@@ -51,10 +51,12 @@ SHEET_ID = "1ISMTDbcY3tUUZZ9R9tPcnsnIiHdFtEtfBlZF-JYJBKY"
 - 軽微：`_research.json` を直接編集 → `build_site.py` 実行。
 - 本格的に再調査：トピックを決めて調査（出典必須・事実検証）→ `_research.json` の該当トピックを差し替え → 再成形。
 
-## 公開（GitHub Pages・タスクスライムと同じ流れ）
-1. このフォルダで `git init` → GitHubに**推測されにくい名前**でリポジトリ作成 → push。
-2. リポジトリ Settings → Pages → Source: `Deploy from a branch`、Branch: `main` / フォルダ `/docs`。
-3. 発行されたURLを3人に共有。以後の更新は再成形して push するだけ。
+## 公開（GitHub Pages）
+- **リポジトリ**：https://github.com/ruirui135/us-trip-2026-oct-9k2x （main・/docs公開・初版push済み 2026-06-27）
+- **公開URL（Pages有効化後）**：https://ruirui135.github.io/us-trip-2026-oct-9k2x/
+- Pages設定：Settings → Pages → Deploy from a branch → main / `/docs`。
+- **以後の更新**：`build_site.py` で再成形 → `git add . && git commit -m "更新" && git push`。
+  - originは設定済み。pushは認証キャッシュで通る（2026-06-27に成功実績）。
 
 ## 進捗・残タスク
 **済**：日付確定（10/8〜10/16）／往復United反映／ガイド「気になること」8件（出典付・荷物はUnited規格&洗濯1回）／★段取りのたたき台5件（提案＋3人で決めること付）／スプシ公開読取り確認。
