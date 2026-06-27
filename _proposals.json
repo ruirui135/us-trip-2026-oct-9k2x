@@ -1,0 +1,547 @@
+[
+  {
+    "topic": "空港の段取り（到着LAX・帰国LAS→LAX→成田）",
+    "summary": "初海外3人なら、到着LAX（着陸→外に出るまで）は「混雑時は1〜2時間みておく」が安全。降りたら(1)入国審査→(2)預け荷物受取→(3)税関→到着ロビー→Uber/Lyftは専用乗り場「LAX-it」へ、の順です。帰国の10/15は逆に楽な向きで、ラスベガス(LAS)を早朝発の国内線→LAXで成田行きに乗継ぐ流れ。同じユナイテッド1枚の券なら荷物は成田まで通し預け（LAXで受け取り直し不要）の見込みで、LAXでは保安検査も再入国審査もなし。LASは早朝発なので「2時間半〜3時間前」着が安心。時刻・規則は必ず予約前に各自確認を。",
+    "points": [
+      {
+        "heading": "到着LAXの全体像（着陸→外に出るまで）と所要時間",
+        "detail": "国際線が着くのは「トムブラッドリー国際線ターミナル(TBIT＝LAXの国際線専用の建物)」。降りてから外に出るまでの順番は (1)入国審査(immigration＝パスポートと入国目的を確認する所) → (2)預け荷物の受取(baggage claim) → (3)税関(customs＝持込み品の申告) → (4)到着ロビー、です。目安は全体で30分〜2時間、混む時間帯は2時間以上になることも。とくに国際線が集中する朝6〜9時(アジア便の到着が重なる)は混みやすい。今回の到着は10/8の昼〜午後で、この朝ピークは外れる可能性が高いですが、初海外3人は『最低1〜2時間かかるつもり』で、その後の予定を詰め込みすぎないのが安全です。",
+        "sources": [
+          "https://www.lax-international-airport.com/lax-customs-immigration",
+          "https://www.sanspotter.com/how-long-does-it-take-to-get-through-customs-at-lax/",
+          "https://flightqueue.com/los-angeles-international-airport-passport-control-wait-times"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "入国審査：3人は『初海外＝初入国』なので自動端末はAPCキオスク（MPCアプリは使えない想定）",
+        "detail": "日本人がビザなしで観光する時は ESTA(エスタ＝渡航前にネットで取る入国許可) が必要で、これは別途必須(到着空港で取るものではない)。LAXのTBITには『APCキオスク』という自動端末があり、ESTAを持つビザ免除国の旅行者も使えて、パスポート読取り・顔写真・税関と簡単な質問・指紋を1〜2分ほどで済ませられ、混雑時の待ちが短縮できます(2026年も稼働中)。注意点：スマホで完結する『MPC(モバイル・パスポート・コントロール)』アプリは無料・事前承認不要で便利ですが、対象は米国市民・永住者・一部カナダ人と『ESTAで“再入国”する旅行者(returning VWP)』に限られます。つまり“初めての米国入国”だと使えません。なので3人は基本『APCキオスク or 審査官の窓口』を想定し、初回は指紋採取がある前提で。英語が不安でも端末は日本語表示を選べ、画面の指示どおり進めばOK。質問は『観光/Vacation』『滞在日数』『泊まる所(ホテル名)』程度。",
+        "sources": [
+          "https://www.cbp.gov/newsroom/local-media-release/lax-unveils-new-automated-passport-control-kiosks-expedite-travelers",
+          "https://www.cbp.gov/travel/us-citizens/mobile-passport-control",
+          "https://en.wikipedia.org/wiki/Mobile_Passport_Control"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "税関の申告書：紙は不要なことが多い／同行家族でなければ各自で",
+        "detail": "税関で出す『税関申告書(CBP Form 6059B＝持込み品の申告)』は、APCキオスクで電子的に答えるので紙の記入が要らないことが多い。1枚を家族でまとめて出せるのは“同居の家族”が前提なので、友人同士の3人は基本それぞれ申告すると考えておくと安心(キオスクは家族単位での操作が基本で、友人同士は各自操作になる場合が多い)。申告で迷いがちなのは『食品(お菓子・カップ麺等)』『現金1万ドル超の持込み』。お菓子類は念のため正直に申告、で大きな問題は普通ありません。最新の運用は変わるので予約・出発前に各自確認を。",
+        "sources": [
+          "https://www.cbp.gov/document/forms/form-6059b-customs-declaration-english-fillable",
+          "https://www.cbp.gov/travel/clearing-cbp/traveler-entry-form",
+          "https://www.lax-international-airport.com/lax-customs-immigration"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "到着後の配車(Uber/Lyft)：必ず専用乗り場『LAX-it』へ。ターミナル前では拾えない",
+        "detail": "LAXでは通常のUber/Lyftはターミナル前で乗れず、『LAX-it(ラックス・イット)』という専用の集合乗り場に行く決まり(2019年から)。場所はターミナル1の隣。行き方は到着階(下の階＝Lower/Arrivals Level)の、バゲージクレーム外側の内側カーブで緑色の『LAX-it』看板を目印に、(a)無料シャトルバス(約5分間隔・乗車後の所要15分程度)に乗る か (b)歩く(国際線TBITからは歩くと遠めなのでシャトル推奨)。現地で『Uberは緑のレーン2〜4、Lyftはピンクのレーン5〜7、タクシーはレーン1』に分かれています。キャッシュレス志向の3人にはアプリ配車が便利。注意：イベント時や夜は待ち時間が出ることがあるので、アプリで車種(料金安め)と到着時刻を見て選ぶ。Uber Black等の上位車種は例外でターミナル前から乗れます。最新の運用は予約・出発前に各自確認を。",
+        "sources": [
+          "https://www.flylax.com/lax-it",
+          "https://www.uber.com/global/en/r/airports/lax/pickup/",
+          "https://goenjoyabroad.com/en/lax-uber-pickup-laxit-guide/",
+          "https://www.discoverlosangeles.com/sites/default/files/2024-03/LAXit-doc.pdf"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "つまずきやすい点（到着）",
+        "detail": "(1)荷物が出るのに20〜45分、便が重なると60分以上かかることがある＝『荷物が遅い＝紛失』と早合点しない。(2)入国審査は『最初の到着空港』で受ける＝LAXに着いた時点で必ず一度入国手続き。(3)3人は同じ便でも審査レーンで別々になりがち＝待ち合わせ場所(税関を出た到着ロビー)を事前に決めておく。(4)スマホ通信＝到着時にネットが繋がるよう、出発前にeSIM等を準備しておくとUber呼び出しがスムーズ。",
+        "sources": [
+          "https://laxtogo.com/tom-bradley-international-terminal-lax-arrival-guide/",
+          "https://www.lax-international-airport.com/lax-customs-immigration"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "帰国(10/15)：LASは早朝発の国内線→『2時間半〜3時間前』着が安心",
+        "detail": "ラスベガス(LAS=ハリーリード国際空港)は『国内線は2時間前着』が公式の目安。TSA(保安検査)が混むのは朝5〜8時台と夕方4〜7時で、早朝便はちょうど朝の混み始めにかかります。ただし5〜6時台の最初の波の前は待ち時間が短い(0〜5分)時間帯もあります。初海外3人＋荷物預け＋英語不安を考えると、安全側で『2時間半〜3時間前着』が無難。預け荷物がある場合はチェックインカウンターが開く時間も要確認(早朝便は概ね出発2時間前頃から)。LASは公式サイトと館内モニターでTSAの今の待ち時間が見られるので、当日チェックを。※LASは出発ターミナル(T1=主に国内線/T3=国際線等)が保安検査後はつながっていないので、自分の便のターミナルを必ず確認。時刻は予約・出発前に各自確認を。",
+        "sources": [
+          "https://www.harryreidairport.com/security-wait-times",
+          "https://www.airporstinsights.com/las-airport/wait-times/",
+          "https://flightqueue.com/airport/LAS"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "帰国の乗継(LAS→LAX→成田)は“楽な向き”：LAXで再入国審査なし・保安検査なし",
+        "detail": "帰りはアメリカを『出る』方向なので、行き(到着)とは段取りが逆で簡単。LAXでは米国の入国審査も税関も保安検査も再度受けません(出国スタンプ的な審査は米国にはなく、搭乗ゲートで搭乗手続きするだけ)。LASで一度TSA保安検査を通れば、LAX到着後はそのまま乗継ぎの国際線ゲートへ。Unitedの国内線はLAXではターミナル7/8に着き、成田行き国際線はTBIT(トムブラッドリー)から出ます。T7/T8とTBITは保安検査の中(エアサイド)の連絡通路でつながっており、同一券なら検査をやり直さず移動できます(徒歩でやや距離があるので時間に余裕を)。",
+        "sources": [
+          "https://onemileatatime.com/connect-terminals-lax/",
+          "https://upgradedpoints.com/travel/airports/getting-between-terminals-lax-airport/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "預け荷物の『通し預け(through check)』：同じUnited1枚の券なら成田まで通る見込み",
+        "detail": "一般論として、1枚のつながった航空券なら、航空会社は『最終目的地(=成田)まで荷物を預ける』のが基本。とくに今回はLAS→LAX→成田が『米国内→国際線(＝アメリカから出る方向)』なので、LASで預けた荷物は成田まで通し＝LAXで受け取り直し不要、の見込み。※『荷物を一度受け取って預け直す』必要があるのは逆向き(海外→アメリカ到着→米国内線)の時で、今回はその逆なので該当しません。ただし券の組み方や当日の運用で例外もあるため、出発前にUnitedアプリや空港カウンターで『荷物は成田まで(to Tokyo Narita)ですか?』と必ず確認を。荷物タグの行き先(NRT)を自分の目で確認すると安心。",
+        "sources": [
+          "https://www.united.com/en/us/fly/baggage/checked-bags.html",
+          "https://www.solotravellerapp.com/do-i-have-to-pick-up-my-luggage-on-a-connecting-flight-united/"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "LAXでの乗継時間の考え方（帰りの国内→国際）",
+        "detail": "LAXの『最低乗継時間(これ以下だと航空会社が売らないギリギリの数字)』は国内→国際で概ね45分〜1時間とされます。ただしこれはあくまで最低基準で、専門家は余裕をみて『搭乗券を既に持っていれば2時間、荷物預けやトラブル対応が要るなら2.5〜3時間』を推奨。今回は通し預けなら荷物作業は不要で、保安検査も行き(LAS)で済ませているので不要。それでもターミナル間の徒歩移動があるため、券面の乗継時間が2時間以上あると安心です。1時間台だと国内線(LAS→LAX)が少し遅れただけで危ういので、予約時に乗継時間を確認しておくのがおすすめ。",
+        "sources": [
+          "https://www.sanspotter.com/is-1-hour-layover-enough-time-in-lax/",
+          "https://www.travelcodex.com/long-take-change-terminals-lax/",
+          "https://airssist.com/transit-los-angeles-airport/"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "成田着(10/16 16時頃)の最後の段取り＝そこで初めて日本の入国・税関",
+        "detail": "成田に着いたら、米国出国時には無かった『日本の入国審査＋税関』を受けます(ここで荷物を受け取る)。日本入国は『Visit Japan Web(ビジット・ジャパン・ウェブ＝入国/税関を事前にスマホ登録できる公式サービス)』を出発前に登録しておくとスムーズ。2024年1月から入国と税関が1つのQR(2次元コード)にまとまり、さらに2026年は成田・羽田・関西で『Joint Kiosk(ジョイントキオスク)』という端末が導入され、パスポートとQRを1台でかざせば入国と税関を一度に処理できます。無料・初心者でも数分。岡崎さんのカード事情(アメックスのみ)とは無関係で、3人とも各自登録を。※入国だけ登録して税関を忘れるとQRが無効＝紙の申告になるので、両方完了させること。詳細・最新仕様は出発前に各自確認を。",
+        "sources": [
+          "https://services.digital.go.jp/en/visit-japan-web/",
+          "https://www.vjw.digital.go.jp/main/#/vjwplo001_010",
+          "https://www.customs.go.jp/kaigairyoko/qa_zei.htm"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      }
+    ],
+    "decisions": [
+      "到着LAXの待ち合わせ場所を事前に1つ決める（おすすめ：税関を出た『到着ロビー』。審査レーンで3人バラバラになる前提で）",
+      "到着後の市内移動の足を決める（おすすめ：キャッシュレスのUber/Lyftを『LAX-it』乗り場から。事前にアプリ入れ・支払いカード登録まで済ませる。アメックスしか無い岡崎さんも事前にUberにカード登録できるか確認）",
+      "到着時にスマホがすぐ繋がる手段を決める（おすすめ：3人とも出発前にeSIM等を準備。Uber呼び出し・地図に必須）",
+      "10/15のLAS到着目標時刻を決める（おすすめ：早朝便なら2.5〜3時間前着。早朝便のチェックイン開始時刻も前日に確認。自分の便の出発ターミナルも確認）",
+      "LAS→成田の荷物の扱いを決める（おすすめ：出発前にUnitedで『成田まで通し預けか』を確認し、当日も荷物タグの行き先がNRTか各自目視）",
+      "LAX乗継の余裕を確認（おすすめ：券面の国内→国際の乗継時間が2時間以上あるか予約前に確認。1時間台なら見直し検討）",
+      "日本帰国の事前登録を決める（おすすめ：3人とも『Visit Japan Web』を入国＋税関の両方とも出発前に登録し、成田の入国・税関をスムーズに）"
+    ],
+    "caveats": [
+      "価格・時刻・乗継時間・運行・各種ルールは変動します。航空券の予約前、および出発直前に必ず各自で公式（United/LAX/LAS/CBP）で最新情報を確認してください。",
+      "MPC(モバイル・パスポート・アプリ)は『ESTAで“再入国”する人(returning VWP)』等に限られ、今回のように“初めての米国入国”だと使えません。3人はAPCキオスクか審査官窓口・初回は指紋採取あり、を前提に。実際の可否は当日CBPの案内に従ってください。",
+      "『成田までの通し預け(through check)』はUnited1枚の同一券なら基本通る見込み（米国から出る方向なので特に問題になりにくい）ですが、券の組み方・当日運用で例外あり。LASのカウンターで必ず確認を。なおUnitedの『乗継12時間以内』等の細かな条件は今回公式ページで確証が取れなかったため、当日カウンターで荷物の最終行き先(NRT)を必ず確認してください。",
+      "LAXの『公式の最低乗継時間』は国内→国際で概ね45分〜1時間ですが、これはあくまで最低基準で実用的ではありません。専門家推奨の2時間以上を目安にし、当日の搭乗ゲート(出発便の案内)を空港モニターで確認してください。United国内線はT7/T8着、成田行きはTBIT発です。",
+      "入国審査での質問・申告（食品、現金1万ドル超など）は正直に。判断に迷う持込みは事前にCBPの最新案内を確認。",
+      "岡崎さんのカードがアメックスのみの件：Uber等の配車アプリやホテルでアメックスが使えるか、出発前にアプリ側のカード登録可否を各自テストしておくと安心（このテーマ＝空港段取りの範囲外なので別途確認推奨）。"
+    ]
+  },
+  {
+    "topic": "アナハイム→ラスベガスの移動手段",
+    "summary": "10/13(火)のアナハイム→ラスベガス(道路で約275マイル/約440km)は、初海外・英語不安・キャッシュレス志向の3人なら「長距離バス(FlixBus/Greyhound)」が本命です。1人約US$44〜52(=3人で約US$130〜160、約2万円前後)・スマホで予約でき(画面は翻訳で日本語化可)・乗車はQRコード(eチケット)を見せるだけ・スーツケースはバスの床下に無料で預けられ、英会話がほぼ要りません。直行で所要は最短約6時間。楽さ・少人数の快適さを優先するならMercedes Sprinterの「LuxXpress(ラックスプレス)」(1人US$80〜、ただし10/13は火曜でアナハイム発1便のみ＋ダイヤモンドバー乗換あり)、到着を早めたいなら飛行機(SNA→LASが近い)も候補。レンタカー片道は乗り捨て料・運転負担・国際免許の手間が大きく、初海外3人には非推奨です。",
+    "points": [
+      {
+        "heading": "全体像：距離と所要、4つの選択肢",
+        "detail": "アナハイム(ディズニー周辺)からラスベガスは道路で約275マイル(約440km)、車で約4〜4.5時間が目安。選択肢は大きく4つ。(1)長距離バス(FlixBus/Greyhound、直行で最短約5時間55分)(2)レンタカー片道乗り捨て(運転約4〜4.5時間)(3)飛行機(オレンジカウンティ空港SNA→ラスベガスLAS、飛行時間だけなら約1時間16分〜1時間20分)(4)その他=高級シャトルバン(LuxXpress)や貸切送迎(Viator等)。「飛行機=一番速い」と思いがちですが、空港までの移動・保安検査・荷物受取を足すと、ドアtoドアではバスと差が縮むことがあるのが落とし穴。なお【重要】2026年10月13日は『火曜日』です(木曜ではありません)。便の時刻表を見る時はこの曜日で確認してください。",
+        "sources": [
+          "https://www.flixbus.com/bus-routes/bus-orange-county-anaheim-santa-ana-ca-las-vegas-nv",
+          "https://www.flightsfrom.com/SNA-LAS"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "(a) 長距離バス FlixBus / Greyhound ＝本命候補",
+        "detail": "・所要：直行で最短約5時間55分。FlixBus・Greyhoundとも『直行(direct)便あり』。\n・料金感(片道1人)：早めの予約で目安US$44〜52前後。3人なら約US$130〜160(約2万円前後)。混む日・直前は上がります。\n・予約方法：FlixBus/Greyhound公式アプリ・サイト、または比較サイト(Wanderu/Busbud等)。クレカでオンライン決済＝完全キャッシュレス(アメックスも一般に可。決済画面で対応ブランドを確認)。スマホのブラウザは翻訳機能で日本語表示できます。\n・英語の負担：ほぼ不要。予約はアプリ完結、乗車はスマホのQR(eチケット)を見せるだけ。\n・スーツケース：『手荷物(小)1個＋預け荷物1個』が運賃込み。FlixBusの預け荷物は約20kgまで(手荷物は約7kgまで)、Greyhoundは預け1個無料(手荷物は約16×12×7インチ/約11kgまで)。スーツケースはバス床下の収納に預けられ、車内で抱える必要なし。\n・乗り場：アナハイムの『ARTIC(アナハイム地域交通センター、2626 E Katella Ave)』など。ディズニー周辺からタクシー/Uberですぐ。\n→ 3人・初海外・英語不安・キャッシュレスのすべてに最も合致。",
+        "sources": [
+          "https://www.flixbus.com/bus-routes/bus-orange-county-anaheim-santa-ana-ca-las-vegas-nv",
+          "https://www.greyhound.com/bus-routes/orange-county-anaheim-santa-ana-ca-las-vegas-nv",
+          "https://www.wanderu.com/en-us/bus/us-ca/anaheim/us-nv/las-vegas/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "(d) 高級シャトルバン LuxXpress ＝快適さ重視の対抗馬",
+        "detail": "『LuxXpress(ラックスプレス)』はMercedes Sprinter(少人数の高級バン)で運行。\n・料金感(片道1人)：アナハイム発はUS$80〜。3人で約US$240〜。クレカ払いは1回の予約ごとに＋US$3.99の手数料、当日窓口(walk-in)は各US$10高い。\n・所要：最速クラス(同社が最速をうたう)。\n・【10/13は火曜】公式時刻表では火曜のアナハイム発は『1:45 PM の1便のみ』(他の曜日は2便ある日も)。便数が少なく曜日で時刻が違うので、ラスベベガス到着が午後遅めになる点に注意。\n・乗り換え：アナハイム/ガーデングローブ発は『ダイヤモンドバー』で1回乗り換えあり。\n・ラスベガス側の降車：Gold Coast または South Point(いずれもカジノホテル)。Excaliburまではタクシー/Uberで移動。\n・予約はオンライン＝キャッシュレス可。\n→ FlixBusより割高だが少人数で快適・荷物が安心。『楽したい』なら有力。10/13(火)1:45PM発がディズニー後の予定に合うか要確認。",
+        "sources": [
+          "https://www.luxxpress.com/schedule/",
+          "https://www.luxxpress.com/faq/"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "(c) 飛行機 SNA(オレンジカウンティ)→ LAS",
+        "detail": "・飛行時間：SNA(ジョンウェイン空港)→LAS(ハリーリード国際空港)は約1時間16分〜1時間20分(距離が近い)。1日約14便の直行あり。\n・運航会社：Southwest・Delta・Frontier・Spirit・Allegiant・Breeze など(直行)。\n・料金感(片道1人)：安いと約US$28〜、目安US$47〜100前後。3人で約US$150〜300+。\n・予約：航空会社サイト/アプリでクレカ決済＝キャッシュレス。\n・落とし穴(時間とお金)：飛行は短くても、空港まで移動＋保安検査で出発の約2時間前到着＋預け荷物受取で、ドアtoドアではバスと差が縮みがち。LCC(格安航空＝Spirit/Frontier等)は預け荷物が有料で1人あたり数十ドル上乗せになりやすい。英語の負担も保安・搭乗で発生。\n→ ラスベガス到着を午後早めにしたい・荷物が少なめの人向け。3人スーツケースありだと手間とコストが膨らみやすい。",
+        "sources": [
+          "https://www.flightsfrom.com/SNA-LAS",
+          "https://www.spirit.com/en/flights-from-orange-county-to-las-vegas",
+          "https://www.expedia.com/lp/flights/sna/las/orange-county-to-las-vegas"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "(b) レンタカー片道乗り捨て ＝初海外3人には非推奨",
+        "detail": "・運転：I-10東→I-15北で約4〜4.5時間、約275マイル。\n・料金感：車両代に加え『乗り捨て料(ドロップオフ料)』が読めない。会社・需要で大きく変動し、ゼロ〜高額まで幅がある(SIXTなど一部は対象路線で無料の場合も)。\n・必要なもの：日本の運転免許＋『国外運転免許証(国際免許)』を出発前に取得。レンタカー受取/返却・任意保険の説明は基本すべて英語。\n・キャッシュレス：レンタカーはクレカ必須(デポジット枠を押さえられる)で支払い自体は可だが、アメックスは一部の付帯保険特典/会社で扱いが異なることがあり要確認。\n・負担：右側通行・砂漠の長距離運転・ラスベガス側の駐車場代/リゾート料金など、初海外で英語不安だと総合的な負担が大きい。\n→ 自由度は高いが、乗り捨て料の不確実性＋運転リスク＋英語対応で、今回の3人にはおすすめしにくい。",
+        "sources": [
+          "https://www.sixt.com/rental-services/one-way-car-rental/los-angeles-las-vegas/",
+          "https://www.enterprise.com/en/car-rental/one-way.html"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "(d補足) 貸切/共有送迎(Viator/Daytrip等)＝高いが一番ラク",
+        "detail": "アナハイム→ラスベガスの貸切/共有送迎をViatorやDaytripで予約できます。共有(シェア)型はリクライニング席などドアtoドアのサービス、貸切SUVは1台貸し切りで3人で割れるが総額は高め。\n・メリット：ホテル前で乗ってホテル前で降りられ、乗り換え・荷物移動・道探しがゼロ。英語の負担が最小。\n・デメリット：料金が最も高くなりやすい。\n→ 予算に余裕があり『移動を完全に手間ゼロにしたい』なら検討価値あり。正確な価格・所要・運行有無は予約画面で要確認(出品状況は時期で変わります)。",
+        "sources": [
+          "https://www.viator.com/tours/Anaheim-and-Buena-Park/Anaheim-to-Las-Vegas-Luxury-Transfer-Service/d797-3357ANAHTLDTNLAS",
+          "https://daytrip.com/en/transfers/anaheim-ca-us/las-vegas-nv-us"
+        ],
+        "volatile": true,
+        "confidence": "low"
+      },
+      {
+        "heading": "3人へのおすすめ(初海外・英語不安・キャッシュレス)",
+        "detail": "優先順位のおすすめ。\n(1)第一候補=FlixBus または Greyhound の直行バス：最安級・アプリ完結・QRで乗車・スーツケースは床下に無料＝英会話ほぼゼロ。3人で約2万円前後。\n(2)快適さ重視の対抗=LuxXpress(高級バン)：割高(3人でUS$240〜)だが少人数で楽。ただし10/13(火)はアナハイム発1:45PMの1便のみ＋ダイヤモンドバー乗換あり＋降車はGold Coast/South Pointなので、時刻と降車地が予定に合うか先に確認。\n(3)到着を早めたい/荷物少なめ=飛行機(SNA優先。LAXは遠い)：飛行は速いが空港手続きで実質差が縮む＋LCCの荷物代に注意。\n(4)非推奨=レンタカー片道：乗り捨て料が読めず、国際免許・右側通行・英語対応の負担大。\nアメックスしか持たない岡崎さんがいる点でも、バス/航空は一般にアメックス可なので問題になりにくい(レンタカーは会社により特典差あり。決済画面で対応ブランドを確認)。",
+        "sources": [
+          "https://www.flixbus.com/bus-routes/bus-orange-county-anaheim-santa-ana-ca-las-vegas-nv",
+          "https://www.luxxpress.com/schedule/",
+          "https://www.expedia.com/lp/flights/sna/las/orange-county-to-las-vegas"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      }
+    ],
+    "decisions": [
+      "第一候補にするか：FlixBus/Greyhoundの直行バス(最安・英語不要・スーツケース床下無料)。3人の総額・楽さのバランスで本命。→ おすすめ:これを基本線にする",
+      "快適さに課金するか：LuxXpress(高級バンUS$80〜/人)に切り替えるか。少人数で楽だが割高＋10/13(火)はアナハイム発1:45PMの1便のみ＋ダイヤモンドバー乗換あり＋降車はGold Coast/South Point。火曜の便時刻と降車地が予定に合うか先に確認",
+      "速さに課金するか：飛行機(SNA→LASが近くて速い)を使うか。飛行は約1時間でも空港往復・保安・荷物受取で実質差は縮む＋LCC荷物代に注意。ラスベガス到着を午後早めにしたい場合のみ",
+      "レンタカー片道は基本見送りでよいか(乗り捨て料が不確実＋国際免許/右側通行/英語対応の負担)。→ おすすめ:今回は見送り",
+      "手間を完全にゼロにしたい日なら、貸切SUV送迎(Viator/Daytrip)を1台3人割りで使うか。総額は高いがホテル→ホテルで最楽(運行有無・価格は予約画面で要確認)"
+    ],
+    "caveats": [
+      "【曜日の訂正】2026年10月13日は『火曜日』です(以前の資料の『木曜』は誤り)。時刻表は必ず火曜の便で確認してください。特にLuxXpressは火曜のアナハイム発が1:45PMの1便のみと少ないので要注意。",
+      "価格・時刻・便数・乗り換え有無・荷物ルールはすべて変動します。予約/出発前に必ず各社公式(FlixBus/Greyhound/LuxXpress/航空会社/Viator等)で最新を各自確認してください。",
+      "この比較の金額は『目安』です。10/13(火)やイベント・連休で大きく上下します。確定は実際の予約画面の表示額で。",
+      "【ラスベガス側の降り場に注意】FlixBusのラスベガス停留所は2026年1月6日に新住所(4047 Ponderosa Way, W Oquendo Rd近く)へ移転しています。LuxXpressの降車はGold CoastまたはSouth Point(カジノホテル)。いずれもExcaliburまでタクシー/Uberの移動が必要なので、宿(Excalibur)までの行き方を事前に確認してください。",
+      "岡崎さんはアメックスのみ:バス・航空券は一般にアメックス可ですが、念のため決済画面で対応ブランドを確認。レンタカー(デポジットや付帯保険特典)や一部小規模シャトルはカード対応が異なる場合があるので事前確認を。LuxXpressはクレカ決済ごとに＋US$3.99の手数料、窓口購入はオンラインより各US$10高い。",
+      "レンタカーを選ぶ場合は出発前に『国外運転免許証(国際免許)』の取得が必須。乗り捨て料・任意保険・ラスベガス側の駐車/リゾート料金も含めて総額を見積もること。",
+      "飛行機の場合、LCC(Spirit/Frontier/Allegiant等)は預け荷物が有料で1人あたり数十ドル上乗せになりがち。スーツケース込みの総額で他案(バス)と比較してください。SNA(オレンジカウンティ空港)はディズニー周辺から近め、LAXは遠いのでSNA優先。",
+      "乗り場/降り場の正確な住所(アナハイムのARTIC、ラスベガス側の各停留所)とホテルからの行き方(タクシー/Uber/Lyft)を事前に確認しておくと当日スムーズです。"
+    ]
+  },
+  {
+    "topic": "ラスベガス→グランドキャニオンの行き方",
+    "summary": "10/14の日帰りで現実的なのは「ウエストリム（スカイウォーク側）」です。ベガスから車で約2.5〜3時間とサウスリムの半分の距離で、バスツアー（送迎・カード決済OK）が初海外・英語が苦手・キャッシュレス志向の3人に一番ラク。サウスリム（国立公園の絶景の本丸）は車で片道4.5〜5時間あり、自走の日帰りは早朝出発・深夜帰着で正直キツいので、行くなら飛行機ツアー（総所要約9.5〜10.5時間・1人600ドル超）が現実解です。なお、2026年からサウスリム（国立公園）は外国人追加料金100ドル/人がかかりますが、ウエストリムには適用されません。料金・時刻・規則は変わりやすいので予約前に各自確認を。",
+    "points": [
+      {
+        "heading": "まず大前提：グランドキャニオンには「2つの入口」がある（場所が全然違う）",
+        "detail": "ベガスから日帰りで行ける候補は2つあり、まったく別の場所です。\n・(1)サウスリム（South Rim）＝アメリカの国立公園(National Park＝国が管理する自然保護区)の主要部。テレビや写真で見る『あの絶景』はここ。ベガスから約280マイル(約450km)、車で片道おおよそ4.5〜5時間。\n・(2)ウエストリム（West Rim／グランドキャニオン・ウエスト）＝ガラスの展望橋スカイウォークがある側。国立公園ではなく、先住民フアラパイ族(Hualapai)が運営する別エリア。ベガスから約130マイル(約200km)、車で片道おおよそ2.5時間。\n→ つまり『近くて手軽＝ウエスト』『遠いけど王道の絶景＝サウス』という住み分け。どちらを見たいかが最初の分かれ道です。(検証で距離を再確認し、ウエストは約130マイル/2.5時間に修正)",
+        "sources": [
+          "https://www.papillon.com/las-vegas-tours/grand-canyon/distance/",
+          "https://grandcanyon.com/planning/how-far-is-it-from-las-vegas-to-the-grand-canyon/",
+          "https://grandcanyon.com/planning/west-planning/how-to-drive-to-grand-canyon-skywalk-from-las-vegas/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "距離・所要・雰囲気の違い（サウス vs ウエスト）",
+        "detail": "・サウスリム：ベガスから片道4.5〜5時間。国立公園の本格的な大渓谷の眺めで『これぞグランドキャニオン』。ただし遠いので日帰りだと滞在時間が削られ、複数の情報源が『本当はサウスは1泊推奨』と言っています。\n・ウエストリム：ベガスから片道2.5時間ほど。スカイウォーク(谷に張り出したガラス床の展望橋)など『アトラクション的』な楽しみ方。眺めの壮大さはサウスに譲るが、近くて日帰り向き。\n・雰囲気のひと言まとめ：サウス＝自然の絶景をじっくり／ウエスト＝近場で名所＋体験。『1日しかないならウエストが現実的、2日以上あればサウスは長距離の価値あり』という整理が一般的です。",
+        "sources": [
+          "https://www.papillon.com/las-vegas-tours/south-rim/distance-by-car/",
+          "https://www.papillon.com/guides/grand-canyon/canyon-rim-comparison/",
+          "https://www.govegasguide.com/grand-canyon-west-rim-or-south-rim/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "行き方A：日帰りバスツアー（英語が苦手な3人に一番ラク／ウエスト向き）",
+        "detail": "ウエストリム行きの日帰りバスツアーが定番。検証した実例（Canyon Tours社）では、\n・料金の目安：『入場のみ』の基本プランで1人約100ドル〜、スカイウォーク＋ジップライン込みの上位プランで約181ドル。他社には89ドル〜の格安や115ドル前後（朝食・昼食・水込み）のプランもあり。\n・重要：多くのツアーで『グランドキャニオン・ウエストの入場料は基本料金に含まれず別』。さらに燃料費（fuel fee）約20ドル/人が予約時に上乗せされる例が一般的なので、表示価格＝最終額ではない点に注意。\n・1日の流れの目安：朝5:00〜5:30ごろにストリップのホテルで送迎ピックアップ（ツアー時刻の約1時間前）→現地で約4時間滞在→総所要は約11時間前後。\n・メリット：自分で運転しない／ホテル送迎付き／道や駐車の不安ゼロ。英語ほぼ話せない初海外の3人には負担が一番小さい。予約は各社サイトやViator等で日本から事前に取れ、支払いもカード（キャッシュレス）でOK。\n・注意：集合が早朝。前夜のラスベガスは早めに切り上げる前提で。",
+        "sources": [
+          "https://www.canyontours.com/grand-canyon-west-rim-bus-tour/",
+          "https://gc.tours/las-vegas-to-grand-canyon-west-bus-tour",
+          "https://www.viator.com/Las-Vegas-attractions/Grand-Canyon-West-Rim/d684-a1594"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "行き方B：小型飛行機・ヘリツアー（時短・特別感／サウスも日帰り可能になる）",
+        "detail": "空から行く選択肢。検証で数値を再確認しました。\n・小型飛行機(エアプレーン)ツアー：ベガス近郊ボルダーシティの空港発が多い。サウスリムまで『飛行＋現地でハマー(四輪駆動車)観光』を組んだ終日パッケージは、Scenic社で総所要約9.5時間・約626ドル(ハマー付)〜934ドル(ヘリ付)。Papillon社の類似プランは総所要約10.5時間とやや長め（事業者で差あり）。サウスを日帰りで“ちゃんと”見る数少ない現実解。\n・ヘリコプターツアー：飛行のみは約195ドル〜。谷底着陸付き（ウエスト）は約449〜739ドル。総所要は2〜5時間程度で短時間・特別感重視。\n・メリット：移動が速い／景色がドラマチック。デメリット：価格が高い、燃料サーチャージ(15〜30%目安)や入場料が別途のことが多い、出発も朝。支払いはオンライン＆カードでOK。",
+        "sources": [
+          "https://www.scenic.com/airplane-tours/grand-canyon/south-rim",
+          "https://www.papillon.com/las-vegas-tours/national-park-air-and-ground-tours/grand-canyon-connoisseur-with-hummer/",
+          "https://www.canyontours.com/grand-canyon-helicopter-tours/",
+          "https://grandcanyon.com/planning/grand-canyon-helicopter-tours/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "行き方C：レンタカー自走（自由度は最高だが英語と運転の負担が大きい）",
+        "detail": "自分たちで運転して行く方法。\n・サウスリム自走：片道4.5〜5時間。日帰りだと往復だけで約8〜9時間の運転になり、実体験談では朝6時起き→渓谷で過ごす→ベガス帰着が深夜0時ごろという例も。複数ガイドが『可能だが厳しい、できれば1泊』と注意。初海外・英語が苦手な3人には正直ハードルが高い。\n・ウエストリム自走：片道2.5時間で日帰りはしやすい。ただし入口から先はマイカー進入禁止で、駐車場に停めて園内の無料『ホップオン・ホップオフ』シャトルに乗り換える仕組み（検証で確認）。入場パスが必要（一般入場67ドル/人、スカイウォーク等込みのオールアクセス99ドル/人）。\n・共通の負担：右側通行・英語の標識・ガソリン給油・駐車などすべて自力。レンタカー予約や運転に自信があるならアリだが、3人とも英語が苦手なら優先度は低め。",
+        "sources": [
+          "https://cameraandacanvas.com/las-vegas-to-grand-canyon-south-rim/",
+          "https://www.shakaguide.com/article/grand-canyon/las-vegas-to-grand-canyon-south-rim",
+          "https://grandcanyonwest.com/plan-your-visit/faqs/"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "【重要・2026年新ルール】外国人追加料金はサウスリムだけ。ウエストリムは対象外",
+        "detail": "2026年1月1日から、グランドキャニオン『国立公園』(＝サウスリム／ノースリム)に入る外国人観光客に、16歳以上1人あたり100ドルの追加料金(foreign visitor fee)が新設されました。これは通常の入園料(車1台35ドル等)とは別。日本のパスポート保持者は対象です。\n・★節約のコツ（検証で新たに確認）：『非居住者向け年間パス(Non-Resident America the Beautiful Annual Pass)』が250ドルで、パス保持者＋大人3名までをカバー。つまり大人3人なら全員分の外国人料金が250ドルでまかなえ、個別に100ドル×3＝300ドル払うより安くなる計算。サウスリムを国立公園として訪れるなら検討価値あり。\n・★重要：この100ドル料金は『国立公園(サウス/ノース)のみ』。ウエストリム(グランドキャニオン・ウエスト)はフアラパイ族の土地で国立公園の管轄外のため、この外国人料金は適用されません（別の入場パス体系）。\n・バス／飛行機ツアーは入場料がプランに含まれる/別の両方があるので、申込時に『外国人追加料金が込みか別か』を必ず確認。2026年に始まったばかりの新ルールで運用が変わる可能性があるため、予約前にNPS公式で最新確認を。",
+        "sources": [
+          "https://www.nps.gov/grca/planyourvisit/fees.htm",
+          "https://grandcanyon.com/news/grand-canyon-foreign-visitor-fee/",
+          "https://explorethecanyon.com/2026-grand-canyon-park-fee-changes-international-visitors/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "結論：日帰りで現実的なのはどれ？／出発は何時ごろ？",
+        "detail": "・一番おすすめ＝ウエストリムのバスツアー。近い(片道2.5時間)・送迎付き・英語の負担最小・カード決済OKで、初海外3人に最適。出発はホテル送迎が朝5:00〜5:30ごろ、総所要約11時間で夕方〜夜にベガス帰着のイメージ。外国人追加料金100ドルもかかりません。\n・サウスリムをどうしても見たいなら＝飛行機ツアー(総所要約9.5〜10.5時間・1人600ドル超)が現実解。自走サウスは早朝出発・帰着深夜になりがちで、運転と英語の負担が大きく日帰りはおすすめしにくい。\n・どの手段でも“朝が早い”のは共通。10/13夜のラスベガス(Excalibur泊)は早めに就寝し、10/14は早朝出発を前提に組むのが安全です。",
+        "sources": [
+          "https://www.canyontours.com/grand-canyon-west-rim-bus-tour/",
+          "https://www.scenic.com/airplane-tours/grand-canyon/south-rim",
+          "https://cameraandacanvas.com/las-vegas-to-grand-canyon-south-rim/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      }
+    ],
+    "decisions": [
+      "【サウス or ウエスト】どちらの『顔』を見たいか決める。王道の大絶景をじっくり＝サウスリム／近くてスカイウォーク等の体験重視＝ウエストリム。おすすめは、日帰り＆初海外の負担を考えて『ウエストリム』（外国人追加料金100ドルもかからない）。",
+      "【ツアー or 自走】運転・英語・駐車を自力でやるか、プロに任せるか。3人とも英語が苦手でキャッシュレス志向なら『ツアー』が断然ラク（送迎付き・カード決済・道の不安ゼロ）。レンタカー自走は自由だが負担大。",
+      "【総合おすすめ案】『ウエストリムの日帰りバスツアー』を軸に検討。サウスの絶景に強くこだわる場合だけ『サウスリムの飛行機ツアー（総所要約9.5〜10.5時間）』を比較対象に。いずれも朝5時台出発前提で10/13夜は早寝する。",
+      "【料金の内訳を確認】バスツアーは表示価格に『入場料が別＋燃料費約20ドル/人』が乗ることが多い。予約前に総額（入場料・税・燃料費・スカイウォーク込みか）を必ず確認する。",
+      "【サウスリムを選ぶ場合の外国人料金】2026年新設の外国人料金(16歳以上100ドル/人)が選んだ手段に『込みか別か』を確認。大人3人なら250ドルの非居住者年間パスの方が安くなる可能性も検討する。"
+    ],
+    "caveats": [
+      "料金・出発時刻・所要時間・滞在時間・入場ルール・送迎範囲はすべて事業者やシーズンで変わります。掲載の数値は2026年6月時点の目安なので、予約・出発前に各ツアー会社/公式サイトで最新情報を各自確認してください。",
+      "バスツアーの表示価格は『入場のみ』の基本額のことが多く、グランドキャニオン・ウエストの入場料や燃料費(約20ドル/人)・税が別途上乗せされる例があります。総額を確認のこと。",
+      "2026年1月1日開始のグランドキャニオン国立公園(サウス/ノースリム)の外国人追加料金100ドル/人は新ルールで、運用・金額・適用範囲が変わる可能性があります。ウエストリムには適用されませんが、サウスリムを検討する場合はNPS公式(nps.gov)で最新を確認。",
+      "ウエストリムは国立公園ではなくフアラパイ族運営の別エリアで、料金体系・予約方法・パス種類(一般入場67ドル/オールアクセス99ドル等)が国立公園とは異なります。園内はマイカー進入禁止で無料シャトル必須。さらにスカイウォークの橋上はカメラ・バッグ・財布などの持ち込み禁止(携帯電話のみ可・ロッカー有料/無料あり)なので、撮影は備え付けの有料カメラマンか携帯で。現地ルールを事前確認してください。",
+      "自走を選ぶ場合：アメリカは右側通行、標識・案内は英語、給油や駐車も自力です。国際運転免許やレンタカーの保険条件、ガソリン式給油の操作などを出発前に必ず確認してください。サウスリム自走の日帰りは往復8〜9時間運転＋帰着が深夜になりがちで負担大。",
+      "どの手段も朝が早い前提です。10/14は早朝出発になるため、前夜(10/13・Excalibur泊)は夜更かしを避け、集合・送迎時刻に遅れないよう余裕を持って準備してください。",
+      "観光スポットやチケット・見る場所自体はこの調査では決めていません（行き方の選択肢の整理のみ）。実際の予約内容は3人で相談のうえ確定してください。"
+    ]
+  },
+  {
+    "topic": "ディズニー（OBB・チケット・お土産・荷物）",
+    "summary": "アナハイムのディズニーは「2日とも別々のチケットが必要」と覚えてください。10/11(日)はOogie Boogie Bash(OBB＝カリフォルニア・アドベンチャーの夜のハロウィンイベント)の専用チケット(2026年の10/11=日曜は1人179ドル＋税)、10/12(月)は普通の1day Tier券＋待ち時間を短くするLightning Lane Multi Pass(1人約25〜40ドル、変動)が要ります。支払いはアメックスもApple Pay/タッチ決済も全館で使え、キャッシュレスでほぼ完結します。お土産は最終日の夜に「アプリのMobile Checkout(レジ並ばず会計)」を使い原則その日に持ち帰り、10/13の移動日はホテルのベルデスク(荷物預かり)に頼るのが基本です。価格・時刻・規則は変わるので、必ず予約前に各自で公式を確認してください。",
+    "points": [
+      {
+        "heading": "大前提：2日とも「別のチケット」が要る（OBBは普通の入園券では入れない）",
+        "detail": "(1)10/11(日)のOogie Boogie Bash(オウギー・ブギー・バッシュ＝以下OBB。カリフォルニア・アドベンチャー=DCAで夜だけ開催する別売りのハロウィンイベント)は、通常の入園券とは『完全に別』の専用チケットが必要です。OBBチケットを買えば当日DCAに早めに入れるので、10/11は通常の1day券は買わなくてOK。(2)10/12(月)のディズニーランドは普通の『1day Tier券(=日にちごとに値段が変わる入園券)』が必要。つまり3人とも『OBB券(11日)＋1day券(12日)』の2種類を人数分そろえる、と覚えてください。買う前に全員のMyDisneyアカウントに券を紐づけておくと当日スムーズです。※前の調査では10/11を「土曜」としていましたが、2026年の10/11は『日曜』、10/12は『月曜』です(検証で訂正)。",
+        "sources": [
+          "https://disneyland.disney.go.com/events-tours/disney-california-adventure/oogie-boogie-bash-halloween-party/",
+          "https://disneyland.disney.go.com/faq/tickets/ticket-prices/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "OBBの仕組み：時間・値段・含まれるもの（10/11は日曜・179ドル）",
+        "detail": "・時間：パーティー本編は18:00〜23:00(午後6時〜午後11時)。チケットがあればDCAに15:00(午後3時)から早入りできる(=実質約8時間遊べる)。\n・値段(2026年)：全体では1人139〜199ドル＋税(3歳以上同額)。ハロウィンに近い日ほど高く、対象のあなたの日『10/11(日)=179ドル＋税』。\n・10月の開催日：Oct 1/4/6/8/11/13/15/18/20/22/25/27/29/31(曜日は日・火・木が中心)。\n・含まれるもの：villain(ヴィラン=悪役)が立つ『トリックオアトリート(お菓子もらい)』のトレイル、Villains Grove(光と音の歩いて回る演出)、各種ショー、ヴィランとの記念撮影、そしてPhotoPass(=園内カメラマンの写真)のダウンロードが無料で込み。\n・注意：2026年は新アトラクション『Coco(リメンバー・ミー)のボートライド』工事のため、恒例の『Frightfully Fun パレード』は無しと公式系ガイドが明記(行ってみたら有る/無しは当日要確認)。\n・販売：2026年は6/18(木)9時PST〜一般販売開始済み。買えるうちに確保を。",
+        "sources": [
+          "https://disneyland.disney.go.com/events-tours/disney-california-adventure/oogie-boogie-bash-halloween-party/",
+          "https://touringplans.com/blog/2026-oogie-boogie-bash-halloween-party-guide-at-disney-california-adventure/",
+          "https://mickeyvisit.com/oogie-boogie-bash-ticket-prices-dates-june-2-2026/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "OBBのコスチューム(仮装)ルール：年齢で違う",
+        "detail": "OBBは通常と違い、大人も仮装OK(普段の昼のパークは14歳以上の仮装・マスク禁止)。ただしルールあり：\n・13歳以下：コスチュームと一部のマスクOK。ただし顔全体を覆わない＝目が見えること。\n・14歳以上：マスクは医療目的以外NG。ケープ(マント)・テーマTシャツやヘッドウェアはOKだが顔を覆わないこと。\n・全年齢共通：家族向けで攻撃的・暴力的でないこと、本物に見える/間違われる武器や鋭利な小道具はNG、地面を引きずる衣装(ロングのプリンセスドレス等)はNG。\n20代3人(初海外・英語が不安)には『動きやすく目が見える軽装の仮装』が安全。仮装しない選択でも全く問題ありません。",
+        "sources": [
+          "https://touringplans.com/blog/2026-oogie-boogie-bash-halloween-party-guide-at-disney-california-adventure/",
+          "https://disneyland.disney.go.com/faq/parks/dress/"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "10/12 ディズニーランドの1day Tier券＝『日にちで値段が変わる入園券』",
+        "detail": "ディズニーランドの1day(1パーク)券は需要に応じてTier0〜6の7段階の値段制。2025-26時点で大人約104〜224ドル＋税(子供3〜9歳は約98〜214ドル)。土日や祝・繁忙期は高いTier、平日は安いTierになりがち。あなたの日『10/12は月曜＝平日』なので、土日より低めのTierになる可能性が高いです(ただし秋の繁忙状況やイベントで上振れもあるため最終確認は必須)。仕組み上『高いTierの券は同じか低いTierの日にも使える』(逆は不可)ので、希望日(10/12)を選んで買えばOK。3人分まとめて同じ日付で購入し、各自のMyDisneyに紐づけておくと、次のLightning Laneも全員分まとめて買えます。※前の調査は10/12を「日曜」としていましたが正しくは『月曜(平日)』です(検証で訂正)。",
+        "sources": [
+          "https://disneyland.disney.go.com/faq/tickets/ticket-prices/",
+          "https://www.laughingplace.com/disney-parks/disneyland-resort-ticket-price-tier-dates/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "待ち時間を短くするLightning Lane Multi Pass(LLMP)の使い方",
+        "detail": "LLMP＝『短い列(=Lightning Lane)で乗れる予約を有料で取れる仕組み』。多数の人気アトラクションが対象。\n・値段(2026年)：1人1日 おおむね最低約25ドル〜開始価格約34ドル、繁忙日は最大約40ドルで日によって変動(当日まで待つと高くなる傾向)。\n・買い方：入園後にDisneylandアプリで購入、またはチケット購入時の追加オプションとして事前に付けることも可。全員に同じ日の有効な入園券があり、MyDisneyに紐づいていることが前提。\n・コツ：①入園直後に1個目を予約→②『前の予約を使ったら/予約から2時間経ったら』次が取れる、を繰り返して複数を“ためる(stack)”。③1個目はあえて少し後の時間に取ると無駄が減るという上級者の声も。④空き状況は当日変動するので、アプリでこまめに予約変更して良い時間を探す。\n・PhotoPass(園内カメラマンの写真)はLLMP購入日に込み。\n操作はアプリ内のスマホ上で完結します(英語が不安でも視覚的に進められます)。",
+        "sources": [
+          "https://disneyland.disney.go.com/lightning-lane-passes/",
+          "https://www.enchantedinsider.com/disneyland-lightning-lane-complete-guide-2026/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "支払い：アメックスもタッチ決済もOK＝キャッシュレスでほぼ完結",
+        "detail": "Disneyのパーク内・オンラインともVisa/Mastercard/American Express/Discoverが使え、岡崎さんのアメックスのみでも問題ありません。Apple Pay等のタッチ決済(スマホでタップ)も全館で使え、クイックサービス(軽食店)はアプリのモバイルオーダーが事実上の標準。フード/グッズ/チケット/LLMPすべてカード・スマホ決済で回せるので、3人のキャッシュレス志向と相性良し。2026年は屋外の自販機など一部が現金不可になりつつありますが、多くの店・レストランでは現金もまだ使えます。万一の故障やチップ用に少額の現金/別ブランドのカードを1枚持つと安心(岡崎さん以外がVisa等を持つと保険になる)。",
+        "sources": [
+          "https://www.enchantedinsider.com/is-disneyland-cashless-in-2026-complete-payment-guide/",
+          "https://disneyland.disney.go.com/guest-services/merchandise-mobile-checkout/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "お土産：かさばり対策と賢い買い方（最終日の夜＆アプリ活用）",
+        "detail": "・買うタイミング：基本は最終日の閉園間際。メインストリート等の店は閉園後しばらく開いており、一日中荷物を持ち歩かずに済む。\n・アプリで会計：Merchandise Mobile Checkout＝棚で商品のバーコードを自分でスキャン→QRを専用ポディウムのキャストに見せて支払い(レジ列回避)。対応店舗のみ。\n・運び方/受取：『Buy Now, Pick Up Later(買って後で受取)』は過去に一部店舗で試験導入されたもので、2026年時点で全店常設かは不確実。ホテル配送はディズニー直営ホテル向けで現在は縮小・休止傾向、今回の宿(The Wayfarer/Clarion)は対象外。よって原則“その日のうちに持ち帰る/スーツケースに入れる”前提で計画を。\n・OBB限定品(Loungeflyやスピリットジャージー等)やポップコーンバケツは人気で売り切れることも。欲しい物は早めに確保。\n・混雑回避：ダウンタウン・ディズニーの大型店『World of Disney』は遅い時間ほど落ち着きやすい。",
+        "sources": [
+          "https://disneyland.disney.go.com/guest-services/merchandise-mobile-checkout/",
+          "https://www.undercovertourist.com/blog/souvenirs-at-disneyland/",
+          "https://blogmickey.com/2022/11/disneyland-rolls-out-buy-now-pick-up-later-merchandise-mobile-ordering-at-select-locations/"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "10/13 移動日の荷物：基本は『ホテルのベルデスク預かり』、パークのロッカーは“一日だけ”用",
+        "detail": "10/13(火)はClarionをチェックアウト→ラスベガスへ移動。手荷物の置き場は次の3択：\n①Clarionのベルデスク/フロント：多くのホテルはチェックアウト後も当日中は荷物を預かる(数時間が目安、原則そのホテルの宿泊者向け・タグをもらう)。Clarion固有の料金/上限・無料か有料かは要確認。これが第一候補。\n②パークのロッカー(その日その場で出し入れする人向け)：パーク内は標準$7/大型$10、入口外エスプラネードは$7/$10/$12/$15(サイズ別)。機内持込スーツケースは入口外の大型(Jumbo=約18×25×37インチ)ロッカーでないと入らないことが多く、持込手荷物の上限は24×15×18インチ目安。園内・エスプラネードとも『その日のみ・一晩不可』。10/13は移動が主目的なのでロッカーよりホテル預かりが現実的。\n③駅前/街中の手荷物預かりサービス(LuggageHero/Bounce等)：1時間〜1日課金。\n移動手段(車/バス/フライト)が決まり次第、その出発時刻に合わせて受け取り計画を。",
+        "sources": [
+          "https://disneyland.disney.go.com/guest-services/locker-rentals/",
+          "https://mickeyvisit.com/renting-lockers-at-disneyland/",
+          "https://help.marriott.com/s/article/store-luggage-before-after-check-in"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      }
+    ],
+    "decisions": [
+      "10/11(日)のOBBチケットを最優先で人数分(3枚)確保するか今すぐ決める。2026年は一般販売開始済み・10/11(日)=179ドル＋税→おすすめ：行くなら今すぐ公式で3枚購入し、3人のMyDisneyに紐づける。",
+      "10/12(月)の1day Tier券にLightning Lane Multi Passを『事前に付ける』か『当日アプリで買う』か→おすすめ：英語不安＆初海外なら当日朝にアプリで購入(空き状況を見て判断できる)。確実に使う前提なら事前付与で価格固定でも可。",
+      "OBBで仮装するか/しないか、するなら全員そろえるか→おすすめ：目が見える軽装の仮装 or Tシャツ程度のゆる仮装。荷物・暑さ・写真映えのバランスで。仮装なしでも問題なし。",
+      "お土産の運用ルールを統一→おすすめ：対応店舗でアプリのMobile Checkoutを使い、原則その日のうちに持ち帰る。大物は10/12(月)の閉園間際にWorld of Disneyでまとめ買い。",
+      "10/13(火)移動日の荷物はClarionのベルデスク預かりを第一候補に。チェックイン時にチェックアウト後預かりの可否・料金(無料/有料)・預かり時間上限を、英語が話せるメンバー(岡崎さん以外)が確認する役割を決める。"
+    ],
+    "caveats": [
+      "最重要の訂正：2026年の10/11は『日曜』、10/12は『月曜』、10/13は『火曜』です(前の調査の「土曜/日曜」表記は誤り)。OBB 10/11は日曜開催・179ドル＋税で検証済み。",
+      "価格・開催日・時間・コスチューム規則・パレード有無・ロッカー料金は変わりやすい。予約/出発前に必ず各自で公式ページ(Disneyland.com)とホテルに最新情報を確認すること。",
+      "2026年はCocoの新ライド工事のため恒例パレード(Frightfully Fun Parade)が無いとの公式系ガイド情報あり。当日の上演有無・ショー内容は公式と現地表示で要確認。",
+      "Lightning Lane Multi Passの価格は日によって最低約25ドル〜最大約40ドルで変動。表示は2026年閲覧時点の目安で、購入日に上振れすることがある。",
+      "『Buy Now, Pick Up Later』は過去の限定試験導入が初出で、2026年に全店常設かは不確実。確実なのはMobile Checkout(レジ並ばず会計)。ホテル配送は直営ホテル向けで今回の宿(The Wayfarer/Clarion)は対象外、お土産はその日に持ち帰る前提で。",
+      "Clarionのチェックアウト後荷物預かりの可否・料金・時間上限はホテル固有。チェックイン時に必ず確認を。",
+      "支払いは岡崎さんのアメックスで概ね問題ないが、機器トラブルやチップ用に別ブランドのカード1枚＋少額の現金(USドル)を予備で持つと安心。",
+      "本回答は2025-2026年の各ソースに基づく。リンク先の数値は閲覧時点のもので、為替・税で実際の支払額は前後する。"
+    ]
+  },
+  {
+    "topic": "ラスベガスのカジノ基礎",
+    "summary": "結論：ラスベガスのカジノで遊ぶには「21歳以上」と「写真付き身分証（外国人はパスポート現物）」が絶対条件で、これが無いとプレイも大きな配当の受取もできません。賭けに使う「チップ（円盤状の代用貨幣）」はテーブルに着いて現金を台の上に置けば交換でき、帰るときは「ケージ」という現金窓口や自動精算機で現金に戻します。少額で遊べる初心者向けはスロットやルーレットの「赤か黒」など。みなさんが泊まるExcalibur（エクスカリバー）はストリップ（中心街）の中でも珍しく$5の生ディーラー・ブラックジャックや$3の機械式ゲームがある安め寄りのカジノです。ディーラーや無料ドリンクを運ぶ係には1〜2ドルのチップ（心づけ）を渡すのが慣習です。",
+    "points": [
+      {
+        "heading": "(1) 21歳以上＋写真付き身分証は絶対。外国人はパスポート現物を必ず携帯（コピー・スマホ画像はNG）",
+        "detail": "ネバダ州（ラスベガスがある州）の法律(NRS 463.350)で、スロット・テーブルゲーム・スポーツ賭けなど全ての賭けが21歳以上。3人とも20代なので問題ありませんが、若く見られると身分証の提示を求められます。\n・外国人が使える身分証は事実上「パスポートの現物」だけ（日本の運転免許証は使えないことが多い）。\n・スマホの中のパスポート写真やコピーは公式に拒否対象（複数の情報源が『写真・コピーは不可、現物のみ』と明記）。係員はカードの手触りやホログラム（光る加工）を確認するため。\n・特にケージ（現金窓口）・大きな配当の手渡し受取（ハンドペイ）・ナイトクラブ入場では現物必須。\n・期限切れ・破損したパスポートは無効扱い（年齢に関わらず断られることがある）。\n・対策：カジノで遊ぶ日（Excalibur泊の10/13夜・10/14夜）はパスポートを持ち歩く必要があります。紛失リスクもあるので首下げ・内ポケット式のセキュリティポーチで肌身離さず管理を。",
+        "sources": [
+          "https://lasvegaswonders.com/las-vegas-id-rules/",
+          "https://www.lasvegasadvisor.com/question/casino-id/",
+          "https://passport-photo.online/blog/casino-passport/",
+          "https://law.justia.com/codes/nevada/chapter-463/statute-463-350/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "(2) カジノフロアの写真・動画のルールは施設ごとに違う。Excalibur(MGM系)は『自撮り＋短い動画』が公式にOK",
+        "detail": "「カジノ内の撮影は法律で禁止」は誤解で、禁止する法律はありません。ただし各カジノが独自に制限しており、長年セキュリティが厳しく取り締まってきた歴史があります。\n・近年はSNS普及で緩める施設が増加。みなさんが泊まる Excalibur は MGM系（MGM Grand・Luxor・New York-New York 等と同じ運営会社）で、MGMは『自分がプレイしている様子の自撮り＆短い動画（個人利用）』を公式に許可しています。\n・例：The Strat（ザ・ストラット）も自撮り・写真はOK（ただし動画・ライブ配信は不可）。\n・一方 Caesars Palace（シーザーズパレス）系は昔から撮影に厳しいなど、施設差が大きい。\n・共通マナー：他のお客さんやディーラーを本人の同意なく撮るのはどこでもNG寄り。プレイ中のテーブルを写し込むのも避ける。動画は写真より厳しく見られる施設が多い。\n・安全策：心配なら近くのスタッフに一声かける。",
+        "sources": [
+          "https://cdcgaming.com/brief/las-vegas-casinos-change-photo-rules-as-social-media-transforms-gaming-floor-policies/",
+          "https://www.casino.org/news/vegas-myths-re-busted-its-illegal-to-take-photos-in-a-casino/",
+          "https://www.reviewjournal.com/business/business-columns/inside-gaming/mgm-trying-new-policy-allowing-selfies-short-videos-in-casinos-2792368/",
+          "https://www.lasvegasadvisor.com/faq-general-photos-in-casinos/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "(3) チップ（賭け用の代用貨幣）への両替と、現金化（キャッシュアウト）のやり方",
+        "detail": "用語：ここでの「チップ」は心づけではなく、賭けに使う円盤状の代用貨幣のこと。\n■買い方（現金→チップ）\n・テーブル（ブラックジャック等）の席に着き、現金をテーブルの上（フェルト=台の布の上）に置く。手渡しはマナー違反。\n・ディーラーが金額分のチップに替えてくれる。両替窓口に行く必要はない。\n・色＝金額の目安：白$1／赤$5／緑$25／黒$100（施設で多少違う）。\n■現金に戻す（キャッシュアウト）\n・「ケージ(Cage)」という現金窓口に持って行くと現金に替えてくれる。\n・スロットの場合は、機械から出る『バーコード付きレシート(TITO=チケット・イン/アウト)』を、フロアの自動精算機(キオスク)かケージに入れて現金化。\n・有効期限：ネバダ州の標準は発行から180日(約6か月)。ただし施設により短く、Strip中心部のWynn/Encore/Circus Circus/Stratなどは60日、一部ダウンタウンは90日と幅がある。期限切れ前提で考えず、忘れず『その日のうちに現金化』が安全。",
+        "sources": [
+          "https://vegasadvantage.com/how-long-until-that-forgotten-slot-ticket-expires/",
+          "https://www.lasvegasadvisor.com/faq-gambling-unclaimed-tito/",
+          "https://en.wikipedia.org/wiki/Ticket-in,_ticket-out",
+          "https://www.liveabout.com/redeeming-slot-vouchers-537713"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "(4) 最低賭け金(テーブルのミニマム)の見方／スロットの始め方／初心者向けゲーム",
+        "detail": "■最低賭け金(ミニマム)\n・各テーブルに小さな札があり、最低〜最高の賭け額が書いてある。例『$5 minimum』。\n・重要：ストリップ(中心街)の本格的な配当(3:2)のブラックジャックは、近年ミニマムが$25〜$50に上がっている時間帯が多い(2025〜2026年の調査)。『$5』『$3』の安い台は、配当が不利な6:5の台か機械式(電子)の台であることが多い。\n・嬉しい点：みなさんが泊まる Excalibur は例外的に安く、ストリップで唯一クラスの『$5の生ディーラー・ブラックジャック(ただし配当6:5)』があり、機械式のブラックジャック/ルーレット/クラップスは$3〜から。初心者が低予算で座るには向いた施設。\n・注意：『$5/$2ブラックジャック』など格安台は配当が6:5(不利)のことが多い。安さだけで飛びつかない。週末・夜はミニマムが上がりやすい。\n■スロットの始め方(一番かんたん)\n(1)紙幣を投入口に入れる→クレジット(持ち点)になる (2)1回の賭け額を選ぶ (3)スピンボタンを押す。絵柄がそろえば配当。最初は当たりライン(ペイライン)が少ないシンプルな台が分かりやすい。\n■初心者向けゲーム\n・スロット：ルール不要で気軽。\n・ルーレットの『赤か黒』『奇数か偶数』：配当1:1で分かりやすい。ただしラスベガスは0と00がある『ダブルゼロ』式が主流なので、当たる確率はちょうど50%ではなく約47.4%(0/00に入ると外れ)。\n・ブラックジャック：低ミニマム台を選べば長く遊べる。",
+        "sources": [
+          "https://vegasadvantage.com/las-vegas-blackjack/central-las-vegas-strip-blackjack/",
+          "https://www.reviewjournal.com/business/casinos-gaming/strip-casino-offering-5-blackjack-with-a-live-dealer-3467509/",
+          "https://www.vegasinsider.com/casinos/roulette/odds/",
+          "https://www.cachecreek.com/how-to-play-slots"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "(5) ディーラー(進行係)へのチップ＝トーク(toke)",
+        "detail": "用語：カジノではディーラーへの心づけを『トーク(toke)』と呼ぶ。ディーラーは最低賃金＋チップで生活しており、チップは重要。\n・目安には2つの考え方がある：(a)賭け額ベース＝$10〜$50で賭ける人なら1時間あたり$1〜$5程度、(b)時間ベース＝1時間あたり$4〜$8(チップ生活者の最低限を支える発想)。どちらでも『1テーブルで遊んだら数ドル』が初心者の現実的な目安。\n・渡し方：自分の賭けの手前にチップを1枚置いて『これはあなたへ(This is for you)』と言う、またはディーラーのために代わりに賭けてあげる方法も。\n・勝ったときに渡すと喜ばれる。大きく賭けているのに$1だと少なく見られがち。\n・大きく負けているときは無理に渡さなくてよい(ディーラーも期待しない)。",
+        "sources": [
+          "https://www.caesars.com/casino-gaming-blog/latest-posts/table-games/casino-terms-tips-tokes",
+          "https://easy.vegas/vegas/tipping-guide",
+          "https://www.travelweekly.com/North-America-Travel/Insights/How-to-tip-in-Las-Vegas-casinos"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "(6) 賭けている間のドリンクは無料。ただしチップ(心づけ)を渡すのが慣習",
+        "detail": "・カジノは賭けを続けてもらうため、フロアを回るカクテル係(cocktail server)がアルコール/ソフトドリンクを無料で運んでくれる。スロットでもテーブルでも、実際に遊んでいる人が対象。\n・チップの目安：1杯につき$1〜$2が基本。最近は$2〜$3渡す人も増えている。\n・渡し方：係が持つトレイにチップ(心づけ)を置く。現金でもカジノチップ(代用貨幣)でも可だが、現金の方がやや喜ばれる。\n・コツ：最初に多めに渡して『しばらくここにいるね』と言うと、その後こまめに注文を聞きに来てくれる。\n・注意：『無料』はドリンク自体で、チップは別。チップ0は印象が悪い。飲みすぎ・酔いつぶれはマナー違反(後述)。",
+        "sources": [
+          "https://vinepair.com/articles/casino-tipping-etiquette/",
+          "https://easy.vegas/vegas/tipping-guide",
+          "https://www.lasvegasadvisor.com/faq-tipping-cocktails/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "(7) ドレスコードと基本マナー",
+        "detail": "■服装\n・日中：カジュアルでOK(ジーンズ・短パン・スニーカー・Tシャツ可)。スロットや観光ならこれで十分。\n・夜：少しきれいめが無難。男性は襟付きシャツ＋スラックスやきれいめジーンズ、女性はワンピースやブラウス＋パンツ等。\n・避けたい：スウェット、ビーチサンダル、破れ・汚れた服。特に夜のサンダル・短パンは浮きやすい。歩き回るので歩きやすい靴を。\n■マナー(特にテーブル)\n・座る前にそのゲームのルールを最低限知っておく。\n・カードに触れてよいか(伏せ札か表向きか)はゲーム次第。表向きの台では基本カードに触らない。\n・ブラックジャックの合図：もう1枚=テーブルを軽く叩く／これ以上いらない=手のひらを水平に振る(口頭より手の合図が基本)。\n・プレイ中の長電話・撮影・酔いつぶれは避ける。ディーラーやスタッフには負けても丁寧に。",
+        "sources": [
+          "https://www.thed.com/blog/las-vegas-casino-etiquette/",
+          "https://www.goldengatecasino.com/blog/what-to-do-in-casino-in-vegas/",
+          "https://303magazine.com/2025/10/step-out-in-style-following-the-las-vegas-casino-dress-code/"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "(8) 【2026年の新情報】大当たり時の税関連と身分証(知っておくと安心)",
+        "detail": "・スロット/キノ/ビンゴで一定額以上の当たりが出ると、その場で機械が止まり係員が手渡しで支払う『ハンドペイ』になり、税の書類(W-2G)記入のため身分証(外国人はパスポート現物)が必要になる。\n・しきい値が2026年1月1日から変更：従来の$1,200から$2,000以上に引き上げ。つまり$2,000以上の大当たりで書類＆身分証が必要(2025年までは$1,200)。\n・初心者が少額で遊ぶ分にはまず関係しないが、『万一の大当たりでもパスポートが無いと受け取り手続きが進まない』点で、(1)の『遊ぶ日はパスポート携帯』がここでも効いてくる。\n・米国の賭け勝ち金は原則として課税対象。手続きや税の扱いは状況により異なるため、大きく勝った場合は現地スタッフの案内に従い、不明点は各自確認を。",
+        "sources": [
+          "https://www.reviewjournal.com/business/casinos-gaming/irs-confirms-2k-slot-jackpot-threshold-begins-in-26-3597374/",
+          "https://cdcgaming.com/brief/irs-confirms-2000-slot-jackpot-threshold-begins-in-2026/",
+          "https://www.irs.gov/instructions/iw2g"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      }
+    ],
+    "decisions": [
+      "『カジノで遊ぶ日(10/13夜・10/14夜のExcalibur泊時)はパスポートを全員持ち歩く』と決める。おすすめ＝首下げ・内ポケット式のセキュリティポーチで肌身離さず管理。スマホ画像・コピーは不可なので現物必須。大当たり(2026年は$2,000以上)時の受取にも現物が要る。",
+      "『1人いくらまで』の上限額を3人それぞれ事前に決め、その分だけ現金でチップに替える。おすすめ＝各自$50〜$100程度を上限に。キャッシュレス志向でも、チップ購入とディーラー/ドリンクへの心づけ用に少額の現金($1札を多めに)を用意しておくと便利。岡崎さんはアメックスのみなので、現金不足に備えて出発前か空港で少額のドル現金を用意しておくと安心。",
+      "最初に遊ぶゲームを決めておく。おすすめ＝まずは全員でスロット(ルール不要)か、ルーレットの『赤/黒』から。テーブルに座るなら、泊まるExcaliburの$5生ブラックジャック(配当6:5)か$3の機械式ブラックジャックが低予算で入りやすい。",
+      "写真は『自分たちの記念だけ』をルールに。Excalibur(MGM系)は自撮り＋短い動画がOKだが、他の客やディーラー、プレイ中のテーブルを写し込むのは避ける、で統一する。施設が変われば緩い/厳しいが変わる点も共有。",
+      "心づけ(チップ)の小額現金担当を1人決め、$1札を20〜30枚ほど崩して用意。ドリンク1杯$1〜$2、ディーラーは『1テーブル遊んだら数ドル』(勝ったとき$1〜$5、または1時間$4前後)を目安に。"
+    ],
+    "caveats": [
+      "最低賭け金・配当ルール(3:2か6:5か)・撮影可否・チップの相場・ドレスコードは施設ごと＆時期ごと(特に週末・夜)に変わります。価格・規則は必ず出発前と現地で、実際に行く施設(Excalibur等)の公式サイトや現地の掲示・スタッフで確認してください。",
+      "Excalibur関連(『$5生ブラックジャック』『$3機械式』『MGM系で自撮り＋短い動画OK』)は2025〜2026年の報道・ガイドに基づく情報です。台の数・最低額・撮影方針は予告なく変わり得るので、現地の表示を最優先に。",
+      "スロット等の大当たり書類(W-2G)のしきい値$2,000は2026年1月1日施行の新ルールで、今後インフレで毎年調整されます。米国の賭け勝ち金の税の扱いは状況により異なるため、大きく勝った場合は現地スタッフの案内に従い、不明点は各自で確認を。",
+      "外国人の身分証はパスポート現物が事実上唯一の確実な手段です。紛失・盗難に備え、パスポート番号の控えやコピーを宿に分けて保管しておくと安心(ただし提示用としてコピー・スマホ画像は使えません)。",
+      "賭けは必ず『失っても困らない金額』の範囲で。ルーレットの赤/黒も当たる確率は約47.4%で、長く遊ぶほど少しずつ不利(ハウスエッジ約5.26%)。無料ドリンクは飲みすぎ防止に水分も挟み、酔いつぶれない範囲で。チップ(心づけ)の金額は強制ではなく慣習なので、無理のない範囲で。"
+    ]
+  }
+]

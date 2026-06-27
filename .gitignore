@@ -1,0 +1,6 @@
+# Claude Code のローカル設定（公開不要）
+.claude/
+
+# Python 一時物
+__pycache__/
+*.pyc

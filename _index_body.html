@@ -1,0 +1,172 @@
+<body>
+
+<style>
+  /* このページ用の小追加（共通テンプレは触らない） */
+  .term{border-bottom:1px dotted var(--accent);cursor:help}
+  .vtl .ev .memo{display:block;font-size:var(--fs-sm);color:var(--text-muted);margin-top:.1em}
+  .vtl .ev .memo.todo{color:var(--warn)}
+  .vtl .ev .evlink{font-size:var(--fs-sm)}
+  .daymark{display:inline-block;font-size:var(--fs-xs);font-weight:700;color:#fff;background:var(--accent);border-radius:999px;padding:.1em .7em;margin-left:.4em;vertical-align:.15em}
+  .src{font-size:var(--fs-xs)}
+  .src a{margin-right:.2em}
+</style>
+
+<div class="topbar">
+  <span class="brand"><span class="dot"></span>アメリカ旅行しおり｜2026.10</span>
+  <span class="spacer"></span>
+  <a class="btn" href="how-to.html">つかいかた</a>
+  <button class="btn" id="themeToggle" aria-label="ライト/ダーク切替">🌙 ダーク</button>
+</div>
+
+<main class="reading">
+
+  <h1>アメリカ旅行しおり 🇺🇸<br>2026年10月・7泊9日</h1>
+
+  <div class="banner info no-print" style="margin-bottom:var(--s4)">
+    <span class="ico">🛈</span>
+    <div class="banner-body">
+      <strong>これは「生きてるしおり」です</strong>
+      最終更新：<strong>{{UPDATED}}</strong>。プラン（日程・未決事項）は Googleスプレッドシートで全員が編集 → 岡崎さんが<span class="term" title="スプシの最新を読んでサイトを作り直すこと">再成形</span>すると、ここに反映されます。編集のしかたは <a href="how-to.html">つかいかた</a> へ。
+    </div>
+  </div>
+
+  <div class="callout tldr">
+    <span class="ico">🧭</span>
+    <div class="body">
+      <div class="label">このしおりの読み方</div>
+      <p><strong>① プラン</strong>＝日程と「まだ決まってないこと（★）」。これは相談しながら埋めていきます。<br>
+      <strong>② ガイド</strong>＝荷物・お金・服装など「気になっていること」への回答（出典つき）。<br>
+      観光スポットの細かい行き先は、<strong>後日みんなで決めてから</strong>追記します。</p>
+    </div>
+  </div>
+
+  <nav class="toc" aria-label="目次">
+    <div class="toc-title">目次</div>
+    <a href="#overview" data-depth="2">旅の概要</a>
+    <a href="#route" data-depth="2">ルート</a>
+    <a href="#plan" data-depth="2">日程（プラン）</a>
+    <a href="#todo" data-depth="2">未決事項（★）</a>
+    <a href="#proposals" data-depth="2">★段取りのたたき台</a>
+    <a href="#guide" data-depth="2">ガイド：気になっていること</a>
+    <a href="#next" data-depth="2">これから決めること</a>
+  </nav>
+
+  <!-- ============ 概要 ============ -->
+  <h2 id="overview">旅の概要</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card"><span class="k">期間</span><span class="v">7泊9日</span><span class="trend flat">2026/10/8〜10/16</span></div>
+    <div class="stat-card"><span class="k">行き先</span><span class="v">4エリア</span><span class="trend flat">LA・アナハイム・ラスベガス・GC</span></div>
+    <div class="stat-card"><span class="k">メンバー</span><span class="v">3人</span><span class="trend flat">会社の同期（20代）</span></div>
+    <div class="stat-card"><span class="k">出発</span><span class="v">仙台→成田</span><span class="trend flat">初めての海外旅行</span></div>
+  </div>
+
+  <h3>メンバー</h3>
+  <div class="card-grid">
+    <div class="card"><h4>岡崎（私）</h4><p class="excerpt">男性・20代</p></div>
+    <div class="card"><h4>大野</h4><p class="excerpt">男性・20代</p></div>
+    <div class="card"><h4>千葉</h4><p class="excerpt">女性・20代</p></div>
+  </div>
+
+  <h3>宿（予定）</h3>
+  <dl class="defs">
+    <dt>The Wayfarer Downtown LA, Tapestry Collection by Hilton</dt>
+    <dd>ロサンゼルス（10/8・9・10 の3泊）</dd>
+    <dt>Clarion Hotel Anaheim Resort</dt>
+    <dd>アナハイム（10/11・12 の2泊／ディズニー徒歩圏）</dd>
+    <dt>Excalibur Hotel &amp; Casino</dt>
+    <dd>ラスベガス（10/13〜／グランドキャニオン日帰りの拠点）</dd>
+  </dl>
+
+  <!-- ============ ルート ============ -->
+  <h2 id="route">ルート</h2>
+  <figure class="figure">
+    <svg viewBox="0 0 760 210" role="img" aria-label="旅のルート図">
+      <defs>
+        <marker id="rah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9z" fill="currentColor"/></marker>
+      </defs>
+      <polyline points="60,80 210,80 360,80 510,80 660,80" fill="none" stroke="currentColor" stroke-width="2.5"/>
+      <g text-anchor="middle" font-size="12">
+        <circle cx="60"  cy="80" r="9" fill="var(--accent)"/>
+        <text x="60"  y="112" fill="var(--text)" font-weight="700">成田</text>
+        <text x="60"  y="130" fill="var(--text-muted)">出発✈</text>
+        <circle cx="210" cy="80" r="9" fill="var(--accent)"/>
+        <text x="210" y="112" fill="var(--text)" font-weight="700">ロサンゼルス</text>
+        <text x="210" y="130" fill="var(--text-muted)">3泊</text>
+        <circle cx="360" cy="80" r="9" fill="var(--accent)"/>
+        <text x="360" y="112" fill="var(--text)" font-weight="700">アナハイム</text>
+        <text x="360" y="130" fill="var(--text-muted)">2泊・ディズニー</text>
+        <circle cx="510" cy="80" r="9" fill="var(--accent)"/>
+        <text x="510" y="112" fill="var(--text)" font-weight="700">ラスベガス</text>
+        <text x="510" y="130" fill="var(--text-muted)">2泊</text>
+        <circle cx="660" cy="80" r="9" fill="var(--accent)"/>
+        <text x="660" y="112" fill="var(--text)" font-weight="700">グランドキャニオン</text>
+        <text x="660" y="130" fill="var(--text-muted)">日帰り</text>
+      </g>
+      <g font-size="15" text-anchor="middle">
+        <text x="135" y="72">✈️</text>
+        <text x="285" y="72">🚗</text>
+        <text x="435" y="72">🚌</text>
+        <text x="585" y="72">🚐</text>
+      </g>
+      <g stroke="currentColor" stroke-width="2" stroke-dasharray="5 4" fill="none" marker-end="url(#rah)">
+        <path d="M660 95 L660 175 L60 175 L60 95"/>
+      </g>
+      <text x="360" y="195" text-anchor="middle" font-size="12" fill="var(--text-faint)">帰り：ラスベガス ✈ ロサンゼルス経由 ✈ 成田</text>
+    </svg>
+    <figcaption>仙台→成田から出発。LA→アナハイム→ラスベガスと回り、ラスベガスを拠点にグランドキャニオンへ日帰り。</figcaption>
+  </figure>
+
+  <!-- ============ 日程 ============ -->
+  <h2 id="plan">日程（プラン）</h2>
+  <p class="muted">★ がついた橙色のメモ＝まだ決まっていない／相談で詰めるところ。<a href="#todo">未決事項の一覧</a>にもまとめてあります。この日程は <strong>スプレッドシート「日程」タブ</strong> から生成しています。</p>
+
+  <!-- DAYS_SECTION -->
+
+  <div class="callout tip">
+    <span class="ico">📅</span>
+    <div class="body"><p><strong>日付確定：</strong>10/8 ロサンゼルス着 〜 10/15 早朝ラスベガス発 → <strong>10/16 16時ごろ 成田着</strong>（7泊9日）。航空券は<strong>往復ユナイテッド航空</strong>。</p></div>
+  </div>
+
+  <!-- ============ 未決事項 ============ -->
+  <h2 id="todo">未決事項（★）</h2>
+  <p class="muted">決まったら、スプシの「未決事項」タブで状態と決定内容を更新 → 再成形でここに反映されます。</p>
+
+  <!-- TODO_SECTION -->
+
+  <!-- ============ ★段取りのたたき台 ============ -->
+  <h2 id="proposals">★ 段取りのたたき台（提案）</h2>
+  <p class="muted">★を前に進めるための Claude からの提案です（出典つき）。各項目の<strong>「🤝 3人で決めること」</strong>を見て選び、確定したらスプシの未決事項を更新 → 再成形で反映。<strong>価格・時刻・規則は変わるので予約・確定前に各自でも確認を。</strong></p>
+
+  <!-- PROPOSALS_SECTION -->
+
+  <!-- ============ ガイド（調査結果をはめ込む） ============ -->
+  <h2 id="guide">ガイド：気になっていること</h2>
+  <p class="muted">荷物・お金・服装など、行き先の決定とは関係なく準備できることへの回答です。各項目に出典リンク付き。<strong>価格・気温・ルールは変わることがあるので、予約・購入・出発前に各自でも確認を。</strong></p>
+
+  <!-- GUIDE_SECTION -->
+
+  <!-- ============ これから ============ -->
+  <h2 id="next">これから決めること</h2>
+  <div class="callout tip">
+    <span class="ico">🌱</span>
+    <div class="body">
+      <p>このしおりは相談しながら育てます。次に詰めるのは主にこの3つ：</p>
+      <ul style="margin:.3em 0 0">
+        <li><strong>★の日程詰め</strong>（各工程の時刻・空港の段取り・都市間の移動手段）← Claudeと相談しながら</li>
+        <li><strong>観光スポット</strong>（フリーのLA、ラスベガス等）← まず3人である程度決めて → Claudeが精査</li>
+        <li><strong>出発前の手続き</strong>（ESTA・パスポート・各種予約の確認）</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer no-print">
+    <p>アメリカ旅行しおり（2026年10月）｜ 編集のしかたは <a href="how-to.html">つかいかた</a><br>
+    <span class="faint">プランはGoogleスプレッドシート由来・ガイドはClaude作成（出典付き）</span></p>
+  </div>
+
+</main>
+
+<button class="to-top" aria-label="ページ先頭へ戻る" hidden>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>

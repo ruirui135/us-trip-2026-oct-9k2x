@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>つかいかた｜アメリカ旅行しおり</title>
+<!--
+  これは「土台（共通デザイン）」のスケルトン v2 です。
+  ・このファイル1枚で完結（外部ファイル・ネット接続なしで開ける）
+  ・下の <style> と <script> が、整理サイト・MyVault・Gemini資料で使い回す“見た目の本体”
+  ・build_vault.py は、下の START/END マーカーの間だけを抜き出して MyVault.html に埋め込みます
+  ・v1 の部品はそのまま温存し、その後ろに v2 の新部品を追記しています（非破壊）。
+  新しいHTMLを作りたい時は、このファイルをコピーして <main> の中身を入れ替えるのが一番早いです。
+-->
+<!-- ===== EFFECTIVE-CSS:START ===== （ここから下、END までが共通CSS。build_vault.pyが抜き出します）-->
+<style>
+:root{
+  /* ---- 色（ライト：Anthropic風の暖色） ---- */
+  --bg:#faf9f7; --surface:#ffffff; --surface-2:#f5efe9;
+  --text:#1f1b16; --text-muted:#6b6256; --text-faint:#9a9186;
+  --accent:#d97757; --accent-hover:#c15f3c; --accent-soft:#f6ebe4;
+  --border:#e8e1d8; --border-strong:#d8cfc3;
+  --code-bg:#f6f2ee; --code-text:#5a4a3f;
+  --link:#c15f3c;
+  /* レベル/重要度の色（L0灰 → L5緑） */
+  --l0:#9a9186; --l1:#bb7d4f; --l2:#caa23f; --l3:#9aac4e; --l4:#6fa85c; --l5:#3f9d6b;
+  --ok:#3f9d6b; --warn:#caa23f; --danger:#c25b4a; --info:#5b86c2;
+  /* ---- フォント（ネット不要・Windows標準の日本語フォントを優先） ---- */
+  --font-sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Yu Gothic UI","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif;
+  --font-mono:"Cascadia Code","Consolas","BIZ UDGothic",ui-monospace,monospace;
+  /* ---- セリフ（見出し用・編集的＝Anthropic Serif風をシステム明朝で近似／Webフォント不要） ---- */
+  --font-serif:Georgia,"Times New Roman","Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  /* ---- 文字サイズ（1.2倍ずつ） ---- */
+  --fs-xs:.78rem; --fs-sm:.88rem; --fs-base:1rem; --fs-lg:1.15rem; --fs-xl:1.4rem; --fs-2xl:1.8rem; --fs-3xl:2.2rem;
+  --lh:1.85;
+  /* ---- 余白 ---- */
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:32px; --s7:48px; --s8:64px;
+  /* ---- 形 ---- */
+  --reading:86ch; --sidebar-w:290px; --radius:8px; --radius-sm:6px;
+  --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.06);
+  --shadow-lg:0 10px 24px rgba(0,0,0,.12);
+}
+[data-theme="dark"]{
+  --bg:#1a1714; --surface:#241f1b; --surface-2:#2e2822;
+  --text:#ece5db; --text-muted:#b3a99c; --text-faint:#7d7468;
+  --accent:#e89a7f; --accent-hover:#f0ad94; --accent-soft:#3a2b24;
+  --border:#3a332c; --border-strong:#4a4138;
+  --code-bg:#221d19; --code-text:#d8c9bd;
+  --link:#e89a7f;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.25);
+  --shadow-lg:0 8px 30px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:var(--font-sans); font-size:var(--fs-base); line-height:var(--lh);
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+/* 読み物の幅を制限（長文でも読みやすく） */
+.reading{max-width:var(--reading); margin-inline:auto; padding:var(--s5) var(--s5) var(--s8);}
+.wide{max-width:1100px; margin-inline:auto; padding:var(--s5);}
+/* 見出し */
+h1,h2,h3,h4{line-height:1.35; font-weight:700; margin:1.6em 0 .6em; scroll-margin-top:72px;}
+h1,h2,h3{font-family:var(--font-serif); letter-spacing:.005em}
+h1{font-size:var(--fs-3xl); margin-top:.2em; letter-spacing:.01em;}
+h2{font-size:var(--fs-2xl); padding-bottom:.3em; border-bottom:2px solid var(--border);}
+h3{font-size:var(--fs-xl)} h4{font-size:var(--fs-lg)}
+p{margin:.9em 0}
+a{color:var(--link); text-decoration:none; border-bottom:1px solid transparent; transition:border-color .15s}
+a:hover{border-bottom-color:var(--link)}
+strong{color:var(--text); font-weight:700}
+ul,ol{padding-left:1.4em; margin:.8em 0} li{margin:.35em 0}
+hr{border:none; border-top:1px solid var(--border); margin:var(--s6) 0}
+blockquote{margin:1em 0; padding:.6em 1.1em; border-left:4px solid var(--accent); background:var(--surface-2); border-radius:0 var(--radius-sm) var(--radius-sm) 0; color:var(--text-muted)}
+small,.muted{color:var(--text-muted)} .faint{color:var(--text-faint)}
+img{max-width:100%}
+/* トップバー */
+.topbar{position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:var(--s3);
+  padding:var(--s3) var(--s5); background:color-mix(in srgb,var(--bg) 85%,transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--border)}
+.topbar .brand{font-weight:700; font-size:var(--fs-lg); display:flex; align-items:center; gap:.5em}
+.topbar .brand .dot{width:12px; height:12px; border-radius:50%; background:var(--accent)}
+.topbar .spacer{flex:1}
+.btn{font:inherit; cursor:pointer; border:1px solid var(--border-strong); background:var(--surface);
+  color:var(--text); padding:.4em .8em; border-radius:var(--radius-sm); transition:all .15s; display:inline-flex; align-items:center; gap:.4em}
+.btn:hover{border-color:var(--accent); color:var(--accent)}
+.btn-accent{background:var(--accent); color:#fff; border-color:var(--accent)}
+.btn-accent:hover{background:var(--accent-hover); color:#fff}
+/* TL;DR / コールアウト */
+.callout{display:flex; gap:var(--s3); padding:var(--s4) var(--s4); border-radius:var(--radius);
+  background:var(--surface-2); border:1px solid var(--border); margin:1.2em 0}
+.callout .ico{font-size:1.3em; line-height:1.4} .callout .body{flex:1}
+.callout .body>:first-child{margin-top:0} .callout .body>:last-child{margin-bottom:0}
+.callout .label{font-weight:700; font-size:var(--fs-sm); text-transform:uppercase; letter-spacing:.06em; color:var(--text-muted); margin-bottom:.2em}
+.callout.tldr{background:var(--accent-soft); border-color:color-mix(in srgb,var(--accent) 30%,var(--border))}
+.callout.tldr .label{color:var(--accent-hover)}
+.callout.tip{background:color-mix(in srgb,var(--ok) 10%,var(--surface)); border-color:color-mix(in srgb,var(--ok) 30%,var(--border))}
+.callout.warn{background:color-mix(in srgb,var(--warn) 12%,var(--surface)); border-color:color-mix(in srgb,var(--warn) 35%,var(--border))}
+.callout.danger{background:color-mix(in srgb,var(--danger) 10%,var(--surface)); border-color:color-mix(in srgb,var(--danger) 30%,var(--border))}
+/* バッジ */
+.badge{display:inline-flex; align-items:center; gap:.3em; font-size:var(--fs-xs); font-weight:700;
+  padding:.18em .6em; border-radius:999px; background:var(--surface-2); color:var(--text-muted); border:1px solid var(--border); white-space:nowrap}
+.badge.lv{color:#fff; border:none}
+.badge.l0{background:var(--l0)} .badge.l1{background:var(--l1)} .badge.l2{background:var(--l2)}
+.badge.l3{background:var(--l3)} .badge.l4{background:var(--l4)} .badge.l5{background:var(--l5)}
+.tag{display:inline-block; font-size:var(--fs-xs); padding:.15em .55em; border-radius:var(--radius-sm);
+  background:var(--surface-2); color:var(--text-muted); border:1px solid var(--border); margin:.15em .25em .15em 0}
+a.tag:hover{border-color:var(--accent); color:var(--accent)}
+/* 表 */
+.table-wrap{overflow-x:auto; margin:1.2em 0; border:1px solid var(--border); border-radius:var(--radius)}
+table{border-collapse:collapse; width:100%; font-size:var(--fs-sm)}
+th,td{padding:.6em .85em; text-align:left; border-bottom:1px solid var(--border); vertical-align:top}
+thead th{position:sticky; top:0; background:var(--surface-2); font-weight:700; white-space:nowrap; z-index:1}
+tbody tr:nth-child(even){background:color-mix(in srgb,var(--surface-2) 45%,transparent)}
+tbody tr:hover{background:var(--accent-soft)}
+/* コードブロック＋コピーボタン */
+.code-block{position:relative; margin:1.2em 0}
+.code-block pre{margin:0; background:var(--code-bg); border:1px solid var(--border); border-radius:var(--radius);
+  padding:var(--s4) var(--s4); padding-top:2.4em; overflow-x:auto}
+.code-block code{font-family:var(--font-mono); font-size:var(--fs-sm); color:var(--code-text); line-height:1.7}
+:not(pre)>code{font-family:var(--font-mono); font-size:.9em; background:var(--code-bg); color:var(--code-text);
+  padding:.12em .4em; border-radius:5px; border:1px solid var(--border)}
+.code-block .copy-btn{position:absolute; top:.5em; right:.5em; font-size:var(--fs-xs); padding:.3em .7em;
+  background:var(--surface); border:1px solid var(--border-strong); border-radius:6px; cursor:pointer; color:var(--text-muted); transition:all .15s}
+.code-block .copy-btn:hover{color:var(--accent); border-color:var(--accent)}
+.code-block .copy-btn.done{color:#fff; background:var(--ok); border-color:var(--ok)}
+.code-block .cap{position:absolute; top:.55em; left:.9em; font-size:var(--fs-xs); color:var(--text-faint); font-family:var(--font-mono)}
+/* タブ */
+.tabs{margin:1.2em 0}
+.tablist{display:flex; gap:.25em; flex-wrap:wrap; border-bottom:2px solid var(--border)}
+.tab{font:inherit; cursor:pointer; background:none; border:none; padding:.55em 1em; color:var(--text-muted);
+  border-bottom:2px solid transparent; margin-bottom:-2px; border-radius:var(--radius-sm) var(--radius-sm) 0 0}
+.tab:hover{color:var(--text); background:var(--surface-2)}
+.tab[aria-selected="true"]{color:var(--accent); border-bottom-color:var(--accent); font-weight:700}
+.tabpanel{padding:var(--s4) 0} .tabpanel[hidden]{display:none}
+/* 折りたたみ */
+details{margin:.8em 0; border:1px solid var(--border); border-radius:var(--radius); background:var(--surface); overflow:hidden}
+details>summary{cursor:pointer; padding:.7em 1em; font-weight:600; list-style:none; display:flex; align-items:center; gap:.5em; background:var(--surface-2)}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"▶"; font-size:.7em; color:var(--accent); transition:transform .15s}
+details[open]>summary::before{transform:rotate(90deg)}
+details>summary:hover{color:var(--accent)}
+details .details-body{padding:var(--s4) var(--s4)}
+details .details-body>:first-child{margin-top:0} details .details-body>:last-child{margin-bottom:0}
+/* カードグリッド（比較・一覧） */
+.card-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:var(--s4); margin:1.2em 0}
+.card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:var(--s4); box-shadow:var(--shadow); transition:transform .15s,box-shadow .15s; display:flex; flex-direction:column; gap:.4em}
+a.card:hover{transform:translateY(-2px); box-shadow:var(--shadow-lg); border-color:var(--accent)}
+.card h4{margin:0} .card .meta{font-size:var(--fs-xs); color:var(--text-faint)}
+.card .excerpt{font-size:var(--fs-sm); color:var(--text-muted); margin:0}
+/* 番号付きステップ */
+.steps{counter-reset:step; list-style:none; padding:0}
+.steps>li{counter-increment:step; position:relative; padding:.3em 0 .8em 2.4em; margin:0}
+.steps>li::before{content:counter(step); position:absolute; left:0; top:.1em; width:1.7em; height:1.7em;
+  background:var(--accent); color:#fff; border-radius:50%; display:grid; place-items:center; font-size:.85em; font-weight:700}
+/* SVG図 */
+.figure{margin:1.2em 0; padding:var(--s4); background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); text-align:center}
+.figure svg{max-width:100%; height:auto; color:var(--accent)}
+.figure figcaption{font-size:var(--fs-sm); color:var(--text-muted); margin-top:.6em}
+/* 検索ボックス */
+.search{width:100%; font:inherit; padding:.6em .9em; border:1px solid var(--border-strong); border-radius:var(--radius-sm); background:var(--surface); color:var(--text)}
+.search:focus{outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft)}
+/* 切れたリンク（リンク先ノートが無い） */
+a.dangling{color:var(--danger); border-bottom:1px dotted var(--danger); cursor:help}
+a.dangling:hover{background:color-mix(in srgb,var(--danger) 10%,transparent)}
+/* レイアウト：サイドバー付き（MyVaultで使用） */
+.app{display:grid; grid-template-columns:var(--sidebar-w) 1fr; min-height:100vh}
+.sidebar{border-right:1px solid var(--border); background:var(--surface); padding:var(--s4); overflow-y:auto; position:sticky; top:0; height:100vh}
+.sidebar .nav-group{margin-bottom:var(--s4)}
+.sidebar .nav-group>.title{font-size:var(--fs-xs); text-transform:uppercase; letter-spacing:.08em; color:var(--text-faint); margin:.4em 0; font-weight:700}
+.sidebar a.nav-item{display:block; padding:.32em .6em; border-radius:6px; color:var(--text-muted); font-size:var(--fs-sm); border:none}
+.sidebar a.nav-item:hover{background:var(--surface-2); color:var(--text)}
+.sidebar a.nav-item.active{background:var(--accent-soft); color:var(--accent-hover); font-weight:600}
+.content{min-width:0; padding-bottom:var(--s8)}
+/* フッター */
+.footer{border-top:1px solid var(--border); margin-top:var(--s7); padding:var(--s5); text-align:center; color:var(--text-faint); font-size:var(--fs-sm)}
+/* 横スクロールの注記 */
+.hint{font-size:var(--fs-xs); color:var(--text-faint)}
+/* レスポンシブ（スマホ） */
+@media (max-width:860px){
+  .app{grid-template-columns:1fr}
+  .sidebar{position:fixed; left:0; top:0; width:84%; max-width:320px; height:100vh; transform:translateX(-100%); transition:transform .2s; z-index:60; box-shadow:var(--shadow-lg)}
+  .sidebar.open{transform:none}
+  .menu-toggle{display:inline-flex !important}
+  .reading,.wide{padding:var(--s4)}
+}
+.menu-toggle{display:none}
+/* 印刷（PDF化）に強く */
+@media print{
+  .topbar,.sidebar,.search,.copy-btn,.menu-toggle,.no-print{display:none !important}
+  .app{display:block} body{background:#fff; color:#000}
+  details[open] .details-body,details .details-body{display:block !important}
+  details{break-inside:avoid} a{color:#000; border:none}
+}
+/* ---- 追加部品（実例集から） ---- */
+.diff{font-family:var(--font-mono);font-size:var(--fs-sm);background:var(--code-bg);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin:1em 0}
+.diff .drow{display:grid;grid-template-columns:2.4em 1fr;border-bottom:1px solid color-mix(in srgb,var(--border) 60%,transparent)}
+.diff .ln{color:var(--text-faint);text-align:right;padding:.1em .5em;user-select:none}
+.diff .code{padding:.1em .6em;white-space:pre-wrap}
+.diff .add{background:color-mix(in srgb,var(--ok) 14%,transparent)} .diff .add .code::before{content:"+ ";color:var(--ok)}
+.diff .del{background:color-mix(in srgb,var(--danger) 12%,transparent)} .diff .del .code::before{content:"- ";color:var(--danger)}
+.sev{font-size:var(--fs-xs);font-weight:700;padding:.1em .5em;border-radius:999px;color:#fff;white-space:nowrap}
+.sev.block{background:var(--danger)} .sev.nit{background:var(--warn)} .sev.ok{background:var(--ok)}
+.vtl{list-style:none;padding:0;margin:1em 0;position:relative}
+.vtl::before{content:"";position:absolute;left:6.3em;top:.5em;bottom:.5em;width:2px;background:var(--border)}
+.vtl li{position:relative;display:grid;grid-template-columns:5.6em 1fr;gap:1.4em;padding:.35em 0}
+.vtl .t{font-family:var(--font-mono);font-size:var(--fs-sm);color:var(--accent-hover);text-align:right}
+.vtl .ev{position:relative;font-size:var(--fs-sm)} .vtl .ev::before{content:"";position:absolute;left:-1.75em;top:.35em;width:11px;height:11px;border-radius:50%;background:var(--accent);border:2px solid var(--surface)}
+.vtl li.bad .ev::before{background:var(--danger)} .vtl li.good .ev::before{background:var(--ok)}
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(108px,1fr));gap:.6em;margin:.6em 0}
+.swatch{cursor:pointer;border:1px solid var(--border);border-radius:8px;overflow:hidden;background:var(--surface);font-size:var(--fs-xs)}
+.swatch .chip{height:44px} .swatch .meta{padding:.3em .5em} .swatch .meta b{display:block} .swatch.copied{outline:2px solid var(--ok)}
+.metrics{display:grid;grid-template-columns:repeat(auto-fill,minmax(115px,1fr));gap:.6em;margin:.5em 0}
+.metric{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.6em;text-align:center}
+.metric .v{font-size:var(--fs-xl);font-weight:700;color:var(--accent-hover)} .metric .k{font-size:var(--fs-xs);color:var(--text-muted)}
+.tri{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:.7em} .tri .tcol{border:1px solid var(--border);border-radius:10px;padding:.5em .6em;background:var(--surface)}
+.wide-section{width:min(1140px,94vw);margin-left:50%;transform:translateX(-50%)}
+/* ヒーロー見出し */
+.hero{background:linear-gradient(135deg,var(--accent-soft),transparent);border:1px solid var(--border);border-radius:var(--radius);padding:var(--s6);margin:var(--s5) 0}
+.hero h1{margin:0 0 .2em} .hero .sub{font-size:var(--fs-lg);color:var(--text-muted);margin:0}
+/* 画像（リッチ用：URLが要る＝ネット依存。無ければ placehold.co の枠を使う） */
+.hero-img{width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);margin:0 0 var(--s5)}
+figure.media{margin:1.2em 0} figure.media img{width:100%;display:block;border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow)}
+figure.media figcaption{font-size:var(--fs-sm);color:var(--text-muted);margin-top:.5em;text-align:center}
+/* 棒グラフ（CSSだけ・SVG不要） */
+.barchart{display:flex;flex-direction:column;gap:.5em;margin:1.2em 0}
+.barchart .row{display:grid;grid-template-columns:7em 1fr 3em;align-items:center;gap:.6em;font-size:var(--fs-sm)}
+.barchart .label{color:var(--text-muted);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.barchart .track{background:var(--surface-2);border-radius:999px;height:16px;overflow:hidden}
+.barchart .fill{display:block;height:100%;background:var(--accent);border-radius:999px}
+.barchart .val{font-weight:700;text-align:right}
+/* 2カラム（テキスト＋画像など。スマホで1列） */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);align-items:center;margin:1.2em 0}
+@media(max-width:700px){.split{grid-template-columns:1fr} .barchart .row{grid-template-columns:5em 1fr 2.6em}}
+
+/* ===================================================================== */
+/* ===== v2: ここから下が v2 で追加した部品です（v1は上で温存済み） ===== */
+/* ===================================================================== */
+
+/* ===== v2: データ表示（静的・見栄え） ===== */
+.compare{width:100%;border-collapse:separate;border-spacing:0;font-size:var(--fs-sm);margin:1.2em 0;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.compare th,.compare td{padding:.7em .9em;text-align:center;border-bottom:1px solid var(--border)}
+.compare thead th{background:var(--surface-2);font-weight:700;white-space:nowrap}
+.compare tbody th{text-align:left;font-weight:600;color:var(--text-muted);background:color-mix(in srgb,var(--surface-2) 45%,transparent)}
+.compare tbody tr:last-child th,.compare tbody tr:last-child td{border-bottom:none}
+.compare .yes{color:var(--ok);font-weight:700}
+.compare .no{color:var(--text-faint)}
+.compare col.pick,.compare .pick{background:var(--accent-soft)}
+.compare th.pick{position:relative;color:var(--accent-hover)}
+.compare th.pick .star{display:block;font-size:var(--fs-xs);font-weight:700;letter-spacing:.04em}
+.compare td.pick{color:var(--text)}
+@media(max-width:700px){.compare{font-size:var(--fs-xs)}.compare th,.compare td{padding:.5em .45em}}
+@media print{.compare col.pick,.compare .pick{background:transparent}}
+
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:var(--s3);margin:1.2em 0}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:var(--s4);box-shadow:var(--shadow);display:flex;flex-direction:column;gap:.35em}
+.stat-card .k{font-size:var(--fs-xs);color:var(--text-muted);font-weight:600;letter-spacing:.02em}
+.stat-card .v{font-size:var(--fs-2xl);font-weight:700;line-height:1.1;color:var(--text)}
+.stat-card .trend{display:inline-flex;align-items:center;gap:.25em;font-size:var(--fs-sm);font-weight:700;width:fit-content;padding:.1em .5em;border-radius:999px}
+.stat-card .trend.up{color:var(--ok);background:color-mix(in srgb,var(--ok) 14%,transparent)}
+.stat-card .trend.down{color:var(--danger);background:color-mix(in srgb,var(--danger) 14%,transparent)}
+.stat-card .trend.flat{color:var(--text-muted);background:var(--surface-2)}
+.stat-card .trend .arrow{font-size:.85em;line-height:1}
+/* 画面には出さず、読み上げソフトにだけ伝える補助テキスト */
+.stat-card .sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+@media(max-width:700px){.stat-card .v{font-size:var(--fs-xl)}}
+
+.ring{display:inline-grid;place-items:center;width:var(--size,104px);height:var(--size,104px);color:var(--accent)}
+.ring svg{grid-area:1/1;width:100%;height:100%;transform:rotate(-90deg)}
+.ring .track{fill:none;stroke:var(--surface-2);stroke-width:9}
+.ring .bar{fill:none;stroke:currentColor;stroke-width:9;stroke-linecap:round;stroke-dasharray:var(--c) var(--c);stroke-dashoffset:calc(var(--c) - var(--c) * var(--p) / 100);transition:stroke-dashoffset .5s ease}
+.ring .num{grid-area:1/1;font-weight:700;font-size:calc(var(--size,104px) * .26);color:var(--text)}
+.ring.ok{color:var(--ok)} .ring.warn{color:var(--warn)} .ring.danger{color:var(--danger)}
+@media(prefers-reduced-motion:reduce){.ring .bar{transition:none}}
+
+.meter{display:grid;grid-template-columns:1fr auto;gap:.15em .6em;margin:.7em 0;font-size:var(--fs-sm)}
+.meter .mlabel{color:var(--text-muted);font-weight:600}
+.meter .mval{font-weight:700;color:var(--text);font-variant-numeric:tabular-nums}
+.meter .mtrack{grid-column:1/-1;height:8px;background:var(--surface-2);border-radius:999px;overflow:hidden}
+.meter .mfill{display:block;height:100%;width:var(--p,0%);background:var(--accent);border-radius:999px;transition:width .5s ease}
+.meter.ok .mfill{background:var(--ok)} .meter.warn .mfill{background:var(--warn)} .meter.danger .mfill{background:var(--danger)}
+@media(prefers-reduced-motion:reduce){.meter .mfill{transition:none}}
+
+.pill{display:inline-flex;align-items:center;gap:.4em;font-size:var(--fs-xs);font-weight:700;padding:.2em .65em;border-radius:999px;background:var(--surface-2);color:var(--text-muted);border:1px solid var(--border);white-space:nowrap;line-height:1.4}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:currentColor;flex:none}
+.pill.success{color:var(--ok);background:color-mix(in srgb,var(--ok) 12%,var(--surface));border-color:color-mix(in srgb,var(--ok) 35%,var(--border))}
+.pill.pending{color:var(--warn);background:color-mix(in srgb,var(--warn) 14%,var(--surface));border-color:color-mix(in srgb,var(--warn) 35%,var(--border))}
+.pill.failed{color:var(--danger);background:color-mix(in srgb,var(--danger) 12%,var(--surface));border-color:color-mix(in srgb,var(--danger) 35%,var(--border))}
+.pill.pending .dot{animation:pill-pulse 1.4s ease-in-out infinite}
+@keyframes pill-pulse{50%{opacity:.3}}
+@media(prefers-reduced-motion:reduce){.pill.pending .dot{animation:none}}
+
+.heatmap{display:grid;grid-auto-flow:column;grid-template-rows:repeat(7,1fr);gap:3px;margin:1.2em 0;overflow-x:auto;padding-bottom:.3em}
+.heatmap .cell{width:13px;height:13px;border-radius:3px;background:var(--surface-2);border:1px solid color-mix(in srgb,var(--border) 60%,transparent)}
+.heatmap .cell.h1{background:color-mix(in srgb,var(--accent) 22%,var(--surface-2))}
+.heatmap .cell.h2{background:color-mix(in srgb,var(--accent) 45%,var(--surface))}
+.heatmap .cell.h3{background:color-mix(in srgb,var(--accent) 70%,var(--surface))}
+.heatmap .cell.h4{background:var(--accent)}
+.heatmap-legend{display:flex;align-items:center;gap:.4em;font-size:var(--fs-xs);color:var(--text-muted);margin:.3em 0 1em}
+.heatmap-legend .cell{width:12px;height:12px;border-radius:3px;display:inline-block}
+
+.quote-card{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:var(--s5) var(--s4) var(--s4);box-shadow:var(--shadow);margin:1.2em 0}
+.quote-card::before{content:open-quote;position:absolute;top:.05em;left:.32em;font-size:3.2em;line-height:1;color:var(--accent);opacity:.32;font-family:Georgia,serif}
+.quote-card blockquote{margin:0;padding:0;border:none;background:none;color:var(--text);font-size:var(--fs-lg);line-height:1.7}
+.quote-card .who{display:flex;align-items:center;gap:.7em;margin-top:var(--s4)}
+.quote-card .avatar{width:40px;height:40px;border-radius:50%;flex:none;display:grid;place-items:center;font-weight:700;font-size:var(--fs-sm);color:#fff;background:var(--accent)}
+.quote-card .name{font-weight:700;font-size:var(--fs-sm)}
+.quote-card .role{font-size:var(--fs-xs);color:var(--text-muted)}
+
+/* ===== v2: フィードバック/状態 ===== */
+.banner{display:flex;align-items:flex-start;gap:var(--s3);padding:var(--s3) var(--s4);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--radius-sm);background:var(--surface-2);color:var(--text);font-size:var(--fs-sm);line-height:var(--lh)}
+.banner .ico{flex:0 0 auto;width:1.25em;height:1.25em;margin-top:.1em;color:var(--accent)}
+.banner .banner-body{flex:1 1 auto;min-width:0}
+.banner .banner-body strong{display:block;margin-bottom:.15em}
+.banner-close{flex:0 0 auto;margin:-2px -4px 0 0;padding:2px;background:none;border:0;border-radius:var(--radius-sm);color:var(--text-muted);cursor:pointer;line-height:0}
+.banner-close:hover{background:color-mix(in srgb,var(--text) 10%,transparent);color:var(--text)}
+.banner-close:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.banner.info{border-left-color:var(--info)}.banner.info .ico{color:var(--info)}
+.banner.ok{border-left-color:var(--ok)}.banner.ok .ico{color:var(--ok)}
+.banner.warn{border-left-color:var(--warn)}.banner.warn .ico{color:var(--warn)}
+.banner.danger{border-left-color:var(--danger)}.banner.danger .ico{color:var(--danger)}
+
+.empty{display:flex;flex-direction:column;align-items:center;text-align:center;gap:var(--s2);padding:var(--s7) var(--s4);max-width:var(--reading);margin-inline:auto;color:var(--text-muted)}
+.empty .empty-ico{width:56px;height:56px;color:var(--text-faint)}
+.empty h3{margin:var(--s1) 0 0;font-size:var(--fs-lg);color:var(--text)}
+.empty p{margin:0;font-size:var(--fs-sm);line-height:var(--lh);max-width:38ch}
+.empty .btn-accent{margin-top:var(--s3)}
+
+.skeleton{position:relative;overflow:hidden;background:color-mix(in srgb,var(--text) 10%,transparent);border-radius:var(--radius-sm)}
+.skeleton::after{content:"";position:absolute;inset:0;transform:translateX(-100%);background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--surface) 75%,transparent),transparent);animation:skeleton-shimmer 1.3s ease-in-out infinite}
+.skeleton.line{height:.8em;margin:.45em 0}
+.skeleton.line.short{width:55%}
+.skeleton.title{height:1.2em;width:40%;margin-bottom:var(--s3)}
+.skeleton.avatar{width:44px;height:44px;border-radius:50%}
+@keyframes skeleton-shimmer{100%{transform:translateX(100%)}}
+@media (prefers-reduced-motion:reduce){.skeleton::after{animation:none}}
+@media print{.skeleton{display:none}}
+
+.toast-stack{position:fixed;right:var(--s4);bottom:var(--s4);z-index:9999;display:flex;flex-direction:column;gap:var(--s2);max-width:min(92vw,360px)}
+.toast{display:flex;align-items:center;gap:var(--s2);padding:var(--s2) var(--s3);background:var(--surface);color:var(--text);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--radius-sm);box-shadow:var(--shadow);font-size:var(--fs-sm);animation:toast-in .25s ease both}
+.toast .ico{flex:0 0 auto;width:1.15em;height:1.15em;color:var(--accent)}
+.toast.ok{border-left-color:var(--ok)}.toast.ok .ico{color:var(--ok)}
+.toast.warn{border-left-color:var(--warn)}.toast.warn .ico{color:var(--warn)}
+.toast.danger{border-left-color:var(--danger)}.toast.danger .ico{color:var(--danger)}
+.toast.leaving{animation:toast-out .25s ease both}
+@keyframes toast-in{from{opacity:0;transform:translateY(8px)}}
+@keyframes toast-out{to{opacity:0;transform:translateY(8px)}}
+@media (prefers-reduced-motion:reduce){.toast,.toast.leaving{animation:none}}
+@media print{.toast-stack{display:none}}
+
+.note{position:relative;padding:var(--s3) var(--s4);background:color-mix(in srgb,var(--warn) 14%,var(--surface));border:1px solid color-mix(in srgb,var(--warn) 40%,var(--border));border-radius:var(--radius-sm);color:var(--text);font-size:var(--fs-sm);line-height:var(--lh)}
+.note .note-label{display:inline-flex;align-items:center;gap:.35em;margin-bottom:.3em;font-weight:600;font-size:var(--fs-xs);color:color-mix(in srgb,var(--warn) 75%,var(--text));text-transform:uppercase;letter-spacing:.04em}
+.note .note-label svg{width:1.05em;height:1.05em}
+.note p{margin:0}
+.note p + p{margin-top:.5em}
+
+kbd{display:inline-block;min-width:1.6em;padding:.15em .5em;font-family:var(--font-mono);font-size:.85em;line-height:1.4;text-align:center;color:var(--text);background:var(--surface-2);border:1px solid var(--border-strong);border-bottom-width:2px;border-radius:var(--radius-sm);box-shadow:0 1px 0 color-mix(in srgb,var(--text) 8%,transparent);white-space:nowrap}
+kbd + kbd{margin-left:.15em}
+.kbd-combo{white-space:nowrap}
+.kbd-combo .kbd-plus{margin:0 .2em;color:var(--text-faint);font-size:.85em}
+
+.defs{margin:0;padding:var(--s2) 0;border-top:1px solid var(--border)}
+.defs dt{margin-top:var(--s3);font-weight:600;color:var(--text)}
+.defs dt:first-child{margin-top:0}
+.defs dd{margin:.25em 0 0;padding-left:var(--s3);border-left:2px solid var(--accent-soft);color:var(--text-muted);font-size:var(--fs-sm);line-height:var(--lh)}
+
+/* ===== v2: 動く部品（インタラクティブ） ===== */
+.faq{margin:1.2em 0;display:flex;flex-direction:column;gap:.5em}
+.faq-item{border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);overflow:hidden}
+.faq-q{font:inherit;width:100%;text-align:left;cursor:pointer;padding:.8em 1em;background:var(--surface-2);color:var(--text);border:none;font-weight:600;display:flex;align-items:center;gap:.6em}
+.faq-q:hover{color:var(--accent)}
+.faq-q:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.faq-q .faq-mark{margin-left:auto;color:var(--accent);transition:transform .2s;flex:none}
+.faq-q[aria-expanded="true"] .faq-mark{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;color:var(--text-muted)}
+.faq-a-inner{padding:.2em 1em 1em}
+@media print{.faq-a{max-height:none!important}}
+@media(prefers-reduced-motion:reduce){.faq-a,.faq-q .faq-mark{transition:none}}
+
+.calc{margin:1.2em 0;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);padding:var(--s4);display:flex;flex-direction:column;gap:.7em}
+.calc-row{display:flex;align-items:center;gap:.7em;flex-wrap:wrap}
+.calc-row label{color:var(--text-muted);font-size:var(--fs-sm);min-width:5.5em}
+.calc input[type="number"]{font:inherit;flex:1;min-width:7em;padding:.5em .7em;border:1px solid var(--border-strong);border-radius:var(--radius-sm);background:var(--bg);color:var(--text)}
+.calc input:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.calc-out{display:flex;align-items:baseline;gap:.5em;padding:.6em .8em;background:var(--accent-soft);border-radius:var(--radius-sm)}
+.calc-out .calc-label{font-size:var(--fs-sm);color:var(--accent-hover)}
+.calc-out .calc-val{font-size:var(--fs-xl);font-weight:700;color:var(--accent-hover);font-family:var(--font-mono)}
+
+.filter{margin:1.2em 0}
+.filter input{width:100%;font:inherit;padding:.6em .9em;border:1px solid var(--border-strong);border-radius:var(--radius-sm);background:var(--surface);color:var(--text)}
+.filter input:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.filter-list{list-style:none;padding:0;margin:.7em 0 0;display:flex;flex-direction:column;gap:.3em}
+.filter-list li{padding:.5em .8em;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--surface);font-size:var(--fs-sm)}
+.filter-list li[hidden]{display:none}
+.filter-empty{display:none;padding:.6em .8em;color:var(--text-muted);font-size:var(--fs-sm);font-style:italic}
+.filter.is-empty .filter-empty{display:block}
+
+.sortable{margin:1.2em 0;overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius)}
+.sortable table{border-collapse:collapse;width:100%;font-size:var(--fs-sm);margin:0}
+.sortable th,.sortable td{padding:.6em .85em;text-align:left;border-bottom:1px solid var(--border)}
+.sortable th{background:var(--surface-2);font-weight:700;cursor:pointer;user-select:none;white-space:nowrap}
+.sortable th:hover{color:var(--accent)}
+.sortable th:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.sortable th .sort-mark{color:var(--text-faint);font-size:.85em;margin-left:.3em}
+.sortable th[aria-sort="ascending"] .sort-mark,.sortable th[aria-sort="descending"] .sort-mark{color:var(--accent)}
+.sortable tbody tr:hover{background:var(--accent-soft)}
+
+.switch{display:inline-flex;align-items:center;gap:.6em;cursor:pointer;font-size:var(--fs-sm)}
+.switch .switch-track{width:42px;height:24px;border-radius:999px;background:var(--border-strong);position:relative;transition:background .2s;flex:none}
+.switch .switch-thumb{position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:var(--shadow);transition:transform .2s}
+.switch[aria-checked="true"] .switch-track{background:var(--accent)}
+.switch[aria-checked="true"] .switch-thumb{transform:translateX(18px)}
+.switch:focus-visible{outline:none}
+.switch:focus-visible .switch-track{outline:2px solid var(--accent);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){.switch .switch-track,.switch .switch-thumb{transition:none}}
+
+.rng{margin:1.2em 0;display:flex;align-items:center;gap:.9em}
+.rng label{color:var(--text-muted);font-size:var(--fs-sm);flex:none}
+.rng input[type="range"]{flex:1;accent-color:var(--accent)}
+.rng input[type="range"]:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.rng .rng-out{min-width:4.5em;text-align:right;font-family:var(--font-mono);font-weight:700;color:var(--accent-hover);font-size:var(--fs-lg)}
+
+.checklist{list-style:none;padding:0;margin:1.2em 0;display:flex;flex-direction:column;gap:.4em}
+.checklist li{display:flex;align-items:center;gap:.6em;padding:.5em .8em;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--surface)}
+.checklist input[type="checkbox"]{width:18px;height:18px;accent-color:var(--accent);cursor:pointer;flex:none}
+.checklist input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.checklist label{cursor:pointer;flex:1}
+.checklist input:checked+label{color:var(--text-faint);text-decoration:line-through}
+
+.ba{position:relative;margin:1.2em 0;height:200px;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;user-select:none;touch-action:none}
+.ba-panel{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:var(--fs-xl);padding:var(--s4);text-align:center}
+.ba-after{background:var(--surface-2);color:var(--text)}
+.ba-before{background:var(--accent);color:#fff;clip-path:inset(0 50% 0 0)}
+.ba-divider{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;transform:translateX(-50%);box-shadow:0 0 0 1px var(--border-strong);pointer-events:none}
+.ba-handle{position:absolute;top:50%;left:50%;width:38px;height:38px;border-radius:50%;background:#fff;border:2px solid var(--accent);transform:translate(-50%,-50%);display:grid;place-items:center;color:var(--accent);cursor:ew-resize;box-shadow:var(--shadow)}
+.ba-handle:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.ba-tag{position:absolute;top:.6em;font-size:var(--fs-xs);padding:.15em .6em;border-radius:999px;background:color-mix(in srgb,var(--text) 45%,transparent);color:#fff}
+.ba-tag-before{left:.6em} .ba-tag-after{right:.6em}
+
+/* ===== v2: ナビ/構造 ===== */
+/* 目次スクロールスパイ：ページ脇に貼り付く目次。現在地が自動で光る */
+.toc{position:static;font-size:var(--fs-sm);border-left:2px solid var(--border);padding:.2em 0 .2em var(--s4);margin:1.2em 0}
+.toc.stick{position:sticky;top:var(--s5);align-self:start} /* 追従させたい時だけ class="toc stick" */
+.toc .toc-title{font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--text-faint);font-weight:700;margin-bottom:.5em}
+.toc a{display:block;color:var(--text-muted);padding:.2em 0;border:none;line-height:1.5;border-radius:4px;transition:color .15s}
+.toc a:hover{color:var(--accent)}
+.toc a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* data-depth="3" は小見出し（h3）用に1段下げる */
+.toc a[data-depth="3"]{padding-left:var(--s4);font-size:var(--fs-xs)}
+/* .current＝今読んでいる見出し。左に短いアクセント線を出す */
+.toc a.current{color:var(--accent);font-weight:700;box-shadow:-1em 0 0 -.85em var(--accent)}
+@media (max-width:860px){.toc{position:static;border-left:none;border-top:1px solid var(--border);padding:var(--s3) 0 0}}
+/* 印刷では脇の目次が本文に浮くので普通の位置に戻す */
+@media print{.toc{position:static;border-left:none}}
+
+/* パンくず：階層を › 区切りで横並び。最後が現在地 */
+.breadcrumb{display:flex;flex-wrap:wrap;align-items:center;gap:.2em .1em;list-style:none;padding:.4em 0;margin:1em 0;font-size:var(--fs-sm)}
+.breadcrumb li{display:flex;align-items:center;color:var(--text-muted)}
+/* 2個目以降の前に区切り記号 › を自動で挿入 */
+.breadcrumb li+li::before{content:"›";color:var(--text-faint);margin:0 .5em}
+.breadcrumb a{color:var(--text-muted);border:none;border-radius:4px}
+.breadcrumb a:hover{color:var(--accent)}
+.breadcrumb a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* aria-current="page" が現在地。リンクにせず太字で見せる */
+.breadcrumb [aria-current="page"]{color:var(--text);font-weight:600}
+
+/* ページネーション：前/次＋ページ番号。現在ページを強調 */
+.pager{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:var(--s2);list-style:none;padding:0;margin:1.5em 0;font-size:var(--fs-sm)}
+.pager a,.pager span{display:inline-flex;align-items:center;justify-content:center;min-width:2.4em;height:2.4em;padding:0 .6em;border:1px solid var(--border-strong);border-radius:var(--radius-sm);background:var(--surface);color:var(--text);transition:all .15s}
+.pager a:hover{border-color:var(--accent);color:var(--accent)}
+.pager a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 現在ページ：アクセント塗り（白文字は既存 .btn-accent と同じ扱い） */
+.pager [aria-current="page"]{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:700}
+/* .gap＝省略の「…」、.disabled＝押せない端（前/次） */
+.pager .gap{border:none;background:none;color:var(--text-faint)}
+.pager .disabled{opacity:.45;pointer-events:none}
+
+/* トップへ戻る：スクロールで右下に出現、押すと先頭へ */
+.to-top{position:fixed;right:var(--s5);bottom:var(--s5);z-index:40;width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--border-strong);border-radius:50%;background:var(--surface);color:var(--accent);box-shadow:var(--shadow-lg);cursor:pointer;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s,transform .2s,visibility .2s}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.to-top:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.to-top svg{width:20px;height:20px}
+/* アニメ控えめ設定を尊重（出現はそのまま、移動の揺れを止める） */
+@media(prefers-reduced-motion:reduce){.to-top{transition:opacity .2s;transform:none}}
+/* 印刷では邪魔なので隠す */
+@media print{.to-top{display:none}}
+
+/* 横型ステッパー：手順1→2→3を横並びで進捗表示 */
+.stepper{display:flex;list-style:none;padding:0;margin:1.5em 0;counter-reset:stp}
+.stepper li{counter-increment:stp;flex:1;position:relative;text-align:center;padding-top:2.6em;color:var(--text-muted);font-size:var(--fs-sm);min-width:0}
+/* 丸い番号 */
+.stepper li::before{content:counter(stp);position:absolute;top:0;left:50%;transform:translateX(-50%);width:2em;height:2em;border-radius:50%;display:grid;place-items:center;font-weight:700;background:var(--surface);border:2px solid var(--border-strong);color:var(--text-muted);z-index:1}
+/* 丸と丸をつなぐ線 */
+.stepper li::after{content:"";position:absolute;top:1em;left:calc(-50% + 1em);width:calc(100% - 2em);height:2px;background:var(--border-strong)}
+.stepper li:first-child::after{display:none}
+/* 完了：緑＋チェック（白文字は既存 .badge.lv と同じ扱い） */
+.stepper li.done{color:var(--text)}
+.stepper li.done::before{background:var(--ok);border-color:var(--ok);color:#fff;content:"\2713"}
+.stepper li.done::after{background:var(--ok)}
+/* 現在：アクセント枠 */
+.stepper li.current{color:var(--accent);font-weight:700}
+.stepper li.current::before{border-color:var(--accent);color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.stepper .label{display:block;padding:0 .3em}
+/* スマホ：縦並びに切替（線も縦に） */
+@media(max-width:700px){
+  .stepper{flex-direction:column;gap:.2em;padding-left:.5em}
+  .stepper li{text-align:left;padding:.4em 0 .4em 2.8em;min-height:2.4em}
+  .stepper li::before{left:0;transform:none;top:.2em}
+  .stepper li::after{top:calc(-50% + .2em);left:1em;width:2px;height:100%}
+}
+
+/* ===== v2: 仕上げ/品質（全体の底上げ・全ページ共通の土台） ===== */
+/* フォーカスリング：キーボード操作時だけ枠を出す */
+:focus:not(:focus-visible){outline:none}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:var(--radius-sm)}
+a:focus-visible{outline-offset:3px}
+.btn:focus-visible,.tab:focus-visible{outline-offset:2px}
+.search:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft)}
+
+/* 動き軽減：OSで「動きを減らす」設定の人にアニメ・スムーススクロールを抑える */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important}
+  .fade-in{opacity:1 !important; transform:none !important}
+}
+
+/* ジャンプ先ハイライト：#リンクで飛んだ見出しを一瞬光らせる */
+h1:target,h2:target,h3:target,h4:target{scroll-margin-top:72px; animation:eh-target-flash 1.6s ease-out}
+@keyframes eh-target-flash{
+  0%{background:var(--accent-soft); box-shadow:-8px 0 0 var(--accent-soft),8px 0 0 var(--accent-soft)}
+  100%{background:transparent; box-shadow:-8px 0 0 transparent,8px 0 0 transparent}
+}
+@media (prefers-reduced-motion: reduce){
+  h1:target,h2:target,h3:target,h4:target{animation:none !important; background:var(--accent-soft)}
+}
+
+/* テキスト選択色：選択した部分をアクセント色に */
+::selection{background:var(--accent-soft); color:var(--text)}
+::-moz-selection{background:var(--accent-soft); color:var(--text)}
+code::selection,pre code::selection{background:color-mix(in srgb,var(--accent) 22%,transparent)}
+
+/* 控えめスクロールバー（WebKit＋Firefox両対応） */
+html{scrollbar-width:thin; scrollbar-color:var(--border-strong) transparent}
+*::-webkit-scrollbar{width:10px; height:10px}
+*::-webkit-scrollbar-track{background:transparent}
+*::-webkit-scrollbar-thumb{background:var(--border-strong); border-radius:999px; border:2px solid var(--bg)}
+*::-webkit-scrollbar-thumb:hover{background:var(--text-faint)}
+*::-webkit-scrollbar-corner{background:transparent}
+
+/* ボタンの押下・無効状態（既存 .btn の transition は上書きしない） */
+.btn:active{transform:translateY(1px) scale(.985)}
+.btn-accent:active{background:var(--accent-hover)}
+.btn[disabled],.btn:disabled{opacity:.5; cursor:not-allowed; box-shadow:none}
+.btn[disabled]:hover,.btn:disabled:hover{border-color:var(--border-strong); color:var(--text)}
+.btn[disabled]:active,.btn:disabled:active{transform:none}
+.btn[aria-busy="true"]{cursor:progress; opacity:.75}
+
+/* 外部リンクの印（↗マーク） */
+a[target="_blank"]:not(.no-ext)::after{content:"\2197"; display:inline-block; margin-left:.18em; font-size:.82em; color:var(--text-faint); vertical-align:.05em; transition:color .15s}
+a[target="_blank"]:not(.no-ext):hover::after{color:var(--accent)}
+@media print{a[target="_blank"]::after{content:"" !important}}
+
+/* 読み込みフェードイン：JSが動いた時(html.js-ready)だけ初期状態を隠してから出す＝JS無し/失敗でも本文が消えない */
+.fade-in{transition:opacity .5s ease,transform .5s ease}
+html.js-ready .fade-in{opacity:0; transform:translateY(10px)}
+html.js-ready .fade-in.is-in{opacity:1; transform:none}
+@media (prefers-reduced-motion: reduce){html.js-ready .fade-in{opacity:1 !important; transform:none !important; transition:none}}
+
+/* ===================================================================== */
+/* ===== v2 アーキタイプ（動く実例）：8個の“根クラス”部品をここに追記 ===== */
+/* 子要素は必ず根クラス配下にスコープし、既存クラスと干渉させない。     */
+/* ===================================================================== */
+
+/* ===== v2 アーキタイプ: スライドデッキ ===== */
+.deck{border:1px solid var(--border);border-radius:10px;background:var(--surface);overflow:hidden;outline:none}
+.deck:focus-visible{box-shadow:0 0 0 3px var(--accent-soft)}
+.deck .slide{display:none;padding:var(--s5);min-height:150px}
+.deck .slide.active{display:block}
+.deck .slide h5{margin:.2em 0 .6em;color:var(--accent-hover);font-size:var(--fs-lg)}
+.deck .slide ul{margin:.4em 0;padding-left:1.3em}
+.deck .slide .faint{color:var(--text-faint)}
+.deck .deckbar{display:flex;align-items:center;gap:.6em;padding:.4em .6em;border-top:1px solid var(--border);background:var(--surface-2);font-size:var(--fs-sm)}
+.deck .deckbar .count{margin-left:auto;font-family:var(--font-mono);color:var(--text-faint)}
+/* デッキ内の前後ボタン（.minibtn は v1/v2 に無いので根クラス配下で定義） */
+.deck .minibtn{font:inherit;font-size:var(--fs-sm);cursor:pointer;border:1px solid var(--border-strong);background:var(--surface);color:var(--text);padding:.25em .7em;border-radius:6px}
+.deck .minibtn:hover{border-color:var(--accent);color:var(--accent)}
+.deck .minibtn:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+/* 現在位置のドット表示（任意・キーボード代替にもなる） */
+.deck .dots{display:flex;gap:.4em;align-items:center}
+.deck .dots .dot{appearance:none;border:0;padding:0;width:9px;height:9px;border-radius:50%;background:var(--border-strong);cursor:pointer;transition:background .2s,transform .2s}
+.deck .dots .dot:hover{background:var(--accent-hover)}
+.deck .dots .dot.on{background:var(--accent);transform:scale(1.25)}
+.deck .dots .dot:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.deck .dots .dot{transition:none}}
+@media print{.deck .slide{display:block !important;border-top:1px solid var(--border)}.deck .deckbar{display:none}}
+
+/* ===== v2 アーキタイプ: クリックで開くフローチャート ===== */
+.flow{display:flex;flex-direction:column;gap:.2em;margin:.5em 0}
+.flow .step{display:flex;align-items:center;gap:.6em;padding:.5em .8em;border:1px solid var(--border);border-radius:8px;background:var(--surface);cursor:pointer;text-align:left;width:100%;font:inherit;color:inherit}
+.flow .step:hover{border-color:var(--accent)}
+.flow .step:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.flow .step .st-t{margin-left:auto;font-family:var(--font-mono);font-size:var(--fs-xs);color:var(--text-faint)}
+.flow .step.fail{border-style:dashed;border-color:var(--danger)}
+.flow .arrow{text-align:center;color:var(--text-faint);line-height:1;font-size:.8em}
+.flow .detail{font-size:var(--fs-sm);color:var(--text-muted);padding:.2em .8em .5em;display:none}
+.flow .detail.open{display:block}
+@media print{.flow .detail{display:block !important}}
+
+/* ===== v2 アーキタイプ: ドラッグ並べ替え ===== */
+.reorder{margin:.5em 0}
+.reorder .sortlist{list-style:none;padding:0;margin:.4em 0;max-width:320px}
+.reorder .sortlist li{display:flex;align-items:center;gap:.5em;padding:.5em .7em;margin:.3em 0;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm,8px);cursor:grab}
+.reorder .sortlist li:active{cursor:grabbing}
+.reorder .sortlist li .grip{color:var(--text-faint)}
+.reorder .sortlist li .ct{margin-left:auto;font-size:var(--fs-xs);color:var(--text-faint)}
+/* つまんでいる行は半透明に（元の操作感を忠実に） */
+.reorder .sortlist li.dragging{opacity:.35}
+/* キーボード操作中の選択行を分かりやすく */
+.reorder .sortlist li.picked{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+.reorder .sortlist li:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+/* キーボード代替ボタン（マウスを使えない人向け） */
+.reorder .movebtns{display:inline-flex;gap:.2em;margin-left:.4em}
+.reorder .movebtns button{font:inherit;font-size:var(--fs-xs);line-height:1;cursor:pointer;border:1px solid var(--border-strong);background:var(--surface);color:var(--text-muted);width:1.7em;height:1.7em;border-radius:6px;display:inline-flex;align-items:center;justify-content:center}
+.reorder .movebtns button:hover{border-color:var(--accent);color:var(--accent)}
+.reorder .movebtns button:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.reorder .movebtns button:disabled{opacity:.35;cursor:not-allowed}
+.reorder .hint{font-size:var(--fs-xs);color:var(--text-faint);margin:.4em 0 0}
+@media(prefers-reduced-motion:reduce){.reorder .sortlist li{transition:none}}
+@media print{.reorder .movebtns{display:none}}
+
+/* ===== v2 アーキタイプ: ドラッグ仕分け盤／かんばん ===== */
+.triage{margin:.5em 0}
+.triage .board{display:grid;grid-template-columns:repeat(4,1fr);gap:.6em;margin:.5em 0}
+.triage .col{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius,12px);padding:.5em;min-height:90px}
+.triage .col h5{margin:.2em 0 .5em;font-size:var(--fs-sm);text-align:center}
+/* ドロップ先として狙われている列を破線で強調 */
+.triage .col.over{outline:2px dashed var(--accent)}
+.triage .col.picktarget{outline:2px solid var(--accent);outline-offset:1px}
+.triage .ticket{background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:.4em .5em;margin:.3em 0;font-size:var(--fs-xs);cursor:grab}
+.triage .ticket:active{cursor:grabbing}
+.triage .ticket.dragging{opacity:.4}
+.triage .ticket.picked{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+.triage .ticket:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+/* 操作バー（コピー＆キーボード説明） */
+.triage .ctl{display:flex;align-items:center;gap:.6em;flex-wrap:wrap;margin:.5em 0 0;font-size:var(--fs-sm)}
+.triage .minibtn{font:inherit;font-size:var(--fs-sm);cursor:pointer;border:1px solid var(--border-strong);background:var(--surface);color:var(--text);padding:.25em .7em;border-radius:6px}
+.triage .minibtn:hover{border-color:var(--accent);color:var(--accent)}
+.triage .minibtn:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.triage .msg{font-size:var(--fs-xs);color:var(--text-faint)}
+@media(max-width:700px){.triage .board{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){.triage .ticket{transition:none}}
+@media print{.triage .ctl{display:none}}
+
+/* ===== v2 アーキタイプ: ライブ・サンドボックス ===== */
+.sandbox{margin:.7em 0}
+.sandbox .sbx-stage{margin:1em 0;padding:var(--s4);border:1px dashed var(--border-strong);border-radius:var(--radius);background:var(--surface-2)}
+.sandbox .sbx-label{font-size:var(--fs-xs);color:var(--text-faint);margin-bottom:.7em;display:flex;align-items:center;gap:.4em;font-weight:700;letter-spacing:.04em}
+/* 見本カードの一覧（プリセット） */
+.sandbox .sbx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.8em;margin:.6em 0}
+.sandbox .sbx-card{background:var(--surface);border-radius:10px;padding:16px}
+.sandbox .sbx-card .sbx-t{font-weight:700}
+.sandbox .sbx-card .sbx-s{font-size:var(--fs-xs);color:var(--text-muted)}
+.sandbox .sbx-card.flat{background:var(--surface-2)}
+.sandbox .sbx-card.outlined{border:1px solid var(--border-strong)}
+.sandbox .sbx-card.elevated{box-shadow:var(--shadow)}
+.sandbox .sbx-card.accent{border-left:4px solid var(--accent)}
+/* つまみ（操作部） */
+.sandbox .sbx-ctl{display:flex;align-items:center;gap:.6em;flex-wrap:wrap;margin:1em 0 .4em;font-size:var(--fs-sm)}
+.sandbox .sbx-ctl label{display:flex;align-items:center;gap:.4em}
+.sandbox .sbx-ctl input[type=range]{accent-color:var(--accent)}
+.sandbox .sbx-ctl input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sandbox .sbx-out{font-family:var(--font-mono);font-size:var(--fs-xs);color:var(--text-faint);min-width:2.4em}
+/* 即変化するプレビュー（このカードだけ inline style で動かす） */
+.sandbox .sbx-prev{max-width:240px;background:var(--surface);border-radius:10px;padding:16px;box-shadow:var(--shadow)}
+.sandbox .sbx-prev .sbx-t{font-weight:700}
+.sandbox .sbx-prev .sbx-s{font-size:var(--fs-xs);color:var(--text-muted)}
+@media(max-width:700px){.sandbox .sbx-grid{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){.sandbox .sbx-prev{transition:none}}
+@media print{.sandbox .sbx-ctl{display:none}}
+
+/* ===== v2 アーキタイプ: ライブ・プロンプトエディタ ===== */
+.liveedit{margin:.7em 0}
+.liveedit .led-stage{margin:1em 0;padding:var(--s4);border:1px dashed var(--border-strong);border-radius:var(--radius);background:var(--surface-2)}
+.liveedit .led-label{font-size:var(--fs-xs);color:var(--text-faint);margin-bottom:.7em;display:flex;align-items:center;gap:.4em;font-weight:700;letter-spacing:.04em}
+/* 左：入力 ／ 右：見本 の2カラム */
+.liveedit .led-grid{display:grid;grid-template-columns:1fr 1fr;gap:.7em;margin:.5em 0}
+.liveedit textarea{width:100%;min-height:120px;font-family:var(--font-mono);font-size:var(--fs-sm);padding:.6em;border:1px solid var(--border-strong);border-radius:8px;background:var(--surface);color:var(--text);resize:vertical}
+.liveedit textarea:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.liveedit .led-preview{font-size:var(--fs-sm);border:1px solid var(--border);border-radius:8px;padding:.6em;background:var(--surface);max-height:220px;overflow:auto;white-space:pre-wrap}
+/* 空欄が埋まった所＝下線つきハイライト、未入力＝破線で警告色 */
+.liveedit .led-slot{background:var(--accent-soft);border-radius:3px;padding:0 .2em}
+.liveedit .led-empty{border-bottom:1px dashed var(--danger);color:var(--danger)}
+.liveedit .led-row{margin-bottom:.5em;border-bottom:1px dashed var(--border);padding-bottom:.4em}
+.liveedit .led-count{font-size:var(--fs-xs);color:var(--text-faint);margin-top:.3em}
+.liveedit .led-bar{display:flex;align-items:center;gap:.6em;flex-wrap:wrap;margin:.5em 0;font-size:var(--fs-sm)}
+.liveedit .led-btn{font:inherit;font-size:var(--fs-sm);cursor:pointer;border:1px solid var(--border-strong);background:var(--surface);color:var(--text);padding:.25em .7em;border-radius:6px}
+.liveedit .led-btn:hover{border-color:var(--accent);color:var(--accent)}
+.liveedit .led-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.liveedit .led-msg{color:var(--text-faint);font-size:var(--fs-sm)}
+@media(max-width:700px){.liveedit .led-grid{grid-template-columns:1fr}}
+@media print{.liveedit textarea{min-height:auto;height:auto;resize:none}.liveedit .led-bar{display:none}}
+
+/* ===== v2 アーキタイプ: パラメータで動く/触れるSVG図 ===== */
+.livefig{margin:.7em 0}
+.livefig .lf-ctl{display:flex;align-items:center;gap:.6em;flex-wrap:wrap;margin:.5em 0;font-size:var(--fs-sm)}
+.livefig .lf-btn{font:inherit;font-size:var(--fs-sm);cursor:pointer;border:1px solid var(--border-strong);background:var(--surface);color:var(--text);padding:.25em .7em;border-radius:6px;transition:border-color .15s,color .15s}
+.livefig .lf-btn:hover{border-color:var(--accent);color:var(--accent)}
+.livefig .lf-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.livefig .lf-stat{color:var(--text-faint);font-size:var(--fs-xs)}
+.livefig .lf-fig{margin:.3em 0;padding:var(--s4);background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);text-align:center;color:var(--accent)}
+.livefig .lf-fig svg{max-width:100%;height:auto}
+.livefig .lf-legend{font-size:var(--fs-xs);margin:.4em 0;display:flex;flex-wrap:wrap;gap:.4em}
+.livefig .lf-chip{display:inline-flex;align-items:center;gap:.35em;padding:.12em .55em;border-radius:999px;color:#fff;border:none;font-weight:700}
+@media (max-width:700px){.livefig .lf-ctl{gap:.4em}}
+
+/* ===== v2 アーキタイプ: 設定エディタ ===== */
+.configedit{margin:.7em 0}
+.configedit .ce-rows .ce-row{display:flex;align-items:center;gap:.6em;padding:.45em .2em;border-bottom:1px solid var(--border)}
+.configedit .ce-name{font-family:var(--font-mono);font-size:var(--fs-sm)}
+.configedit .ce-area{font-size:var(--fs-xs);color:var(--text-faint);margin-left:auto;margin-right:.4em}
+.configedit .ce-sw{position:relative;width:38px;height:22px;flex:none}
+.configedit .ce-sw input{position:absolute;opacity:0;width:100%;height:100%;margin:0;cursor:pointer}
+.configedit .ce-sw .ce-sl{position:absolute;inset:0;background:var(--border-strong);border-radius:999px;transition:background .2s;pointer-events:none}
+.configedit .ce-sw .ce-sl::before{content:"";position:absolute;width:16px;height:16px;left:3px;top:3px;background:#fff;border-radius:50%;transition:transform .2s}
+.configedit .ce-sw input:checked + .ce-sl{background:var(--accent)}
+.configedit .ce-sw input:checked + .ce-sl::before{transform:translateX(16px)}
+.configedit .ce-sw input:focus-visible + .ce-sl{outline:2px solid var(--accent);outline-offset:2px}
+.configedit .ce-warn{color:var(--danger);font-size:var(--fs-sm);margin:.5em 0;display:none}
+.configedit .ce-warn.show{display:block}
+.configedit .ce-ctl{display:flex;align-items:center;gap:.6em;flex-wrap:wrap;margin:.5em 0;font-size:var(--fs-sm)}
+.configedit .ce-btn{font:inherit;font-size:var(--fs-sm);cursor:pointer;border:1px solid var(--border-strong);background:var(--surface);color:var(--text);padding:.25em .7em;border-radius:6px;transition:border-color .15s,color .15s}
+.configedit .ce-btn:hover{border-color:var(--accent);color:var(--accent)}
+.configedit .ce-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.configedit .ce-msg{color:var(--text-faint);font-size:var(--fs-xs)}
+@media (prefers-reduced-motion:reduce){.configedit .ce-sl,.configedit .ce-sl::before{transition:none}}
+
+/* ===================================================================== */
+/* ===== v3 マーケ/ランディング部品（claude.com公式風・全て mk- 接頭辞）===== */
+/* 子要素は必ず根クラス(.mk-*)配下にスコープ。既存クラスと干渉させない。 */
+/* ===================================================================== */
+
+/* ===== v3 マーケ: ヒーロー（宣伝の主役） ===== */
+/* ヒーロー：claude.com風の広い余白＋控えめメッシュ背景 */
+.mk-hero{position:relative;overflow:hidden;display:grid;grid-template-columns:1.05fr .95fr;gap:var(--s7);align-items:center;
+  padding:var(--s8) var(--s6);margin:var(--s5) 0;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface)}
+/* 背景＝複数の放射グラデを重ねた淡いメッシュ（色は全てCSS変数・ダーク自動追従） */
+.mk-hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(60% 60% at 15% 12%,var(--accent-soft),transparent 70%),
+            radial-gradient(50% 50% at 92% 8%,color-mix(in srgb,var(--accent) 14%,transparent),transparent 70%),
+            radial-gradient(55% 55% at 78% 96%,var(--surface-2),transparent 72%)}
+.mk-hero>*{position:relative;z-index:1}
+.mk-hero .eyebrow{display:inline-block;font-size:var(--fs-xs);font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--accent-hover);background:var(--accent-soft);padding:.3em .8em;border-radius:999px;margin-bottom:var(--s3)}
+.mk-hero .title{font-family:var(--font-serif);font-size:var(--fs-3xl);line-height:1.18;margin:0 0 var(--s3);letter-spacing:.01em}
+.mk-hero .sub{font-size:var(--fs-lg);color:var(--text-muted);margin:0 0 var(--s5);max-width:46ch}
+.mk-hero .actions{display:flex;flex-wrap:wrap;gap:var(--s3)}
+.mk-hero .actions .btn{padding:.6em 1.3em}
+/* 右側のビジュアル枠（imgが無くてもSVGモックで埋まる） */
+.mk-hero__media{border:1px solid var(--border);border-radius:var(--radius);background:var(--surface-2);box-shadow:var(--shadow-lg);overflow:hidden;aspect-ratio:4/3}
+.mk-hero__media img,.mk-hero__media svg{display:block;width:100%;height:100%;object-fit:cover}
+@media(max-width:700px){.mk-hero{grid-template-columns:1fr;gap:var(--s5);padding:var(--s6) var(--s4);text-align:center}
+  .mk-hero .sub{margin-inline:auto}.mk-hero .actions{justify-content:center}.mk-hero__media{order:-1}}
+@media print{.mk-hero::before{display:none}.mk-hero{box-shadow:none}}
+
+/* ===== v3 マーケ: 機能タブ・ショーケース ===== */
+/* ショーケース：左にタブ見出し、右に内容。内側は既存 .tabs 構造に厳密一致＝既存JSに相乗り */
+.mk-showcase{margin:var(--s6) 0;padding:var(--s6);border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);box-shadow:var(--shadow)}
+.mk-showcase .mk-showcase__head{margin:0 0 var(--s5)}
+.mk-showcase .mk-showcase__head h2{margin:0;border:none;padding:0}
+.mk-showcase .mk-showcase__head p{margin:.4em 0 0;color:var(--text-muted)}
+/* 左タブ／右パネルの2カラム。既存 .tabs はそのまま入れ子にする */
+.mk-showcase .tabs{margin:0;display:grid;grid-template-columns:230px 1fr;gap:var(--s6)}
+.mk-showcase .tablist{flex-direction:column;border-bottom:none;border-left:2px solid var(--border);gap:.2em}
+.mk-showcase .tab{text-align:left;border-bottom:none;border-left:2px solid transparent;margin:0 0 0 -2px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:.7em 1em}
+.mk-showcase .tab[aria-selected="true"]{border-bottom-color:transparent;border-left-color:var(--accent);background:var(--accent-soft)}
+.mk-showcase .tabpanel{padding:0}
+.mk-showcase .mk-showcase__panel{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);align-items:center}
+.mk-showcase .mk-showcase__panel h3{margin:0 0 .3em}
+.mk-showcase .mk-showcase__panel p{margin:0;color:var(--text-muted)}
+.mk-showcase .mk-showcase__fig{border:1px solid var(--border);border-radius:var(--radius);background:var(--surface-2);padding:var(--s4);display:grid;place-items:center}
+.mk-showcase .mk-showcase__fig svg{width:100%;height:auto;color:var(--accent)}
+@media(max-width:700px){.mk-showcase{padding:var(--s4)}
+  .mk-showcase .tabs{grid-template-columns:1fr;gap:var(--s4)}
+  .mk-showcase .tablist{flex-direction:row;flex-wrap:wrap;border-left:none;border-bottom:2px solid var(--border)}
+  .mk-showcase .tab{border-left:none;border-bottom:2px solid transparent;margin:0 0 -2px}
+  .mk-showcase .tab[aria-selected="true"]{border-left-color:transparent;border-bottom-color:var(--accent)}
+  .mk-showcase .mk-showcase__panel{grid-template-columns:1fr}
+  .mk-showcase .mk-showcase__fig{order:-1}}
+
+/* ===== v3 マーケ: 機能カードグリッド ===== */
+/* 機能カード：アイコン＋見出し＋説明の3列。ホバーで軽く持ち上げ */
+.mk-features{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4);margin:var(--s6) 0}
+.mk-features .mk-feature{display:flex;flex-direction:column;gap:var(--s2);padding:var(--s5);background:var(--surface);
+  border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.mk-features .mk-feature:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:color-mix(in srgb,var(--accent) 40%,var(--border))}
+/* アイコン枠：currentColorのSVGをアクセント色の淡い丸に乗せる */
+.mk-features .mk-feature__ico{width:46px;height:46px;border-radius:var(--radius);display:grid;place-items:center;
+  color:var(--accent);background:var(--accent-soft);margin-bottom:var(--s2)}
+.mk-features .mk-feature__ico svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.mk-features .mk-feature h3{margin:0;font-size:var(--fs-lg)}
+.mk-features .mk-feature p{margin:0;color:var(--text-muted);font-size:var(--fs-sm);line-height:var(--lh)}
+@media(max-width:700px){.mk-features{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.mk-features .mk-feature{transition:none}.mk-features .mk-feature:hover{transform:none}}
+
+/* ===== v3 マーケ: スタッツ帯（数値の実績） ===== */
+/* スタッツ帯：大きな数値＋ラベルを横並びに。区切り線つき */
+.mk-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s5);margin:var(--s6) 0;padding:var(--s6) var(--s5);
+  background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius);text-align:center}
+.mk-stats .mk-stat{position:relative;padding:0 var(--s3)}
+/* 2個目以降の左に細い区切り線（モバイルでは消す） */
+.mk-stats .mk-stat+.mk-stat::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:1px;height:64%;background:var(--border-strong)}
+.mk-stats .mk-stat .num{font-family:var(--font-serif);font-size:var(--fs-3xl);font-weight:700;line-height:1.05;
+  color:var(--accent-hover);font-variant-numeric:tabular-nums}
+/* 単位（時間/分）は本体の global small{color:var(--text-muted)} を上書きしてアクセント色を保つ */
+.mk-stats .mk-stat .num small{color:inherit;font-weight:600;font-size:.5em}
+.mk-stats .mk-stat .lbl{display:block;margin-top:.3em;font-size:var(--fs-sm);color:var(--text-muted)}
+@media(max-width:700px){.mk-stats{grid-template-columns:repeat(2,1fr);gap:var(--s5) var(--s3);padding:var(--s5) var(--s4)}
+  .mk-stats .mk-stat::before{display:none}.mk-stats .mk-stat .num{font-size:var(--fs-2xl)}}
+@media(max-width:420px){.mk-stats{grid-template-columns:1fr}}
+
+/* ===== v3 マーケ: CTA帯 ===== */
+/* CTA帯：全幅の囲み＋セリフ見出し＋行動ボタン。背景は控えめグラデ（accent-soft）。 */
+.mk-cta{margin:1.6em 0;border:1px solid var(--border);border-radius:var(--radius);text-align:center;padding:var(--s7) var(--s6);
+  background:linear-gradient(135deg,var(--accent-soft),color-mix(in srgb,var(--accent-soft) 30%,var(--surface)))}
+.mk-cta .eyebrow{font-size:var(--fs-xs);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-hover);margin:0 0 var(--s2)}
+.mk-cta .title{font-family:var(--font-serif);font-size:var(--fs-2xl);font-weight:700;line-height:1.25;margin:0 0 var(--s3);color:var(--text)}
+.mk-cta .desc{font-size:var(--fs-lg);color:var(--text-muted);max-width:46ch;margin:0 auto var(--s5)}
+.mk-cta .actions{display:flex;gap:var(--s3);justify-content:center;flex-wrap:wrap}
+/* 既存 .btn にはフォーカス輪郭が無いので、ここで部品スコープ補強（既存挙動は上書きしない加点のみ） */
+.mk-cta .btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* JSなしで完結。狭い画面でも余白を詰めて崩さない。 */
+@media(max-width:700px){.mk-cta{padding:var(--s6) var(--s4)}.mk-cta .title{font-size:var(--fs-xl)}}
+@media print{.mk-cta{background:var(--surface-2)}}
+/* 動きを減らす設定を尊重（.btn の transition を止める） */
+@media(prefers-reduced-motion:reduce){.mk-cta .btn{transition:none}}
+
+/* ===== v3 マーケ: 巨大フッター ===== */
+/* 巨大フッター：左にブランド＋SNS、右に多列リンク。下段に著作権。既存の単純 .footer とは別物。 */
+.mk-footer{border-top:1px solid var(--border);background:var(--surface-2);border-radius:var(--radius);padding:var(--s7)}
+.mk-footer .ft-top{display:grid;grid-template-columns:1.4fr repeat(4,1fr);gap:var(--s6) var(--s5)}
+.mk-footer .ft-brand .ft-logo{display:flex;align-items:center;gap:.5em;font-weight:700;font-size:var(--fs-lg);margin:0 0 var(--s2)}
+.mk-footer .ft-brand .ft-logo .dot{width:14px;height:14px;border-radius:50%;background:var(--accent)}
+.mk-footer .ft-brand p{font-size:var(--fs-sm);color:var(--text-muted);max-width:30ch;margin:0 0 var(--s4)}
+.mk-footer .ft-social{display:flex;gap:.6em}
+.mk-footer .ft-social a{display:grid;place-items:center;width:34px;height:34px;border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text-muted);background:var(--surface);transition:color .15s,border-color .15s}
+.mk-footer .ft-social a:hover{color:var(--accent);border-color:var(--accent)} .mk-footer .ft-social svg{width:18px;height:18px}
+.mk-footer .ft-col h4{font-size:var(--fs-sm);font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--text);margin:0 0 var(--s3)}
+.mk-footer .ft-col ul{list-style:none;padding:0;margin:0} .mk-footer .ft-col li{margin:0 0 .5em}
+.mk-footer .ft-col a{color:var(--text-muted);font-size:var(--fs-sm);border:none} .mk-footer .ft-col a:hover{color:var(--accent)}
+.mk-footer .ft-bottom{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--s3);margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--border);font-size:var(--fs-xs);color:var(--text-faint)}
+.mk-footer .ft-bottom nav{display:flex;gap:var(--s4);flex-wrap:wrap} .mk-footer .ft-bottom a{color:var(--text-faint);border:none} .mk-footer .ft-bottom a:hover{color:var(--accent)}
+/* キーボード操作のフォーカス輪郭（リンク/アイコン全て）。テンプレに共通則が無いので自前で定義。 */
+.mk-footer a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:var(--radius-sm)}
+/* スマホ：多列を畳む。ブランドは全幅に。JSなしで成立。 */
+@media(max-width:700px){.mk-footer{padding:var(--s5)}.mk-footer .ft-top{grid-template-columns:1fr 1fr}.mk-footer .ft-brand{grid-column:1/-1}}
+/* 動きを減らす設定を尊重 */
+@media(prefers-reduced-motion:reduce){.mk-footer .ft-social a{transition:none}}
+
+/* ===== v3 マーケ: ロゴの壁 ===== */
+/* ロゴの壁：導入企業ロゴ風の格子。外部画像は使わずインラインSVG＋テキスト社名で代用。淡色・等間隔。 */
+.mk-logowall{margin:1.6em 0}
+.mk-logowall .lw-head{text-align:center;font-size:var(--fs-sm);font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text-faint);margin:0 0 var(--s4)}
+/* gap:1px＋背景borderで“線で区切った格子”を表現（外枠と内側の罫線がそろう） */
+.mk-logowall .lw-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.mk-logowall .lw-cell{display:flex;align-items:center;justify-content:center;gap:.5em;padding:var(--s5) var(--s3);background:var(--surface);color:var(--text-faint);font-weight:700;font-size:var(--fs-base);letter-spacing:.02em;transition:color .15s}
+.mk-logowall .lw-cell:hover{color:var(--text-muted)} .mk-logowall .lw-cell svg{width:20px;height:20px;flex:none}
+/* スマホは2列に。JSなしで成立。 */
+@media(max-width:700px){.mk-logowall .lw-grid{grid-template-columns:repeat(2,1fr)}}
+/* 動きを減らす設定を尊重（hover の色 transition を止める） */
+@media(prefers-reduced-motion:reduce){.mk-logowall .lw-cell{transition:none}}
+
+/* ===== v3 マーケ: 証言ウォール ===== */
+.mk-testimonials{margin:var(--s6) 0}
+.mk-testimonials .mk-head{text-align:center;max-width:60ch;margin:0 auto var(--s6)}
+.mk-testimonials .mk-head h2{border-bottom:none;margin:0 0 .3em}
+.mk-testimonials .mk-head p{color:var(--text-muted);margin:0}
+/* masonry風：CSS columnsで高さの違う引用を詰める。JS不要・崩れない */
+.mk-testimonials .mk-wall{columns:3 280px;column-gap:var(--s4)}
+.mk-testimonials .quote-card{break-inside:avoid;margin:0 0 var(--s4);display:inline-block;width:100%}
+/* 任意の指標（例：作業時間-40%）。無くてもOK */
+.mk-testimonials .mk-metric{display:inline-flex;align-items:baseline;gap:.3em;margin-top:var(--s3);padding:.25em .7em;border-radius:999px;background:var(--accent-soft);color:var(--accent-hover);font-size:var(--fs-xs);font-weight:700}
+.mk-testimonials .mk-metric b{font-size:var(--fs-sm)}
+@media(max-width:700px){.mk-testimonials .mk-wall{columns:1}}
+@media print{.mk-testimonials .mk-wall{columns:1}}
+
+/* ===== v3 マーケ: 料金ティア ===== */
+.mk-pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4);align-items:stretch;margin:var(--s6) 0}
+.mk-pricing .mk-tier{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:var(--s5);box-shadow:var(--shadow);position:relative}
+/* 人気プランだけ枠を太く・浮かせて強調 */
+.mk-pricing .mk-tier--featured{border-color:var(--accent);box-shadow:var(--shadow-lg);border-width:2px}
+.mk-pricing .mk-badge{position:absolute;top:-.85em;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;font-size:var(--fs-xs);font-weight:700;padding:.25em .85em;border-radius:999px;white-space:nowrap}
+.mk-pricing .mk-name{font-family:var(--font-serif);font-size:var(--fs-xl);margin:0 0 .2em}
+.mk-pricing .mk-tagline{color:var(--text-muted);font-size:var(--fs-sm);min-height:2.6em;margin:0 0 var(--s3)}
+.mk-pricing .mk-price{display:flex;align-items:baseline;gap:.2em;margin:0 0 var(--s4)}
+.mk-pricing .mk-price .amount{font-size:var(--fs-3xl);font-weight:700;line-height:1;color:var(--text)}
+.mk-pricing .mk-price .per{color:var(--text-muted);font-size:var(--fs-sm)}
+.mk-pricing .mk-feats{list-style:none;padding:0;margin:0 0 var(--s5);display:flex;flex-direction:column;gap:.55em;font-size:var(--fs-sm);flex:1}
+.mk-pricing .mk-feats li{display:flex;gap:.55em;align-items:flex-start}
+.mk-pricing .mk-feats svg{width:1.1em;height:1.1em;flex:none;margin-top:.2em;color:var(--ok)}
+.mk-pricing .mk-feats li.off{color:var(--text-faint)}
+.mk-pricing .mk-feats li.off svg{color:var(--text-faint)}
+/* 画面外テキスト：×アイコンの意味を読み上げにだけ伝える */
+.mk-pricing .mk-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.mk-pricing .btn{justify-content:center;width:100%}
+@media(max-width:700px){.mk-pricing{grid-template-columns:1fr}.mk-pricing .mk-tier--featured{order:-1}}
+@media print{.mk-pricing .mk-tier{box-shadow:none}}
+
+/* ===== v3 マーケ: 機能比較マトリクス ===== */
+.mk-matrix{margin:var(--s6) 0}
+.mk-matrix .mk-cap{font-size:var(--fs-sm);color:var(--text-muted);text-align:center;margin:0 0 var(--s3)}
+/* 表本体は既存 .compare をそのまま流用（.pick列ハイライト方式を踏襲）。ここでは並びの微調整だけ */
+.mk-matrix .compare tbody th{width:42%}
+.mk-matrix .compare thead th .mk-sub{display:block;font-weight:400;font-size:var(--fs-xs);color:var(--text-muted)}
+.mk-matrix .compare th.pick .mk-sub{color:var(--accent-hover)}
+
+/* ===== v3 マーケ: 連携アイコングリッド ===== */
+.mk-connectors{margin:var(--s6) 0}
+.mk-connectors .mk-head{text-align:center;max-width:56ch;margin:0 auto var(--s5)}
+.mk-connectors .mk-head h2{border-bottom:none;margin:0 0 .3em}
+.mk-connectors .mk-head p{color:var(--text-muted);margin:0}
+.mk-connectors .mk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:var(--s3)}
+.mk-connectors .mk-tile{display:flex;flex-direction:column;align-items:center;gap:.5em;padding:var(--s4) var(--s2);background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);text-align:center;color:var(--text);transition:transform .15s,border-color .15s,box-shadow .15s}
+/* aタグで使われた時だけ浮かせる（divなら静的でOK）。必ず根クラス配下にスコープ */
+.mk-connectors a.mk-tile:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow-lg)}
+.mk-connectors a.mk-tile:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mk-connectors .mk-ico{width:30px;height:30px;color:var(--accent)}
+.mk-connectors .mk-tile span{font-size:var(--fs-sm);font-weight:600}
+/* OSで動き軽減を選んでいる人にはホバーの浮きを止める */
+@media(prefers-reduced-motion:reduce){.mk-connectors .mk-tile{transition:none}.mk-connectors a.mk-tile:hover{transform:none}}
+@media print{.mk-connectors .mk-tile{box-shadow:none}}
+
+/* ===== v3 マーケ: プラン診断クイズ ===== */
+/* プラン診断クイズ：質問に答えると おすすめプラン を表示。JS無効でも全部読める */
+.mk-quiz{border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);box-shadow:var(--shadow);padding:var(--s6);margin:var(--s5) 0}
+.mk-quiz .head{margin-bottom:var(--s5)}
+.mk-quiz .head h3{margin:0 0 .2em}
+.mk-quiz .head .sub{color:var(--text-muted);font-size:var(--fs-sm);margin:0}
+.mk-quiz .q{margin:0 0 var(--s5)}
+.mk-quiz .q-title{font-weight:700;margin-bottom:var(--s2)}
+.mk-quiz .opts{display:flex;flex-wrap:wrap;gap:var(--s2);list-style:none;padding:0;margin:0}
+.mk-quiz .opt{display:flex;align-items:center;gap:.5em;padding:.55em .9em;border:1px solid var(--border-strong);border-radius:999px;cursor:pointer;font-size:var(--fs-sm);transition:border-color .15s,background .15s}
+.mk-quiz .opt:hover{border-color:var(--accent);color:var(--accent)}
+.mk-quiz .opt input{accent-color:var(--accent);margin:0}
+.mk-quiz .opt:has(input:checked){border-color:var(--accent);background:var(--accent-soft);color:var(--accent-hover);font-weight:700}
+.mk-quiz .opt:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+.mk-quiz .actions{display:flex;align-items:center;gap:var(--s3);flex-wrap:wrap;margin-top:var(--s5)}
+.mk-quiz .hint{color:var(--text-faint);font-size:var(--fs-xs)}
+/* 結果：JSが入れ替える。既定は控えめ枠 */
+.mk-quiz .result{margin-top:var(--s5);padding:var(--s4);border:1px dashed var(--border-strong);border-radius:var(--radius);background:var(--surface-2);color:var(--text-muted);font-size:var(--fs-sm)}
+.mk-quiz .result.is-done{border-style:solid;border-color:color-mix(in srgb,var(--accent) 40%,var(--border));background:var(--accent-soft);color:var(--text)}
+.mk-quiz .result .pick-label{font-size:var(--fs-xs);font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-hover)}
+.mk-quiz .result .pick-name{font-family:var(--font-serif);font-size:var(--fs-xl);font-weight:700;margin:.1em 0 .2em}
+/* JS無効フォールバック：各プランの説明（既定で見える＝読める） */
+.mk-quiz .plans{margin-top:var(--s5);border-top:1px solid var(--border);padding-top:var(--s4)}
+.mk-quiz .plans .plans-cap{font-size:var(--fs-xs);color:var(--text-faint);font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:var(--s2)}
+.mk-quiz .plans dl{margin:0}.mk-quiz .plans dt{font-weight:700;margin-top:.7em}.mk-quiz .plans dd{margin:.15em 0 0;color:var(--text-muted);font-size:var(--fs-sm)}
+/* JSが動いた時だけプラン一覧を畳む（無効時は開いたまま読める保険） */
+.mk-quiz.js-on .plans{display:none}
+@media(max-width:700px){.mk-quiz{padding:var(--s5) var(--s4)}}
+/* 動き軽減：OS設定を尊重しアニメを止める */
+@media(prefers-reduced-motion:reduce){.mk-quiz .opt{transition:none}}
+/* 印刷：操作専用UI（ボタン・ヒント）は控えめに消し、読む部分（結果・プラン説明）は残す。
+   JSで畳まれた .plans は印刷でも開いて読めるように戻す */
+@media print{.mk-quiz{box-shadow:none}.mk-quiz .actions{display:none}.mk-quiz.js-on .plans{display:block}}
+
+/* ===== v3 マーケ: 部門別ユースケースタブ ===== */
+/* 部門別ユースケースタブ：中身は既存 .tabs 構造に厳密一致＝既存の委譲JSに相乗り（新規JS不要） */
+.mk-usecases{margin:var(--s6) 0}
+.mk-usecases .uc-head{max-width:var(--reading);margin-bottom:var(--s4)}
+.mk-usecases .uc-head h2{margin:0 0 .2em}
+.mk-usecases .uc-head p{margin:0;color:var(--text-muted)}
+/* タブ中身：左に説明、右に箇条書きの2カラム。狭い画面で1列 */
+.mk-usecases .uc-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:var(--s5);align-items:start;padding-top:var(--s2)}
+.mk-usecases .uc-grid h3{margin:0 0 .3em}
+.mk-usecases .uc-grid .role{font-size:var(--fs-xs);font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-hover)}
+.mk-usecases .uc-grid p{color:var(--text-muted)}
+.mk-usecases .uc-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.6em}
+.mk-usecases .uc-list li{display:flex;gap:.6em;align-items:flex-start;font-size:var(--fs-sm)}
+/* チェック印はインラインSVGで currentColor（外部画像なし） */
+.mk-usecases .uc-list .ck{flex:none;width:1.2em;height:1.2em;margin-top:.15em;color:var(--accent)}
+@media(max-width:700px){.mk-usecases .uc-grid{grid-template-columns:1fr;gap:var(--s4)}}
+
+/* ===== v3 マーケ: お知らせ/ブログ風カード ===== */
+/* お知らせ/ブログ風カード：既存 .card-grid / .tag / .badge を流用しつつ見出し体裁だけ整える */
+.mk-posts{margin:var(--s6) 0}
+.mk-posts .posts-head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--s3);flex-wrap:wrap;margin-bottom:var(--s4)}
+.mk-posts .posts-head h2{margin:0}
+.mk-posts .posts-head .all{font-size:var(--fs-sm)}
+/* カード自体は既存 .card を使う。中の体裁だけ mk- でスコープ */
+.mk-posts .mk-post{text-decoration:none;color:inherit}
+.mk-posts .mk-post .top{display:flex;align-items:center;gap:.5em;flex-wrap:wrap;margin-bottom:.2em}
+.mk-posts .mk-post .date{font-size:var(--fs-xs);color:var(--text-faint)}
+.mk-posts .mk-post h3{font-size:var(--fs-lg);margin:.1em 0 .15em;line-height:1.4}
+.mk-posts .mk-post .excerpt{font-size:var(--fs-sm);color:var(--text-muted);margin:0}
+.mk-posts .mk-post .more{margin-top:auto;padding-top:.6em;font-size:var(--fs-sm);font-weight:700;color:var(--accent);display:inline-flex;align-items:center;gap:.3em}
+.mk-posts a.card.mk-post:hover .more{gap:.55em}
+.mk-posts .mk-post .more svg{width:1em;height:1em;transition:transform .15s}
+.mk-posts a.card.mk-post:hover .more svg{transform:translateX(2px)}
+/* 動き軽減：ホバーの矢印アニメを止める */
+@media(prefers-reduced-motion:reduce){.mk-posts .mk-post .more svg{transition:none}.mk-posts a.card.mk-post:hover .more svg{transform:none}}
+
+/* ===== v3 マーケ: OS判定ダウンロード ===== */
+/* OS判定ダウンロード：JSがOSを推定し主ボタンを強調。判定不能/JS無効なら両方“同等表示”で成立 */
+.mk-download{border:1px solid var(--border);border-radius:var(--radius);background:linear-gradient(135deg,var(--accent-soft),transparent);box-shadow:var(--shadow);padding:var(--s6);margin:var(--s5) 0;text-align:center}
+.mk-download h3{margin:0 0 .2em}
+.mk-download .sub{color:var(--text-muted);font-size:var(--fs-sm);margin:0 0 var(--s5)}
+.mk-download .dl-row{display:flex;gap:var(--s3);justify-content:center;flex-wrap:wrap}
+/* 既定（フォールバック）：2つのボタンは同等の見た目＝枠線ボタン。JS無効でもどちらも押せる */
+.mk-download .dl-btn{display:inline-flex;align-items:center;gap:.6em;padding:.7em 1.3em;min-width:13em;justify-content:center;font:inherit;font-weight:700;border:1px solid var(--border-strong);border-radius:var(--radius);background:var(--surface);color:var(--text);cursor:pointer;text-decoration:none;transition:border-color .15s,color .15s,background .15s}
+.mk-download .dl-btn:hover{border-color:var(--accent);color:var(--accent)}
+.mk-download .dl-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mk-download .dl-btn svg{width:1.3em;height:1.3em;flex:none}
+.mk-download .dl-btn .os{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15}
+.mk-download .dl-btn .os small{font-weight:400;font-size:var(--fs-xs);color:var(--text-muted)}
+/* JSが“あなたのOS”と判定した側だけ塗りつぶしで主役化（.is-primary を付与）。
+   #fff はアクセント面に乗る白文字＝既存 .btn-accent と同じ確立パターン */
+.mk-download .dl-btn.is-primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.mk-download .dl-btn.is-primary:hover{background:var(--accent-hover);color:#fff}
+.mk-download .dl-btn.is-primary .os small{color:color-mix(in srgb,#fff 80%,var(--accent))}
+.mk-download .other{margin-top:var(--s4);font-size:var(--fs-xs);color:var(--text-faint)}
+@media(max-width:700px){.mk-download{padding:var(--s5) var(--s4)}.mk-download .dl-btn{width:100%}}
+/* 動き軽減：ボタンのトランジションを止める */
+@media(prefers-reduced-motion:reduce){.mk-download .dl-btn{transition:none}}
+/* 印刷：濃い背景グラデと影はインク無駄なので簡素化（中身は残す） */
+@media print{.mk-download{background:none;box-shadow:none;border-color:#000}}
+</style>
+<!-- ===== EFFECTIVE-CSS:END ===== -->
+</head>
+<body>
+
+<style>
+  /* このページ用の小追加（共通テンプレは触らない）: 用語の点線注釈 */
+  .term{border-bottom:1px dotted var(--accent);cursor:help}
+</style>
+
+<div class="topbar">
+  <span class="brand"><span class="dot"></span>アメリカ旅行しおり｜つかいかた</span>
+  <span class="spacer"></span>
+  <a class="btn" href="index.html">← しおりへ</a>
+  <button class="btn" id="themeToggle" aria-label="ライト/ダーク切替">🌙 ダーク</button>
+</div>
+
+<main class="reading">
+
+  <h1>つかいかた｜スプレッドシートでみんなで編集する</h1>
+
+  <div class="callout tldr">
+    <span class="ico">💡</span>
+    <div class="body">
+      <div class="label">このページは</div>
+      <p>しおりの<strong>「プラン（日程・未決事項）」を、参加者みんなでGoogleスプレッドシートから編集する</strong>ためのやり方です。
+      コードやGitHubの知識は要りません。<strong>スプレッドシートを直すだけ</strong>。
+      直した内容は、岡崎さんがサイトを<span class="term" title="スプレッドシートの最新データを読んで、サイトを作り直すこと">再成形</span>したときに反映されます。</p>
+    </div>
+  </div>
+
+  <nav class="toc" aria-label="このページの目次">
+    <div class="toc-title">目次</div>
+    <a href="#flow" data-depth="2">① 全体の流れ</a>
+    <a href="#editors" data-depth="2">② 参加者向け：編集のルール</a>
+    <a href="#setup" data-depth="2">③ 岡崎さん向け：最初の1回だけの準備</a>
+    <a href="#daily" data-depth="2">④ ふだんの運用</a>
+    <a href="#faq" data-depth="2">⑤ よくある質問</a>
+    <a href="#terms" data-depth="2">⑥ 用語ミニ辞典</a>
+  </nav>
+
+  <h2 id="flow">① 全体の流れ</h2>
+  <p>このしおりは、こういうループで「いつも最新」を保ちます。</p>
+
+  <figure class="figure">
+    <svg viewBox="0 0 760 230" role="img" aria-label="編集→通知→再成形→閲覧のループ図">
+      <defs>
+        <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+          <path d="M0 0L9 4.5L0 9z" fill="currentColor"/>
+        </marker>
+      </defs>
+      <!-- 4 boxes -->
+      <g font-size="13" text-anchor="middle">
+        <rect x="8"   y="28" width="168" height="66" rx="10" fill="var(--surface-2)" stroke="currentColor" stroke-width="1.5"/>
+        <text x="92" y="55" fill="var(--text)" font-weight="700">参加者3人</text>
+        <text x="92" y="76" fill="var(--text-muted)">スプシを編集</text>
+
+        <rect x="204" y="28" width="168" height="66" rx="10" fill="var(--surface-2)" stroke="currentColor" stroke-width="1.5"/>
+        <text x="288" y="55" fill="var(--text)" font-weight="700">編集があった日</text>
+        <text x="288" y="76" fill="var(--text-muted)">岡崎さんへ通知メール</text>
+
+        <rect x="400" y="28" width="168" height="66" rx="10" fill="var(--accent-soft)" stroke="currentColor" stroke-width="1.5"/>
+        <text x="484" y="55" fill="var(--text)" font-weight="700">岡崎さん＋Claude</text>
+        <text x="484" y="76" fill="var(--text-muted)">サイトを再成形</text>
+
+        <rect x="596" y="28" width="156" height="66" rx="10" fill="var(--surface-2)" stroke="currentColor" stroke-width="1.5"/>
+        <text x="674" y="55" fill="var(--text)" font-weight="700">全員</text>
+        <text x="674" y="76" fill="var(--text-muted)">最新のしおりを見る</text>
+      </g>
+      <!-- arrows between -->
+      <g stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#ah)">
+        <line x1="178" y1="61" x2="202" y2="61"/>
+        <line x1="374" y1="61" x2="398" y2="61"/>
+        <line x1="570" y1="61" x2="594" y2="61"/>
+        <!-- loop back -->
+        <path d="M674 96 L674 175 L92 175 L92 96"/>
+      </g>
+      <text x="383" y="197" text-anchor="middle" font-size="12" fill="var(--text-faint)">また誰かが編集すると、ループが回る</text>
+    </svg>
+    <figcaption>編集 → 通知 → 再成形 → 閲覧 のくり返し。スプシを直すだけで全員が最新を見られる。</figcaption>
+  </figure>
+
+  <div class="callout tip">
+    <span class="ico">✅</span>
+    <div class="body"><p><strong>大事な分担：</strong>スプシの編集は<strong>3人みんな</strong>。サイトの再成形（作り直し）は<strong>岡崎さん×Claude</strong>。
+    だから他の2人はGitHubもClaudeも触らなくてOK。</p></div>
+  </div>
+
+  <h2 id="editors">② 参加者向け：編集のルール</h2>
+  <p>開くタブは2つだけ。あとは自由に書き込み・行追加してOKです。</p>
+
+  <dl class="defs">
+    <dt>「日程」タブ</dt>
+    <dd>時刻・場所・宿・予約状況・メモを編集。予定が増えたら<strong>行を足す</strong>。決まってない時刻は空欄でOK。</dd>
+    <dt>「未決事項」タブ</dt>
+    <dd>まだ決まってないこと（★）の一覧。決まったら <strong>状態</strong> を「未着手→相談中→決定」に変え、<strong>決定内容</strong> に結論を書く。</dd>
+  </dl>
+
+  <div class="callout warn">
+    <span class="ico">⚠️</span>
+    <div class="body">
+      <div class="label">これだけ守ってください</div>
+      <ol style="margin:.3em 0 0">
+        <li><strong>タブの名前を変えない</strong>（「日程」「未決事項」のまま）。</li>
+        <li><strong>各タブの1行目（見出し）を消さない・並べ替えない</strong>。列を<em>増やす</em>のはOK。</li>
+        <li><strong>パスポート番号・カード番号・自宅住所</strong>など、人に見られて困る情報は書かない（サイトは「リンクを知っている人は見られる」公開設定のため）。</li>
+      </ol>
+      <p style="margin:.5em 0 0" class="muted">※ ①②は、サイトが「タブ名」と「見出し名」を目印にデータを読むため。ここが変わると読めなくなります（gidで多少守ってありますが、念のため）。</p>
+    </div>
+  </div>
+
+  <h2 id="setup">③ 岡崎さん向け：最初の1回だけの準備</h2>
+  <p>ここは岡崎さんが一度だけやる作業です。終わったら、あとは「ふだんの運用」だけ。</p>
+
+  <ol class="steps">
+    <li><strong>テンプレをGoogleスプレッドシートに取り込む</strong><br>
+      <code>旅行データ_テンプレート.xlsx</code> を Googleドライブにアップ →
+      右クリック「アプリで開く → Googleスプレッドシート」。これで「つかいかた／日程／未決事項」の3タブができます。</li>
+
+    <li><strong>3人を編集者に招待＋全体を「閲覧可」に</strong><br>
+      右上「共有」→ 大野さん・千葉さんのGmailを追加して権限を<strong>「編集者」</strong>に。
+      さらに「一般的なアクセス」を<strong>「リンクを知っている全員：閲覧者」</strong>にする。<br>
+      <span class="muted">→ こうすると「編集できるのは3人だけ／サイトは誰でも読める」という安全な組み合わせになります。</span></li>
+
+    <li><strong>更新メール（通知）をオンにする</strong><br>
+      メニュー「ツール → 通知設定（通知ルール）」→<strong>「変更が行われたとき」→「メール - 1日1回のまとめ」</strong>を選んで保存。
+      → 誰かが編集した日に、岡崎さんへメールが届きます。</li>
+
+    <li><strong>スプレッドシートの「ID」と各タブの「gid」をClaudeに渡す</strong><br>
+      ブラウザのURLが、こういう形になっています。色の付いた2か所を伝えればOK：
+      <div class="code-block">
+        <span class="cap">スプレッドシートのURL</span>
+        <button class="copy-btn">コピー</button>
+        <pre><code>https://docs.google.com/spreadsheets/d/<b>{ここがID}</b>/edit#gid=<b>{ここがgid}</b></code></pre>
+      </div>
+      <span class="muted">「日程」タブを開いているときのgidと、「未決事項」タブを開いているときのgidは別物です。各タブを開いてURL末尾の <code>gid=…</code> をそれぞれ控えてください。</span></li>
+
+    <li><strong>Claudeが配線して公開</strong><br>
+      受け取ったID/gidをサイトの再成形処理に設定し、最新データを焼き込んで <span class="term" title="GitHubが無料でサイトを公開してくれるサービス。タスクスライムで使ったのと同じ">GitHub Pages</span> に公開。URL1つを3人に共有して完成。</li>
+  </ol>
+
+  <h2 id="daily">④ ふだんの運用</h2>
+  <ol class="steps">
+    <li>誰かがスプシを編集する（3人の誰でも）。</li>
+    <li>その日、岡崎さんに<strong>通知メール</strong>が届く。</li>
+    <li>岡崎さんがClaudeに <strong>「サイト更新して」</strong> と頼む。</li>
+    <li>Claudeがスプシを読み直して<strong>再成形</strong>→公開。数十秒〜数分で最新版に。</li>
+    <li>全員、同じURLを<strong>リロード</strong>すれば最新が見える。</li>
+  </ol>
+  <div class="callout tip">
+    <span class="ico">🔁</span>
+    <div class="body"><p>「更新はこまめに / 再成形はまとめて」でOK。毎回の編集ごとに作り直す必要はありません。出発が近づいたら頻度を上げましょう。</p></div>
+  </div>
+
+  <h2 id="faq">⑤ よくある質問</h2>
+  <div class="faq" data-single="true">
+    <div class="faq-item"><button class="faq-q" aria-expanded="false">スプシを直したのにサイトが変わらない<span class="faq-mark" aria-hidden="true">＋</span></button><div class="faq-a"><div class="faq-a-inner">サイトは「再成形」したときの内容で固定されています。岡崎さんがClaudeに「サイト更新して」と頼んで作り直すと反映されます。直しただけでは自動では変わりません（これは仕様です）。</div></div></div>
+    <div class="faq-item"><button class="faq-q" aria-expanded="false">タブの名前を変えてしまった<span class="faq-mark" aria-hidden="true">＋</span></button><div class="faq-a"><div class="faq-a-inner">元の名前（日程／未決事項）に戻せばOK。タブの中身（gid）を目印にしているので多くの場合は耐えますが、念のため名前は変えないのが安全です。</div></div></div>
+    <div class="faq-item"><button class="faq-q" aria-expanded="false">列を増やしたい／減らしたい<span class="faq-mark" aria-hidden="true">＋</span></button><div class="faq-a"><div class="faq-a-inner">増やすのは自由です（サイトは見出し名で読むため）。ただし<strong>既存の見出しは消さない・名前を変えない</strong>でください。新しい列をサイトに表示したいときは、岡崎さん経由でClaudeに伝えてください。</div></div></div>
+    <div class="faq-item"><button class="faq-q" aria-expanded="false">編集する人を増やしたい<span class="faq-mark" aria-hidden="true">＋</span></button><div class="faq-a"><div class="faq-a-inner">「共有」からその人のGmailを「編集者」で追加すればOK。サイト側の設定変更は不要です。</div></div></div>
+    <div class="faq-item"><button class="faq-q" aria-expanded="false">機微な情報（カード番号など）はどこに書けばいい？<span class="faq-mark" aria-hidden="true">＋</span></button><div class="faq-a"><div class="faq-a-inner">このスプシ／サイトには書かないでください。サイトは「リンクを知っている人は見られる」公開状態です。お金や本人確認の情報は、LINE等の身内だけのやり取りで共有を。</div></div></div>
+  </div>
+
+  <h2 id="terms">⑥ 用語ミニ辞典</h2>
+  <dl class="defs">
+    <dt>再成形（さいせいけい）</dt>
+    <dd>スプレッドシートの最新データを読んで、サイトを作り直すこと。岡崎さん×Claudeが行う。</dd>
+    <dt>gid（ジー・アイ・ディー）</dt>
+    <dd>スプレッドシートの「タブ1枚ごとの番号」。URLの末尾 <code>gid=…</code> に出る。タブ名を変えても番号は変わらないので、目印に使う。</dd>
+    <dt>閲覧者／編集者</dt>
+    <dd>Google共有の権限。<strong>閲覧者</strong>＝見るだけ、<strong>編集者</strong>＝書き込める。今回は「全体は閲覧者・3人だけ編集者」。</dd>
+    <dt>GitHub Pages</dt>
+    <dd>GitHubが無料でサイトを公開してくれる仕組み。タスクスライムで使ったのと同じ。URL1つで全員に共有できる。</dd>
+  </dl>
+
+  <div class="footer no-print">
+    <p>アメリカ旅行しおり（2026年10月）｜ <a href="index.html">しおり本体へ戻る</a></p>
+  </div>
+
+</main>
+
+<button class="to-top" aria-label="ページ先頭へ戻る" hidden>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- ===== EFFECTIVE-JS:START ===== （共通の動き：テーマ切替・タブ・コピー。build_vault.pyが抜き出します）-->
+<script>
+(function(){
+  // --- ダーク/ライト切替（前回の選択を記憶） ---
+  var root=document.documentElement;
+  function applyTheme(t){ root.setAttribute('data-theme',t);
+    var b=document.getElementById('themeToggle'); if(b){ b.textContent = t==='dark' ? '☀️ ライト' : '🌙 ダーク'; } }
+  var saved=null; try{ saved=localStorage.getItem('eh-theme'); }catch(e){}
+  if(!saved){ saved=(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches)?'dark':'light'; }
+  applyTheme(saved);
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('#themeToggle'); if(!t) return;
+    var cur=root.getAttribute('data-theme')==='dark'?'light':'dark';
+    applyTheme(cur); try{ localStorage.setItem('eh-theme',cur); }catch(e){}
+  });
+  // --- タブ（イベント委譲：後から追加された部品でも動く） ---
+  document.addEventListener('click',function(e){
+    var tab=e.target.closest('.tab'); if(!tab) return;
+    var wrap=tab.closest('.tabs'); if(!wrap) return;
+    wrap.querySelectorAll('.tab').forEach(function(b){ b.setAttribute('aria-selected', b===tab?'true':'false'); });
+    var id=tab.getAttribute('data-tab');
+    wrap.querySelectorAll('.tabpanel').forEach(function(p){ p.hidden = (p.getAttribute('data-panel')!==id); });
+  });
+  // --- コピーボタン（コードだけコピー） ---
+  document.addEventListener('click',function(e){
+    var btn=e.target.closest('.copy-btn'); if(!btn) return;
+    var block=btn.closest('.code-block'); var code=block&&block.querySelector('code'); if(!code) return;
+    var text=code.innerText;
+    function done(){ var o=btn.textContent; btn.textContent='✓ コピー済'; btn.classList.add('done');
+      setTimeout(function(){ btn.textContent=o; btn.classList.remove('done'); },1400); }
+    if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(done,function(){fallback(text,done);}); }
+    else{ fallback(text,done); }
+  });
+  function fallback(text,cb){ var ta=document.createElement('textarea'); ta.value=text; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select(); try{ document.execCommand('copy'); cb&&cb(); }catch(e){} document.body.removeChild(ta); }
+})();
+
+/* ===================================================================== */
+/* ===== v2: ここから下が v2 で追加した動き（v1は上で温存済み・独立IIFE） ===== */
+/* ===================================================================== */
+
+/* ===== v2: データ表示（貢献ヒートマップ） ===== */
+(function(){
+  // 初期化が要る部品なので DOMContentLoaded を待つ（要素が先に無くても落ちないよう両対応）
+  function fillHeat(){
+    var box=document.getElementById('demoHeat');
+    if(!box||box.dataset.filled)return; box.dataset.filled='1';
+    var today=new Date(), frag=document.createDocumentFragment();
+    for(var i=70;i>=0;i--){
+      var d=new Date(today); d.setDate(today.getDate()-i);
+      var lv=Math.floor(Math.random()*5); // 0〜4（実運用は data から組み立てる）
+      var c=document.createElement('span');
+      c.className='cell'+(lv?(' h'+lv):'');
+      c.title=d.toLocaleDateString('ja-JP')+'：'+lv+'件';
+      frag.appendChild(c);
+    }
+    box.appendChild(frag);
+  }
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded',fillHeat); }
+  else{ fillHeat(); }
+})();
+
+/* ===== v2: フィードバック/状態（アラートバナーの×・トースト） ===== */
+// 委譲：×ボタンで一番近いバナーを閉じる（後から増えた物も動く）
+document.addEventListener('click',function(e){
+  var btn=e.target.closest('[data-close-banner]');
+  if(!btn)return;
+  var b=btn.closest('.banner');
+  if(b)b.remove();
+});
+// 画面隅に一時表示する通知ヘルパ。何度呼んでも安全（冪等）。
+function showToast(msg,type){
+  var stack=document.querySelector('.toast-stack');
+  if(!stack){stack=document.createElement('div');stack.className='toast-stack';document.body.appendChild(stack);}
+  var icons={ok:'M5 13l4 4L19 7',warn:'M12 9v4m0 4h.01',danger:'M6 6l12 12M18 6L6 18',info:'M12 8h.01M11 12h1v4h1'};
+  var t=document.createElement('div');
+  t.className='toast'+(type?(' '+type):'');
+  t.setAttribute('role','status');
+  t.innerHTML='<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="'+(icons[type]||icons.info)+'"/></svg><span></span>';
+  t.querySelector('span').textContent=msg;
+  stack.appendChild(t);
+  // 二重削除を防ぐガード付きの除去。reduced-motionでanimationが無効でもフォールバックtimerで確実に消える。
+  var removed=false;
+  function remove(){if(removed)return;removed=true;if(t.parentNode)t.remove();}
+  setTimeout(function(){
+    t.classList.add('leaving');
+    t.addEventListener('animationend',remove,{once:true});
+    setTimeout(remove,500);
+  },2600);
+}
+
+/* ===== v2: 動く部品（FAQ／電卓／フィルタ／ソート／スイッチ／レンジ／チェックリスト／ビフォーアフター） ===== */
+// FAQアコーディオン：質問クリックで開閉（イベント委譲・後から追加された部品でも動く）
+document.addEventListener('click',function(e){
+  var q=e.target.closest('.faq-q'); if(!q) return;
+  var item=q.closest('.faq-item'), faq=q.closest('.faq'), ans=item&&item.querySelector('.faq-a');
+  if(!ans) return;
+  var open=q.getAttribute('aria-expanded')==='true';
+  // data-single="true" のときは、開く前に他を閉じる（同時に1つだけ）
+  if(faq&&faq.getAttribute('data-single')==='true'&&!open){
+    faq.querySelectorAll('.faq-q[aria-expanded="true"]').forEach(function(o){
+      o.setAttribute('aria-expanded','false');
+      var oa=o.closest('.faq-item').querySelector('.faq-a'); if(oa) oa.style.maxHeight='0';
+    });
+  }
+  q.setAttribute('aria-expanded', open?'false':'true');
+  ans.style.maxHeight = open ? '0' : ans.scrollHeight+'px';
+});
+// 画面回転や文字の再流し込みで高さがズレないよう、開いているパネルだけ測り直す（要素ゼロでも落ちない）
+window.addEventListener('resize',function(){
+  document.querySelectorAll('.faq-q[aria-expanded="true"]').forEach(function(q){
+    var ans=q.closest('.faq-item')&&q.closest('.faq-item').querySelector('.faq-a');
+    if(ans) ans.style.maxHeight=ans.scrollHeight+'px';
+  });
+});
+
+// ライブ電卓：入力→即計算（イベント委譲）。data-calc で計算式を切り替え
+document.addEventListener('input',function(e){
+  var inp=e.target.closest('.calc [data-calc-in]'); if(!inp) return;
+  var calc=inp.closest('.calc'), out=calc&&calc.querySelector('[data-calc-out]'); if(!out) return;
+  var n=parseFloat(inp.value)||0, type=calc.getAttribute('data-calc'), r;
+  if(type==='tax'){ r=Math.round(n*1.1); }      // 税抜→税込（10%）
+  else{ r=n; }                                   // 種類が未指定ならそのまま
+  out.textContent=r.toLocaleString();            // 3桁区切りで表示
+});
+
+// フィルタ検索：入力でリストを絞り込み（テキスト＋data-keywords を対象に部分一致）
+document.addEventListener('input',function(e){
+  var inp=e.target.closest('.filter input'); if(!inp) return;
+  var box=inp.closest('.filter'), items=box.querySelectorAll('.filter-list li');
+  var q=inp.value.trim().toLowerCase(), shown=0;
+  items.forEach(function(li){
+    var hay=((li.getAttribute('data-keywords')||'')+' '+li.textContent).toLowerCase();
+    var hit=hay.indexOf(q)>-1; li.hidden=!hit; if(hit) shown++;
+  });
+  box.classList.toggle('is-empty', shown===0);  // 0件なら案内を表示
+});
+
+// ソート可能表：th クリック／Enter・Space で昇順⇄降順。data-sort=number は数値として比較
+// （th はネイティブの列見出しのまま＝aria-sort がそのまま読み上げられる。role は付けない）
+document.addEventListener('click',function(e){ sortableGo(e.target.closest('.sortable th')); });
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Enter'&&e.key!==' ') return;
+  var th=e.target.closest('.sortable th'); if(!th) return; e.preventDefault(); sortableGo(th);
+});
+function sortableGo(th){
+  if(!th) return;
+  var table=th.closest('table'), tbody=table.querySelector('tbody');
+  var ths=Array.prototype.slice.call(th.parentNode.children), idx=ths.indexOf(th);
+  var asc=th.getAttribute('aria-sort')!=='ascending';  // 同じ列をもう一度押すと逆順
+  ths.forEach(function(o){ o.setAttribute('aria-sort','none'); var m=o.querySelector('.sort-mark'); if(m) m.textContent='↕'; });
+  th.setAttribute('aria-sort', asc?'ascending':'descending');
+  var mk=th.querySelector('.sort-mark'); if(mk) mk.textContent= asc?'▲':'▼';
+  var num=th.getAttribute('data-sort')==='number';
+  var rows=Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+  rows.sort(function(a,b){
+    var x=a.children[idx].textContent.trim(), y=b.children[idx].textContent.trim();
+    if(num){ x=parseFloat(x.replace(/[^0-9.\-]/g,''))||0; y=parseFloat(y.replace(/[^0-9.\-]/g,''))||0; return asc?x-y:y-x; }
+    return asc? x.localeCompare(y,'ja') : y.localeCompare(x,'ja');
+  });
+  rows.forEach(function(r){ tbody.appendChild(r); });  // 並べ替えた順に入れ直す
+}
+
+// トグルスイッチ：クリック／Space・Enter で aria-checked を反転（イベント委譲）
+function switchToggle(sw){ sw.setAttribute('aria-checked', sw.getAttribute('aria-checked')==='true'?'false':'true'); }
+document.addEventListener('click',function(e){ var sw=e.target.closest('.switch'); if(sw) switchToggle(sw); });
+document.addEventListener('keydown',function(e){
+  var sw=e.target.closest('.switch'); if(!sw) return;
+  if(e.key===' '||e.key==='Enter'){ e.preventDefault(); switchToggle(sw); }  // ページスクロール防止
+});
+
+// レンジ即値：スライダーを動かすと隣の数字を即更新（イベント委譲・3桁区切り＋単位）
+document.addEventListener('input',function(e){
+  var r=e.target.closest('.rng input[type="range"]'); if(!r) return;
+  var out=r.closest('.rng').querySelector('.rng-out'); if(!out) return;
+  out.textContent=Number(r.value).toLocaleString()+'円';
+});
+
+// 保存チェックリスト：チェックを localStorage に保存し、読み込み時に復元（data-key 単位）
+document.addEventListener('change',function(e){
+  var cb=e.target.closest('.checklist input[type="checkbox"]'); if(!cb) return;
+  var list=cb.closest('.checklist'), key=list&&list.getAttribute('data-key'); if(!key) return;
+  var boxes=Array.prototype.slice.call(list.querySelectorAll('input[type="checkbox"]'));
+  var state=boxes.map(function(b){ return b.checked?1:0; });
+  try{ localStorage.setItem('checklist-'+key, JSON.stringify(state)); }catch(err){}
+});
+// 復元（要素が無くても落ちないようガード・二重初期化も防止）
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.checklist[data-key]').forEach(function(list){
+    if(list.dataset.clInit) return; list.dataset.clInit='1';
+    var key=list.getAttribute('data-key'), boxes=list.querySelectorAll('input[type="checkbox"]'), saved=null;
+    try{ saved=JSON.parse(localStorage.getItem('checklist-'+key)); }catch(err){}
+    if(saved&&saved.length===boxes.length){ boxes.forEach(function(b,i){ b.checked=!!saved[i]; }); }
+  });
+});
+
+// ビフォーアフター：つまみをドラッグ／矢印キーで左右を比較（画像なし・色と文字だけで成立）
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.ba').forEach(function(ba){
+    if(ba.dataset.baInit) return; ba.dataset.baInit='1';  // 二重初期化を防ぐ
+    var before=ba.querySelector('.ba-before'), div=ba.querySelector('.ba-divider'), handle=ba.querySelector('.ba-handle'), dragging=false;
+    if(!before||!div||!handle) return;
+    function setPct(p){ p=Math.max(0,Math.min(100,p));
+      before.style.clipPath='inset(0 '+(100-p)+'% 0 0)'; div.style.left=p+'%'; handle.style.left=p+'%';
+      var rp=Math.round(p);
+      handle.setAttribute('aria-valuenow', rp);
+      handle.setAttribute('aria-valuetext', '左 '+rp+'%');  // 読み上げ用の言葉も更新
+    }
+    function fromEvent(ev){ var rect=ba.getBoundingClientRect(); setPct((ev.clientX-rect.left)/rect.width*100); }
+    ba.addEventListener('pointerdown',function(ev){ dragging=true; ba.setPointerCapture&&ba.setPointerCapture(ev.pointerId); fromEvent(ev); });
+    ba.addEventListener('pointermove',function(ev){ if(dragging) fromEvent(ev); });
+    ba.addEventListener('pointerup',function(){ dragging=false; });
+    ba.addEventListener('pointercancel',function(){ dragging=false; });
+    handle.addEventListener('keydown',function(ev){
+      var cur=parseFloat(handle.getAttribute('aria-valuenow'))||50;
+      if(ev.key==='ArrowLeft'){ setPct(cur-5); ev.preventDefault(); }
+      else if(ev.key==='ArrowRight'){ setPct(cur+5); ev.preventDefault(); }
+    });
+  });
+});
+
+/* ===== v2: ナビ/構造（目次スクロールスパイ／トップへ戻る） ===== */
+// 目次スクロールスパイ：見出しが画面上部に来たら対応リンクを .current にする
+document.addEventListener('DOMContentLoaded',function(){
+  var tocs=document.querySelectorAll('.toc');
+  if(!tocs.length||!('IntersectionObserver' in window)) return; // 要素無し/未対応でも落ちない
+  tocs.forEach(function(toc){
+    var links=[].slice.call(toc.querySelectorAll('a[href^="#"]'));
+    if(!links.length) return;
+    var map={};
+    links.forEach(function(a){
+      var id=a.getAttribute('href').slice(1);
+      var el=id&&document.getElementById(id);
+      if(el) map[id]=a;
+    });
+    if(!Object.keys(map).length) return; // リンク先が1つも無ければ何もしない
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          links.forEach(function(a){a.classList.remove('current');});
+          var a=map[en.target.id]; if(a) a.classList.add('current');
+        }
+      });
+    },{rootMargin:'-72px 0px -70% 0px'}); // 上部72px付近に来た見出しを現在地とみなす
+    Object.keys(map).forEach(function(id){io.observe(document.getElementById(id));});
+  });
+});
+
+// トップへ戻る：300pxより下で .show、クリックで先頭へ
+document.addEventListener('DOMContentLoaded',function(){
+  var top=document.querySelector('.to-top');
+  if(!top) return; // 要素が無ければ何もしない
+  top.hidden=false; // JSが動く環境でだけ表示対象にする
+  var onScroll=function(){
+    top.classList.toggle('show',(window.scrollY||window.pageYOffset)>300);
+  };
+  onScroll();
+  window.addEventListener('scroll',onScroll,{passive:true});
+  top.addEventListener('click',function(){
+    var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+    window.scrollTo({top:0,behavior:reduce?'auto':'smooth'}); // 控えめ設定なら一瞬で
+  });
+});
+
+/* ===== v2: 仕上げ/品質（読み込みフェードイン） ===== */
+(function(){
+  // JSが動いた印を <html> に付ける（この瞬間まで .fade-in は見えたまま＝JS無し/失敗でも本文は消えない）
+  var root=document.documentElement;
+  root.classList.add('js-ready');
+  function showAll(){ document.querySelectorAll('.fade-in').forEach(function(el){ el.classList.add('is-in'); }); }
+  if(!('IntersectionObserver' in window)){ showAll(); return; }
+  try{
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('is-in'); io.unobserve(en.target); } });
+    },{threshold:.12, rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.fade-in:not(.is-in)').forEach(function(el){ io.observe(el); });
+  }catch(e){ showAll(); }
+})();
+
+/* ===================================================================== */
+/* ===== v2 アーキタイプの動き（8個・独立IIFE／要素ガード付き・冪等） ===== */
+/* 既存JS（テーマ/タブ/コピー＋v2部品）と衝突しない独立リスナーで張る。  */
+/* ===================================================================== */
+
+/* ===== v2 アーキタイプ: スライドデッキ ===== */
+(function(){
+  function initDeck(){
+    var deck=document.getElementById('deckDemo');if(!deck||deck.dataset.deckInit)return;deck.dataset.deckInit='1';
+    var slides=[].slice.call(deck.querySelectorAll('.slide'));
+    var cur=deck.querySelector('.count .cur'), tot=deck.querySelector('.count .tot');
+    var dotsWrap=deck.querySelector('.dots'), i=0;
+    if(tot)tot.textContent=slides.length;
+    // ドットを枚数ぶん生成（クリックでその枚へ＝ドラッグ無しの代替操作）
+    var dots=slides.map(function(s,idx){
+      var b=document.createElement('button');
+      b.type='button';b.className='dot';b.setAttribute('data-go',idx);
+      b.setAttribute('aria-label',(idx+1)+'枚目へ');
+      if(dotsWrap)dotsWrap.appendChild(b);return b;
+    });
+    function show(k){
+      i=(k+slides.length)%slides.length;
+      slides.forEach(function(s,idx){s.classList.toggle('active',idx===i);});
+      dots.forEach(function(d,idx){d.classList.toggle('on',idx===i);});
+      if(cur)cur.textContent=i+1;
+    }
+    deck.addEventListener('click',function(e){
+      var nav=e.target.closest('[data-nav]');
+      if(nav){show(i+parseInt(nav.getAttribute('data-nav'),10));return;}
+      var go=e.target.closest('[data-go]');
+      if(go){show(parseInt(go.getAttribute('data-go'),10));return;}
+      deck.focus();
+    });
+    deck.addEventListener('keydown',function(e){
+      if(e.key==='ArrowRight'){e.preventDefault();show(i+1);}
+      else if(e.key==='ArrowLeft'){e.preventDefault();show(i-1);}
+    });
+    show(0);
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',initDeck);}else{initDeck();}
+})();
+
+/* ===== v2 アーキタイプ: クリックで開くフローチャート（イベント委譲・初期化不要） ===== */
+document.addEventListener('click',function(e){
+  var s=e.target.closest('.flow .step');if(!s)return;
+  var det=s.nextElementSibling;
+  if(det&&det.classList.contains('arrow'))det=null;
+  if(!det||!det.classList.contains('detail'))return;
+  var open=det.classList.toggle('open');
+  s.setAttribute('aria-expanded',open?'true':'false');
+});
+
+/* ===== v2 アーキタイプ: ドラッグ並べ替え（.reorder） ===== */
+// 元コードのドラッグ処理を忠実に再現し、キーボード/ボタン代替を追加。
+// .reorder ごとに独立リスナー（既存JSと衝突しない）。冪等。
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.reorder').forEach(function(root){
+    if(root.dataset.reorderInit) return; root.dataset.reorderInit = '1';
+    var list = root.querySelector('.sortlist'); if(!list) return;
+    var dragging = null;
+
+    // --- マウス／ドラッグ（元の挙動そのまま）---
+    list.addEventListener('dragstart', function(e){
+      var li = e.target.closest('li'); if(!li) return;
+      dragging = li;
+      setTimeout(function(){ li.classList.add('dragging'); }, 0);
+      if(e.dataTransfer) e.dataTransfer.effectAllowed = 'move';
+    });
+    list.addEventListener('dragend', function(){
+      if(dragging) dragging.classList.remove('dragging');
+      dragging = null; refreshBtns();
+    });
+    list.addEventListener('dragover', function(e){
+      e.preventDefault(); if(!dragging) return;
+      var after = getAfter(e.clientY);
+      if(after == null) list.appendChild(dragging); else list.insertBefore(dragging, after);
+    });
+    function getAfter(y){
+      var els = [].slice.call(list.querySelectorAll('li:not(.dragging)'));
+      return els.reduce(function(c, ch){
+        var b = ch.getBoundingClientRect();
+        var o = y - b.top - b.height/2;
+        if(o < 0 && o > c.offset) return {offset:o, el:ch};
+        return c;
+      }, {offset:-Infinity, el:null}).el;
+    }
+
+    // --- キーボード代替（Enter/Spaceで掴む→↑↓で動かす→Enterで確定／Escで戻す）---
+    var picked = null, savedHTML = null;
+    list.addEventListener('keydown', function(e){
+      var li = e.target.closest('li'); if(!li) return;
+      if(!picked && (e.key === 'Enter' || e.key === ' ')){
+        e.preventDefault(); picked = li; savedHTML = list.innerHTML;
+        li.classList.add('picked'); li.setAttribute('aria-grabbed','true');
+      } else if(picked === li && (e.key === 'ArrowUp' || e.key === 'ArrowDown')){
+        e.preventDefault();
+        if(e.key === 'ArrowUp' && li.previousElementSibling) list.insertBefore(li, li.previousElementSibling);
+        if(e.key === 'ArrowDown' && li.nextElementSibling) list.insertBefore(li.nextElementSibling, li);
+        li.focus(); refreshBtns();
+      } else if(picked === li && (e.key === 'Enter' || e.key === ' ')){
+        e.preventDefault(); drop();
+      } else if(picked && e.key === 'Escape'){
+        e.preventDefault(); list.innerHTML = savedHTML; bindBtns(); picked = null;
+      }
+    });
+    function drop(){ if(!picked) return; picked.classList.remove('picked'); picked.removeAttribute('aria-grabbed'); picked.focus(); picked = null; }
+
+    // --- ▲▼ボタン代替（マウスドラッグが難しい人向け）---
+    function bindBtns(){
+      list.querySelectorAll('li').forEach(function(li){
+        if(li.querySelector('.movebtns')) return;
+        var wrap = document.createElement('span'); wrap.className = 'movebtns';
+        var up = document.createElement('button'); up.type='button'; up.textContent='▲'; up.setAttribute('aria-label','上へ移動');
+        var dn = document.createElement('button'); dn.type='button'; dn.textContent='▼'; dn.setAttribute('aria-label','下へ移動');
+        up.addEventListener('click', function(){ if(li.previousElementSibling){ list.insertBefore(li, li.previousElementSibling); refreshBtns(); up.focus(); } });
+        dn.addEventListener('click', function(){ if(li.nextElementSibling){ list.insertBefore(li.nextElementSibling, li); refreshBtns(); dn.focus(); } });
+        wrap.appendChild(up); wrap.appendChild(dn); li.appendChild(wrap);
+      });
+    }
+    function refreshBtns(){
+      var items = list.querySelectorAll('li');
+      items.forEach(function(li, i){
+        var b = li.querySelectorAll('.movebtns button');
+        if(b.length === 2){ b[0].disabled = (i === 0); b[1].disabled = (i === items.length-1); }
+      });
+    }
+    bindBtns(); refreshBtns();
+  });
+});
+
+/* ===== v2 アーキタイプ: ドラッグ仕分け盤／かんばん（.triage） ===== */
+// 元コードのドラッグ＆Markdownコピーを忠実に再現し、キーボード代替を追加。
+// .triage ごとに独立リスナー。既存JSと衝突しない。冪等。
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.triage').forEach(function(root){
+    if(root.dataset.triageInit) return; root.dataset.triageInit = '1';
+    var dragging = null;
+    var cols = [].slice.call(root.querySelectorAll('.col'));
+
+    // --- マウス／ドラッグ（元の挙動そのまま）---
+    root.addEventListener('dragstart', function(e){
+      var t = e.target.closest('.ticket'); if(!t) return;
+      dragging = t;
+      setTimeout(function(){ t.classList.add('dragging'); }, 0);
+    });
+    root.addEventListener('dragend', function(){
+      if(dragging) dragging.classList.remove('dragging');
+      dragging = null;
+    });
+    cols.forEach(function(col){
+      col.addEventListener('dragover', function(e){ e.preventDefault(); col.classList.add('over'); });
+      col.addEventListener('dragleave', function(){ col.classList.remove('over'); });
+      col.addEventListener('drop', function(e){ e.preventDefault(); col.classList.remove('over'); if(dragging) col.appendChild(dragging); });
+    });
+
+    // --- キーボード代替（Enter/Spaceで掴む→←→で列移動→Enterで確定／Escで解除）---
+    var picked = null, colIdx = 0;
+    root.addEventListener('keydown', function(e){
+      var t = e.target.closest('.ticket'); if(!t && !picked) return;
+      if(!picked && (e.key === 'Enter' || e.key === ' ')){
+        e.preventDefault(); picked = t; colIdx = cols.indexOf(t.closest('.col'));
+        t.classList.add('picked'); t.setAttribute('aria-grabbed','true'); markTarget();
+      } else if(picked && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')){
+        e.preventDefault();
+        colIdx += (e.key === 'ArrowRight' ? 1 : -1);
+        if(colIdx < 0) colIdx = 0; if(colIdx > cols.length-1) colIdx = cols.length-1;
+        markTarget();
+      } else if(picked && (e.key === 'Enter' || e.key === ' ')){
+        e.preventDefault(); cols[colIdx].appendChild(picked); clearPick(); picked.focus();
+      } else if(picked && e.key === 'Escape'){
+        e.preventDefault(); var p = picked; clearPick(); p.focus();
+      }
+    });
+    function markTarget(){ cols.forEach(function(c,i){ c.classList.toggle('picktarget', i === colIdx && !!picked); }); }
+    function clearPick(){ if(picked){ picked.classList.remove('picked'); picked.removeAttribute('aria-grabbed'); } picked = null; cols.forEach(function(c){ c.classList.remove('picktarget'); }); }
+
+    // --- Markdownでコピー（元コードそのまま）---
+    var btn = root.querySelector('[data-copy]');
+    var msg = root.querySelector('.ctl .msg');
+    if(btn){
+      btn.addEventListener('click', function(){
+        var md = '';
+        cols.forEach(function(col){
+          md += '## ' + col.getAttribute('data-col') + '\n';
+          col.querySelectorAll('.ticket').forEach(function(t){ md += '- ' + t.textContent.trim() + '\n'; });
+          md += '\n';
+        });
+        function done(){ if(msg){ msg.textContent = 'コピーしました'; setTimeout(function(){ msg.textContent = ''; }, 1500); } }
+        if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(md).then(done, done); } else { done(); }
+      });
+    }
+  });
+});
+
+/* ===== v2 アーキタイプ: ライブ・サンドボックス（.sandbox） ===== */
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.sandbox').forEach(function(root){
+    var prev=root.querySelector('#sbxPrev'); if(!prev||prev.dataset.sbxReady)return; prev.dataset.sbxReady='1';
+    var pad=root.querySelector('#sbxPad'),bd=root.querySelector('#sbxBd'),sh=root.querySelector('#sbxSh'),out=root.querySelector('#sbxPadOut');
+    if(!pad||!bd||!sh)return;
+    function apply(){
+      prev.style.padding=pad.value+'px';
+      prev.style.border=bd.checked?'1px solid var(--border-strong)':'none';
+      prev.style.boxShadow=sh.checked?'var(--shadow)':'none';
+      if(out)out.textContent=pad.value+'px';
+    }
+    pad.addEventListener('input',apply);
+    bd.addEventListener('change',apply);
+    sh.addEventListener('change',apply);
+    apply();
+  });
+});
+
+/* ===== v2 アーキタイプ: ライブ・プロンプトエディタ（.liveedit） ===== */
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.liveedit').forEach(function(root){
+    var ta=root.querySelector('#ledTpl'); if(!ta||ta.dataset.ledReady)return; ta.dataset.ledReady='1';
+    var prev=root.querySelector('#ledPrev'),count=root.querySelector('#ledCount');
+    if(!prev||!count)return;
+    var samples=[
+      {name:'田中',topic:'請求の重複',action:'本日中に返金'},
+      {name:'佐藤',topic:'ログイン不可',action:'再設定リンクを送付'},
+      {name:'鈴木',topic:'',action:''}
+    ];
+    function esc(s){return s.replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
+    function render(){
+      var tpl=ta.value;
+      prev.innerHTML=samples.map(function(s){
+        var out=esc(tpl).replace(/\{\{(\w+)\}\}/g,function(m,k){
+          return s[k]?'<span class="led-slot">'+esc(s[k])+'</span>':'<span class="led-empty">'+esc(k)+'</span>';
+        });
+        return '<div class="led-row">'+out.replace(/\n/g,'<br>')+'</div>';
+      }).join('');
+      count.textContent='雛形 '+tpl.length+'文字 ／ 約'+Math.ceil(tpl.length/2)+'トークン';
+    }
+    ta.addEventListener('input',render);
+    var copy=root.querySelector('#ledCopy'),msg=root.querySelector('#ledMsg');
+    if(copy){copy.addEventListener('click',function(){
+      function done(){if(!msg)return;msg.textContent='コピーしました';setTimeout(function(){msg.textContent='';},1500);}
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(ta.value).then(done,done);}else{done();}
+    });}
+    render();
+  });
+});
+
+/* ===== v2 アーキタイプ: パラメータで動く/触れるSVG図（.livefig） ===== */
+(function(){
+  function initLiveFig(){
+    var svg=document.getElementById('lf-svg');if(!svg||svg.dataset.lfInit)return;svg.dataset.lfInit='1';
+    var statEl=document.getElementById('lf-stat'),legEl=document.getElementById('lf-legend');
+    // 担当ごとの色見本（テーマ追従。CSS変数を実際の色に解決して使う）
+    var palVars=['--accent','--info','--ok','--warn','--accent-hover','--danger','--text-muted','--border-strong'];
+    function pal(){var cs=getComputedStyle(document.body);return palVars.map(function(v){return cs.getPropertyValue(v).trim()||'currentColor';});}
+    var keys=[];for(var i=0;i<24;i++)keys.push('k'+i); // 割り振る対象（鍵）
+    var nodes,prev={};
+    // 文字列→0〜1のばらけた値（図の角度決めに使う簡易ハッシュ）
+    function hash(s){var h=2166136261;for(var i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}h^=h>>>13;h=Math.imul(h,0x5bd1e995);h^=h>>>15;return (h>>>0)/4294967295;}
+    function ang(s){return hash(s)*Math.PI*2;}
+    var cx=140,cy=118,R=86;
+    function xy(a,r){return [cx+r*Math.cos(a-Math.PI/2),cy+r*Math.sin(a-Math.PI/2)];}
+    // その鍵を担当するサーバ（リング上で時計回りに一番近い先）
+    function ownerOf(ka){var best=0,bd=Infinity;nodes.forEach(function(n,idx){var d=(ang('node:'+n)-ka+Math.PI*2)%(Math.PI*2);if(d<bd){bd=d;best=idx;}});return best;}
+    function reset(){nodes=['S1','S2','S3','S4'];prev={};render(true);}
+    function render(init){
+      var c=pal();
+      var s='<circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="currentColor" stroke-opacity="0.18" stroke-width="10"/>';
+      var moved=0,total=0,owner={};
+      keys.forEach(function(k){var ka=ang('key:'+k);var oi=ownerOf(ka);owner[k]=oi;total++;if(!init&&prev[k]!==undefined&&prev[k]!==oi)moved++;var p=xy(ka,R);s+='<circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="4" fill="'+c[oi%c.length]+'"/>';});
+      nodes.forEach(function(n,idx){var na=ang('node:'+n);var p=xy(na,R);s+='<circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="8" fill="'+c[idx%c.length]+'"/>';var lp=xy(na,R+19);s+='<text x="'+lp[0].toFixed(1)+'" y="'+(lp[1]+4).toFixed(1)+'" text-anchor="middle" font-size="10" fill="currentColor">'+n+'</text>';});
+      svg.innerHTML=s;
+      statEl.textContent='サーバ '+nodes.length+' ／ 鍵 '+keys.length+(init?'':'　動いた鍵: '+moved+'／'+total+'（'+Math.round(moved/total*100)+'%）');
+      legEl.innerHTML=nodes.map(function(n,idx){return '<span class="lf-chip" style="background:'+c[idx%c.length]+'">'+n+'</span>';}).join('');
+      prev=owner;
+    }
+    document.getElementById('lf-add').addEventListener('click',function(){nodes.push('S'+(nodes.length+1));render(false);});
+    document.getElementById('lf-rm').addEventListener('click',function(){if(nodes.length>1){nodes.pop();render(false);}});
+    document.getElementById('lf-reset').addEventListener('click',reset);
+    reset();
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',initLiveFig);}else{initLiveFig();}
+})();
+
+/* ===== v2 アーキタイプ: 設定エディタ（.configedit） ===== */
+(function(){
+  function initConfigEdit(){
+    var st=document.getElementById('ce-stage');if(!st||st.dataset.ceInit)return;st.dataset.ceInit='1';
+    var warn=document.getElementById('ce-warn');
+    var init={}; // 最初のON/OFFを覚えておき、差分の基準にする
+    st.querySelectorAll('[data-flag]').forEach(function(c){init[c.getAttribute('data-flag')]=c.checked;});
+    function check(){
+      var map={};
+      st.querySelectorAll('[data-flag]').forEach(function(c){map[c.getAttribute('data-flag')]=c.checked;});
+      var bad=false;
+      // 「前提(data-needs)が必要なのに、その前提がOFFのまま自分がON」を矛盾とみなす
+      st.querySelectorAll('[data-needs]').forEach(function(c){if(c.checked&&!map[c.getAttribute('data-needs')])bad=true;});
+      warn.classList.toggle('show',bad);
+    }
+    st.addEventListener('change',check); // イベント委譲：どのトグルでも1つのリスナーで拾う
+    document.getElementById('ce-diff').addEventListener('click',function(){
+      var d=[];
+      st.querySelectorAll('[data-flag]').forEach(function(c){var f=c.getAttribute('data-flag');if(c.checked!==init[f])d.push('"'+f+'": '+c.checked);});
+      var txt=d.length?'{\n  '+d.join(',\n  ')+'\n}':'(変更なし)';
+      var msg=document.getElementById('ce-msg');
+      function done(){msg.textContent='コピーしました';setTimeout(function(){msg.textContent='';},1500);}
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,done);}else done();
+    });
+    check();
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',initConfigEdit);}else{initConfigEdit();}
+})();
+
+/* ===================================================================== */
+/* ===== v3 マーケ: ここから下が v3 マーケ部品の動き（独立IIFE・非衝突） ===== */
+/* ===================================================================== */
+
+/* ===== v3 マーケ: プラン診断クイズ ===== */
+/* 独立IIFE・イベント委譲・冪等。要素が無くても落ちない。
+   JSが読み込めた時だけ .js-on を付け、フォールバックのプラン一覧を畳む。 */
+(function(){
+  var PLAN={free:{name:'Free プラン',msg:'まずは無料で試すのが◎。基本機能だけで十分なあなたに。'},
+            pro:{name:'Pro プラン',msg:'毎日ヘビーに使うなら Pro。大きな上限で快適に。'},
+            team:{name:'Team プラン',msg:'複数人で使うなら Team。共有と管理が一気に楽に。'}};
+  function mark(form){ if(form && !form.classList.contains('js-on')) form.classList.add('js-on'); }
+  // 初回表示時に、画面内の各クイズへ js-on を付ける（フォールバックを畳む）
+  function initAll(){ document.querySelectorAll('.mk-quiz').forEach(mark); }
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded',initAll); } else { initAll(); }
+
+  // 「結果を見る」委譲（後から増えた .mk-quiz でも動く）
+  document.addEventListener('click',function(e){
+    var go=e.target.closest('[data-quiz-go]'); if(!go) return;
+    var form=go.closest('.mk-quiz'); if(!form) return;
+    mark(form);
+    var out=form.querySelector('[data-quiz-result]'); if(!out) return;
+    // 各設問の選択を集計（data-plan の最多をおすすめに）
+    var tally={free:0,pro:0,team:0}, answered=0, groups={};
+    form.querySelectorAll('input[type="radio"]').forEach(function(r){ groups[r.name]=true; });
+    Object.keys(groups).forEach(function(n){
+      var sel=form.querySelector('input[name="'+n+'"]:checked');
+      if(sel){ answered++; var p=sel.getAttribute('data-plan'); if(tally[p]!=null) tally[p]++; }
+    });
+    var total=Object.keys(groups).length;
+    if(answered<total){ out.classList.remove('is-done'); out.textContent='未回答の質問があります。すべて選んでからもう一度お試しください。'; return; }
+    var best='free'; Object.keys(tally).forEach(function(k){ if(tally[k]>tally[best]) best=k; });
+    var p=PLAN[best];
+    out.classList.add('is-done');
+    out.innerHTML='<div class="pick-label">あなたにおすすめ</div><div class="pick-name"></div><div class="pick-msg"></div>';
+    out.querySelector('.pick-name').textContent=p.name;
+    out.querySelector('.pick-msg').textContent=p.msg;
+  });
+})();
+
+/* ===== v3 マーケ: OS判定ダウンロード ===== */
+/* 独立IIFE・要素ガード・冪等。navigator から推定し、当たった側に .is-primary を付ける。
+   判定できない/JS無効なら何もしない＝両ボタン同等のまま（フォールバックで成立）。 */
+(function(){
+  function guessOS(){
+    var p=((navigator.userAgentData&&navigator.userAgentData.platform)||navigator.platform||navigator.userAgent||'').toLowerCase();
+    if(p.indexOf('mac')>-1||p.indexOf('iphone')>-1||p.indexOf('ipad')>-1) return 'mac';
+    if(p.indexOf('win')>-1) return 'win';
+    return null; // 不明（Linux等）は強調しない
+  }
+  function apply(box){
+    if(!box||box.dataset.dlInit) return; box.dataset.dlInit='1'; // 冪等
+    var os=guessOS(); if(!os) return; // 判定不能ならフォールバックのまま
+    var btn=box.querySelector('.dl-btn[data-os="'+os+'"]'); if(!btn) return;
+    btn.classList.add('is-primary');
+    var label=os==='mac'?'macOS':'Windows';
+    btn.setAttribute('aria-label', label+'版をダウンロード（お使いの環境）');
+    // 主役ボタンを先頭へ並べ替え（DOMが2個でも安全）
+    if(btn.parentNode&&btn.parentNode.firstElementChild!==btn){ btn.parentNode.insertBefore(btn,btn.parentNode.firstElementChild); }
+  }
+  function initAll(){ document.querySelectorAll('[data-download]').forEach(apply); }
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded',initAll); } else { initAll(); }
+})();
+</script>
+<!-- ===== EFFECTIVE-JS:END ===== -->
+</body>
+</html>

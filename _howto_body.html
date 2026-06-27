@@ -1,0 +1,181 @@
+<body>
+
+<style>
+  /* このページ用の小追加（共通テンプレは触らない）: 用語の点線注釈 */
+  .term{border-bottom:1px dotted var(--accent);cursor:help}
+</style>
+
+<div class="topbar">
+  <span class="brand"><span class="dot"></span>アメリカ旅行しおり｜つかいかた</span>
+  <span class="spacer"></span>
+  <a class="btn" href="index.html">← しおりへ</a>
+  <button class="btn" id="themeToggle" aria-label="ライト/ダーク切替">🌙 ダーク</button>
+</div>
+
+<main class="reading">
+
+  <h1>つかいかた｜スプレッドシートでみんなで編集する</h1>
+
+  <div class="callout tldr">
+    <span class="ico">💡</span>
+    <div class="body">
+      <div class="label">このページは</div>
+      <p>しおりの<strong>「プラン（日程・未決事項）」を、参加者みんなでGoogleスプレッドシートから編集する</strong>ためのやり方です。
+      コードやGitHubの知識は要りません。<strong>スプレッドシートを直すだけ</strong>。
+      直した内容は、岡崎さんがサイトを<span class="term" title="スプレッドシートの最新データを読んで、サイトを作り直すこと">再成形</span>したときに反映されます。</p>
+    </div>
+  </div>
+
+  <nav class="toc" aria-label="このページの目次">
+    <div class="toc-title">目次</div>
+    <a href="#flow" data-depth="2">① 全体の流れ</a>
+    <a href="#editors" data-depth="2">② 参加者向け：編集のルール</a>
+    <a href="#setup" data-depth="2">③ 岡崎さん向け：最初の1回だけの準備</a>
+    <a href="#daily" data-depth="2">④ ふだんの運用</a>
+    <a href="#faq" data-depth="2">⑤ よくある質問</a>
+    <a href="#terms" data-depth="2">⑥ 用語ミニ辞典</a>
+  </nav>
+
+  <h2 id="flow">① 全体の流れ</h2>
+  <p>このしおりは、こういうループで「いつも最新」を保ちます。</p>
+
+  <figure class="figure">
+    <svg viewBox="0 0 760 230" role="img" aria-label="編集→通知→再成形→閲覧のループ図">
+      <defs>
+        <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+          <path d="M0 0L9 4.5L0 9z" fill="currentColor"/>
+        </marker>
+      </defs>
+      <!-- 4 boxes -->
+      <g font-size="13" text-anchor="middle">
+        <rect x="8"   y="28" width="168" height="66" rx="10" fill="var(--surface-2)" stroke="currentColor" stroke-width="1.5"/>
+        <text x="92" y="55" fill="var(--text)" font-weight="700">参加者3人</text>
+        <text x="92" y="76" fill="var(--text-muted)">スプシを編集</text>
+
+        <rect x="204" y="28" width="168" height="66" rx="10" fill="var(--surface-2)" stroke="currentColor" stroke-width="1.5"/>
+        <text x="288" y="55" fill="var(--text)" font-weight="700">編集があった日</text>
+        <text x="288" y="76" fill="var(--text-muted)">岡崎さんへ通知メール</text>
+
+        <rect x="400" y="28" width="168" height="66" rx="10" fill="var(--accent-soft)" stroke="currentColor" stroke-width="1.5"/>
+        <text x="484" y="55" fill="var(--text)" font-weight="700">岡崎さん＋Claude</text>
+        <text x="484" y="76" fill="var(--text-muted)">サイトを再成形</text>
+
+        <rect x="596" y="28" width="156" height="66" rx="10" fill="var(--surface-2)" stroke="currentColor" stroke-width="1.5"/>
+        <text x="674" y="55" fill="var(--text)" font-weight="700">全員</text>
+        <text x="674" y="76" fill="var(--text-muted)">最新のしおりを見る</text>
+      </g>
+      <!-- arrows between -->
+      <g stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#ah)">
+        <line x1="178" y1="61" x2="202" y2="61"/>
+        <line x1="374" y1="61" x2="398" y2="61"/>
+        <line x1="570" y1="61" x2="594" y2="61"/>
+        <!-- loop back -->
+        <path d="M674 96 L674 175 L92 175 L92 96"/>
+      </g>
+      <text x="383" y="197" text-anchor="middle" font-size="12" fill="var(--text-faint)">また誰かが編集すると、ループが回る</text>
+    </svg>
+    <figcaption>編集 → 通知 → 再成形 → 閲覧 のくり返し。スプシを直すだけで全員が最新を見られる。</figcaption>
+  </figure>
+
+  <div class="callout tip">
+    <span class="ico">✅</span>
+    <div class="body"><p><strong>大事な分担：</strong>スプシの編集は<strong>3人みんな</strong>。サイトの再成形（作り直し）は<strong>岡崎さん×Claude</strong>。
+    だから他の2人はGitHubもClaudeも触らなくてOK。</p></div>
+  </div>
+
+  <h2 id="editors">② 参加者向け：編集のルール</h2>
+  <p>開くタブは2つだけ。あとは自由に書き込み・行追加してOKです。</p>
+
+  <dl class="defs">
+    <dt>「日程」タブ</dt>
+    <dd>時刻・場所・宿・予約状況・メモを編集。予定が増えたら<strong>行を足す</strong>。決まってない時刻は空欄でOK。</dd>
+    <dt>「未決事項」タブ</dt>
+    <dd>まだ決まってないこと（★）の一覧。決まったら <strong>状態</strong> を「未着手→相談中→決定」に変え、<strong>決定内容</strong> に結論を書く。</dd>
+  </dl>
+
+  <div class="callout warn">
+    <span class="ico">⚠️</span>
+    <div class="body">
+      <div class="label">これだけ守ってください</div>
+      <ol style="margin:.3em 0 0">
+        <li><strong>タブの名前を変えない</strong>（「日程」「未決事項」のまま）。</li>
+        <li><strong>各タブの1行目（見出し）を消さない・並べ替えない</strong>。列を<em>増やす</em>のはOK。</li>
+        <li><strong>パスポート番号・カード番号・自宅住所</strong>など、人に見られて困る情報は書かない（サイトは「リンクを知っている人は見られる」公開設定のため）。</li>
+      </ol>
+      <p style="margin:.5em 0 0" class="muted">※ ①②は、サイトが「タブ名」と「見出し名」を目印にデータを読むため。ここが変わると読めなくなります（gidで多少守ってありますが、念のため）。</p>
+    </div>
+  </div>
+
+  <h2 id="setup">③ 岡崎さん向け：最初の1回だけの準備</h2>
+  <p>ここは岡崎さんが一度だけやる作業です。終わったら、あとは「ふだんの運用」だけ。</p>
+
+  <ol class="steps">
+    <li><strong>テンプレをGoogleスプレッドシートに取り込む</strong><br>
+      <code>旅行データ_テンプレート.xlsx</code> を Googleドライブにアップ →
+      右クリック「アプリで開く → Googleスプレッドシート」。これで「つかいかた／日程／未決事項」の3タブができます。</li>
+
+    <li><strong>3人を編集者に招待＋全体を「閲覧可」に</strong><br>
+      右上「共有」→ 大野さん・千葉さんのGmailを追加して権限を<strong>「編集者」</strong>に。
+      さらに「一般的なアクセス」を<strong>「リンクを知っている全員：閲覧者」</strong>にする。<br>
+      <span class="muted">→ こうすると「編集できるのは3人だけ／サイトは誰でも読める」という安全な組み合わせになります。</span></li>
+
+    <li><strong>更新メール（通知）をオンにする</strong><br>
+      メニュー「ツール → 通知設定（通知ルール）」→<strong>「変更が行われたとき」→「メール - 1日1回のまとめ」</strong>を選んで保存。
+      → 誰かが編集した日に、岡崎さんへメールが届きます。</li>
+
+    <li><strong>スプレッドシートの「ID」と各タブの「gid」をClaudeに渡す</strong><br>
+      ブラウザのURLが、こういう形になっています。色の付いた2か所を伝えればOK：
+      <div class="code-block">
+        <span class="cap">スプレッドシートのURL</span>
+        <button class="copy-btn">コピー</button>
+        <pre><code>https://docs.google.com/spreadsheets/d/<b>{ここがID}</b>/edit#gid=<b>{ここがgid}</b></code></pre>
+      </div>
+      <span class="muted">「日程」タブを開いているときのgidと、「未決事項」タブを開いているときのgidは別物です。各タブを開いてURL末尾の <code>gid=…</code> をそれぞれ控えてください。</span></li>
+
+    <li><strong>Claudeが配線して公開</strong><br>
+      受け取ったID/gidをサイトの再成形処理に設定し、最新データを焼き込んで <span class="term" title="GitHubが無料でサイトを公開してくれるサービス。タスクスライムで使ったのと同じ">GitHub Pages</span> に公開。URL1つを3人に共有して完成。</li>
+  </ol>
+
+  <h2 id="daily">④ ふだんの運用</h2>
+  <ol class="steps">
+    <li>誰かがスプシを編集する（3人の誰でも）。</li>
+    <li>その日、岡崎さんに<strong>通知メール</strong>が届く。</li>
+    <li>岡崎さんがClaudeに <strong>「サイト更新して」</strong> と頼む。</li>
+    <li>Claudeがスプシを読み直して<strong>再成形</strong>→公開。数十秒〜数分で最新版に。</li>
+    <li>全員、同じURLを<strong>リロード</strong>すれば最新が見える。</li>
+  </ol>
+  <div class="callout tip">
+    <span class="ico">🔁</span>
+    <div class="body"><p>「更新はこまめに / 再成形はまとめて」でOK。毎回の編集ごとに作り直す必要はありません。出発が近づいたら頻度を上げましょう。</p></div>
+  </div>
+
+  <h2 id="faq">⑤ よくある質問</h2>
+  <div class="faq" data-single="true">
+    <div class="faq-item"><button class="faq-q" aria-expanded="false">スプシを直したのにサイトが変わらない<span class="faq-mark" aria-hidden="true">＋</span></button><div class="faq-a"><div class="faq-a-inner">サイトは「再成形」したときの内容で固定されています。岡崎さんがClaudeに「サイト更新して」と頼んで作り直すと反映されます。直しただけでは自動では変わりません（これは仕様です）。</div></div></div>
+    <div class="faq-item"><button class="faq-q" aria-expanded="false">タブの名前を変えてしまった<span class="faq-mark" aria-hidden="true">＋</span></button><div class="faq-a"><div class="faq-a-inner">元の名前（日程／未決事項）に戻せばOK。タブの中身（gid）を目印にしているので多くの場合は耐えますが、念のため名前は変えないのが安全です。</div></div></div>
+    <div class="faq-item"><button class="faq-q" aria-expanded="false">列を増やしたい／減らしたい<span class="faq-mark" aria-hidden="true">＋</span></button><div class="faq-a"><div class="faq-a-inner">増やすのは自由です（サイトは見出し名で読むため）。ただし<strong>既存の見出しは消さない・名前を変えない</strong>でください。新しい列をサイトに表示したいときは、岡崎さん経由でClaudeに伝えてください。</div></div></div>
+    <div class="faq-item"><button class="faq-q" aria-expanded="false">編集する人を増やしたい<span class="faq-mark" aria-hidden="true">＋</span></button><div class="faq-a"><div class="faq-a-inner">「共有」からその人のGmailを「編集者」で追加すればOK。サイト側の設定変更は不要です。</div></div></div>
+    <div class="faq-item"><button class="faq-q" aria-expanded="false">機微な情報（カード番号など）はどこに書けばいい？<span class="faq-mark" aria-hidden="true">＋</span></button><div class="faq-a"><div class="faq-a-inner">このスプシ／サイトには書かないでください。サイトは「リンクを知っている人は見られる」公開状態です。お金や本人確認の情報は、LINE等の身内だけのやり取りで共有を。</div></div></div>
+  </div>
+
+  <h2 id="terms">⑥ 用語ミニ辞典</h2>
+  <dl class="defs">
+    <dt>再成形（さいせいけい）</dt>
+    <dd>スプレッドシートの最新データを読んで、サイトを作り直すこと。岡崎さん×Claudeが行う。</dd>
+    <dt>gid（ジー・アイ・ディー）</dt>
+    <dd>スプレッドシートの「タブ1枚ごとの番号」。URLの末尾 <code>gid=…</code> に出る。タブ名を変えても番号は変わらないので、目印に使う。</dd>
+    <dt>閲覧者／編集者</dt>
+    <dd>Google共有の権限。<strong>閲覧者</strong>＝見るだけ、<strong>編集者</strong>＝書き込める。今回は「全体は閲覧者・3人だけ編集者」。</dd>
+    <dt>GitHub Pages</dt>
+    <dd>GitHubが無料でサイトを公開してくれる仕組み。タスクスライムで使ったのと同じ。URL1つで全員に共有できる。</dd>
+  </dl>
+
+  <div class="footer no-print">
+    <p>アメリカ旅行しおり（2026年10月）｜ <a href="index.html">しおり本体へ戻る</a></p>
+  </div>
+
+</main>
+
+<button class="to-top" aria-label="ページ先頭へ戻る" hidden>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>

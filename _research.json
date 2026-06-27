@@ -1,0 +1,869 @@
+[
+  {
+    "topic": "荷物・スーツケース・洗濯",
+    "summary": "結論から：United（ユナイテッド）の日本＝アメリカ線の「通常エコノミー」なら、預ける荷物が無料で2個まで（1個50ポンド=約23kg・3辺合計62インチ=158cmまで）、さらに機内持ち込み1個＋身の回り品1個も持てます。だから3人とも「62cm（158cm）クラスのスーツケース1個ずつ＋機内持ち込みリュック」が基本形でOK。洗濯は「ロサンゼルス最終日にThe Wayfarerのセルフ洗濯で1回まわす」を主案にすれば、服は実質「4日分」あれば全行程を回せます（ベガス＝Excaliburは宿泊者の口コミで『客用セルフ洗濯はなく、ベルデスク経由で外注（割高）』との報告が多く当てにできないので、ベガス入りする前＝LAかアナハイムで洗っておくのが鉄則）。注意点として、モバイルバッテリーは2026年4月24日からの日本発着ルールで「預け荷物に入れるのは全面禁止・手荷物のみ・機内で充電や使用も禁止・1人2個まで各160Wh以下」になっています（10月の本旅行に適用）。",
+    "points": [
+      {
+        "heading": "(あ) Unitedの預け荷物：日本＝アメリカ線エコノミーは無料2個（通常エコノミーの場合）",
+        "detail": "Unitedの日本＝アメリカ（東アジア）線の「通常エコノミー（standard Economy）」は、無料で預けられる荷物が2個。1個あたりの上限は・重さ：50ポンド（約23kg）・サイズ：3辺合計（縦+横+高さ）62インチ（158cm）まで。これはタイヤ・持ち手も含めた外寸の合計です。100ポンド（約45kg）超の荷物は受け付け不可。つまり3人なら合計6個まで無料で預けられる計算ですが、初海外で6個も運ぶのは大変なので「1人1個（大型）＋必要なら2個目」くらいが現実的。※「無料2個」は通常エコノミーの場合。次のポイントのBasic Economy（最安運賃）だと条件が変わるので、自分の予約が通常エコノミーかBasic Economyかは必ず確認を。なお路線・運賃で条件が変わるため、最終的には予約番号でUnited公式の手荷物計算ツールでの確認が確実。",
+        "sources": [
+          "https://www.united.com/en/us/fly/baggage/international-checked-bag-limits.html",
+          "https://www.mybaggage.com/shipping/us/united-airlines-baggage-allowance/",
+          "https://www.united.com/en/us/checked-bag-fee-calculator/any-flights/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "(あ) Basic Economy（最安運賃）だと預け荷物が無料1個に減る",
+        "detail": "同じ日本＝アメリカ線でも、いちばん安い「Basic Economy（ベーシックエコノミー）」運賃だと条件が下がります。・預け荷物：無料は1個まで（通常エコノミーの2個から減る）。2個目は有料。・機内持ち込み：太平洋路線（日本線など）のBasic Economyは『機内持ち込みの大きいバッグ＋身の回り品』の両方を持てる（※Unitedの国内線・大西洋線のBasic Economyは身の回り品だけ＝条件が違うので混同注意）。岡崎さんを含め3人とも、自分の航空券が「通常エコノミー」か「Basic Economy」かを予約確認メール／Unitedアプリの予約詳細で確認してください。Basic Economyだった場合、預け荷物は1人1個に抑える設計にすると追加料金を避けられます。具体的な2個目料金は変動するので公式計算ツールで確認を。",
+        "sources": [
+          "https://www.united.com/en/us/fly/travel/inflight/basic-economy.html",
+          "https://arcaofficial.com/blogs/arca-articles/united-carry-on-basic-economy",
+          "https://www.nerdwallet.com/travel/learn/how-to-make-the-most-of-uniteds-basic-economy"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "(あ) 機内持ち込み＋身の回り品のサイズと個数",
+        "detail": "Unitedで機内に持ち込めるのは2点まで：(1) 機内持ち込みバッグ（carry-on＝頭上の棚に入れる大きめ）：22×14×9インチ（約56×35×23cm）。タイヤ・持ち手・付属品を含むサイズ。(2) 身の回り品（personal item＝前の座席下に入る小さめ）：17×10×9インチ（約43×25×23cm）。リュック・ショルダー・ノートPCバッグなど。Unitedは機内持ち込みの重さ制限は明記していません（ただし自分で持ち上げて棚に入れられる重さに）。おすすめ構成：3人とも「機内持ち込み＝小〜中型のリュック1個」を基本に。後述のモバイルバッテリー・貴重品・薬・着替え1日分はこの手荷物側へ。",
+        "sources": [
+          "https://www.united.com/en/us/fly/baggage/carry-on-bags.html",
+          "https://travelvient.com/tools/carry-on-size/united-airlines/",
+          "https://www.cabinsize.com/collections/united-airlines-size-22x14x9-56x36x23cm-personal-item-17x10x9-43x25x23cm"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "(あ) 買うべきスーツケースの目安サイズ",
+        "detail": "7泊9日・洗濯1回前提なら、預け入れは「Lより一つ手前の中〜大型」がちょうど良い。・狙うサイズ：3辺合計が158cm（62インチ）以内のもの＝各社で『7〜10泊用』『70〜90L』などと表示される段。具体的には外寸が高さ約70cm前後（タイヤ込み）のものが目安。・容量の目安：70〜90L（7泊＋お土産用の余白）。・選び方のコツ：(1)『3辺合計158cm以内/容量〜90L/重量上限23kg対応』と書かれた製品を選ぶ。(2)タイヤ・持ち手込みで158cmを超えないか確認（超過分は超過料金の対象）。(3)空のスーツケース自重が軽いほど、中身を入れられる（23kgは荷物込みの総重量）。・機内持ち込みは別に1人1個のリュックを用意。スーツケースを機内持ち込みサイズ（56×35×23cm）で揃える必要はなく、預け入れ大型＋手荷物リュックの2点持ちが王道。",
+        "sources": [
+          "https://www.united.com/en/us/fly/baggage/checked-bags.html",
+          "https://www.united.com/en/us/fly/baggage/international-checked-bag-limits.html"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "(い) 洗濯は「ロサンゼルス最終日にThe Wayfarerで1回」が主案",
+        "detail": "宿の設備から、洗濯1回の最適タイミングはロサンゼルス滞在の最終日（アナハイムへ移る10/11の前夜＝10/10夜など）。・The Wayfarer Downtown LA：複数の旅行サイトでゲスト用のセルフ洗濯（self-service laundry）ありと記載。ここで1回まわすのが主案。・タイミングの理由：このあと向かうアナハイム2泊→ラスベガス2泊→グランドキャニオン日帰り、の中でベガスのExcaliburが洗濯に当てにできない（次々ポイント）。だから「ベガス入りする前のLAでリセット」しておくと、最長の無洗濯区間（アナハイム＋ベガス＋GC）を清潔な服でカバーできる。・進め方：チェックアウト前日の夜に洗濯→乾燥まで。料金・場所・利用時間・コインかカードかは口コミ情報のため、チェックイン時にフロントへ要確認（変わっている可能性あり）。",
+        "sources": [
+          "https://www.laundryheap.com/en-us/hotel/los-angeles/the-wayfarer-downtown-los-angeles",
+          "https://www.trivago.com/en-US/oar/hotel-the-wayfarer-downtown-la-tapestry-collection-by-hilton-los-angeles",
+          "https://www.wayfarerdtla.com/"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "(い) 予備案：アナハイムのClarionでもう1回まわせる",
+        "detail": "念のための2回目候補はアナハイムのClarion Hotel Anaheim Resort。・設備：ゲスト用のセルフ洗濯機あり（口コミでは『洗い約4ドル・乾燥約4ドル、コインではなくクレジットカード払い』との報告）。乾燥が弱めという声があるので高温設定＋時間に余裕を。・使い方の方針：LAで1回まわせていれば基本は不要。汗・においが気になった人だけ、ディズニー2日の合間（10/11か10/12の夜）に部分的に追加で回す、くらいの位置づけ。・料金・支払い方法・稼働状況は現地で要確認（変動・故障あり得る）。岡崎さんはアメックスのみだが、洗濯機のカード払いが特定ブランド限定の場合に備え、誰か別カードを持つ人が代わりに払える体制にしておくと安心。",
+        "sources": [
+          "https://www.getawaytoday.com/travel-blog/clarion-hotel-anaheim-review",
+          "https://www.tripadvisor.com/FAQ-g29092-d75705-Clarion_Hotel_Anaheim_Resort.html",
+          "https://www.clarionanaheim.com/"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "(い) ラスベガスのExcaliburは『客用セルフ洗濯は当てにしない』前提",
+        "detail": "Excalibur（ベガス）の客用セルフ洗濯は情報が割れています。一部サイトは『下層階に24時間コインランドリーあり』と書きますが、これは出典・証言のない宣伝的な記事で信頼性が低い。一方、TripAdvisorの実際の宿泊者報告では『客用の洗濯機はなく、ベルデスクが外部に出して洗う方式（＝有料・割高）』との声が複数あります。・結論：ベガスでは『自分で洗えない前提』が安全。どうしても必要なら有料のホテルランドリー（出して洗ってもらう）か、近隣のコインランドリーへ。・だからこそ前々ポイントの通り、LA（またはアナハイム）で洗ってベガス入りするのが正解。有無・料金は予約前/到着時にホテルへ各自確認を。",
+        "sources": [
+          "https://www.tripadvisor.com/ShowTopic-g45963-i10-k2145882-Excalibur_Guest_Laundry-Las_Vegas_Nevada.html",
+          "https://www.tripadvisor.com/FAQ_Answers-g45963-d97786-t2504865-Does_this_hotel_have_laundry_or_a_dry_cleaning.html",
+          "https://caesarsrewards.custhelp.com/app/answers/detail/a_id/1360/~/las-vegas-hotels---self-service-laundry-services"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "(い) 1回洗濯なら服は何日分？→『4日分』が安全圏",
+        "detail": "日程を“無洗濯で連続する最長区間”で数えると：(1)前半＝LA到着(10/8)〜LAで洗う前：LA3日分。(2)後半＝LAで洗ったあと〜帰国まで：アナハイム2(10/11-12)＋ベガス2(10/13-14)＋グランドキャニオン日帰り(10/14は移動着で兼用可)＝実質4日分が次の洗濯なしで必要。・よって『下着・靴下・Tシャツは4日分（＋予備1日＝計5枚あると安心）』が目安。トップス/ボトムスは重ね着・着回し前提で各3〜4枚。・LAで1回洗えば前半3日分も再利用できるので、持ち物総量は“4〜5日分”でずっと回せる＝荷物が一気に軽くなる。・10月のLA/ベガスは日中暑く朝晩涼しいので、薄手の羽織り1枚を全員。グランドキャニオンは標高が高く（リム＝縁で約2,100m前後）冷えるので、その日だけ暖かい上着を手荷物に。",
+        "sources": [
+          "https://www.laundryheap.com/en-us/hotel/los-angeles/the-wayfarer-downtown-los-angeles",
+          "https://www.getawaytoday.com/travel-blog/clarion-hotel-anaheim-review"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "(い) 速乾素材・パッキングキューブで荷物を圧縮",
+        "detail": "洗濯1回作戦を成立させるコツ：・速乾素材を選ぶ：下着・Tシャツ・靴下は化繊（ポリエステル/ナイロン）系の『速乾』表記のもの。綿100%は乾きにくく、ホテルの弱い乾燥機だと生乾きになりやすい。夜に手洗い→朝乾く、も可能になる。・パッキングキューブ（仕切り袋＝荷物を種類別に分けて入れる袋）：『きれいな服』『洗濯前』『下着類』で袋を分けると、スーツケース内が崩れず、洗濯後の仕分けも楽。圧縮タイプなら容量も節約。・洗濯用に：小分けの洗剤（ジェルボール/粉を数回分）＋洗濯ネット＋折りたたみハンガー数本があると、ホテルでも手洗いでも対応できる。・乾きにくい日用に、薄手のタオル（速乾）も1枚。",
+        "sources": [
+          "https://www.laundryheap.com/en-us/hotel/los-angeles/the-wayfarer-downtown-los-angeles",
+          "https://www.getawaytoday.com/travel-blog/clarion-hotel-anaheim-review"
+        ],
+        "volatile": false,
+        "confidence": "medium"
+      },
+      {
+        "heading": "手荷物（機内持ち込み）に必ず入れる物：モバイルバッテリーは2026年新ルールで預け不可",
+        "detail": "2026年4月24日からの日本発着の新ルール（10月の本旅行に適用）：・モバイルバッテリー（携帯充電器）は預け荷物に入れるの全面禁止。必ず手荷物（機内持ち込み）で。・機内では充電も使用も禁止、頭上の棚ではなく『手の届く所（座席まわり）』に置く。・持てるのは1人2個まで、各160Wh（ワットアワー）以下。違反は最大で懲役2年または罰金100万円の罰則対象になり得るとの報道。・この規制は日本を発着・経由する全便に適用。そのほか手荷物に入れるべき物：パスポート、現金少額、常備薬、貴重品、電子機器、充電ケーブル、着替え1日分（万一スーツケースが届かない時の保険）。キャッシュレス志向なので、各自のクレカ＋スマホ決済を手荷物側に。岡崎さんはアメックスのみとのことなので、現地でアメックスが使えない店に備え、少額の現金と（可能なら別ブランドのカード/デビット）も検討。規則は変動するため、出発前に各自・航空会社で最終確認を。",
+        "sources": [
+          "https://www.japantimes.co.jp/news/2026/04/14/japan/power-bank-restriction-flights/",
+          "https://www.jal.co.jp/jp/en/info/2026/other/260330/",
+          "https://www.japan.travel/en/ca/news/new-carry-on-power-bank-regulations-are-coming-into-effect-from-apr-24-2026-jst/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      }
+    ],
+    "decisions": [
+      "スーツケースは『1人1個・3辺合計158cm以内/容量70〜90L/重量上限23kg対応』を新調する（おすすめ：軽量ハードタイプ。預け入れ大型＋機内持ち込みリュックの2点持ち）。",
+      "服は『下着・靴下・Tシャツ＝5枚ずつ（4日分＋予備1）／トップス・ボトムス＝各3〜4枚で着回し』に統一。全員が速乾素材で揃える。",
+      "洗濯は『LA最終日にThe Wayfarerのセルフ洗濯で1回（主案）』。アナハイムClarionは予備（カード払い）、ベガスは洗わない、と役割を決めておく（洗剤・洗濯ネット・折りたたみハンガーを誰が持つか担当を決める）。",
+      "各自の航空券が『通常エコノミー（預け無料2個）』か『Basic Economy（無料1個）』かを予約詳細＋United公式の手荷物計算ツールで確認し、預け荷物の個数を合わせる。",
+      "モバイルバッテリーは全員『手荷物に・1人2個まで・160Wh以下』をルール化し、スーツケース（預け）には絶対に入れない。グランドキャニオン日帰り用の暖かい上着は当日手荷物に。"
+    ],
+    "caveats": [
+      "価格・時刻・手荷物規則・ホテル設備（洗濯機の有無/料金/稼働）は変わります。予約前・出発前に、United公式の手荷物ページとバッグ料金計算ツール、各ホテル公式/フロントで各自・最終確認してください。",
+      "『無料2個』はUnited通常エコノミーの場合。Basic Economy（最安運賃）だと無料1個に減るなど条件が違うため、自分の運賃種別を必ず確認。Basic Economyの2個目料金は変動するため公式計算ツールで要確認。",
+      "The Wayfarer・Clarionの洗濯設備や料金（Clarionは口コミで洗い/乾燥各約4ドル・カード払い）は口コミ・第三者情報に基づく部分があり、現地で変わっている可能性あり。チェックイン時にフロントで有無・料金・利用時間・支払い方法を確認。",
+      "Excaliburの客用セルフ洗濯は情報が割れている（『24時間コインランドリーあり』とする出典不明の記事 vs 宿泊者の『セルフはなくベルデスク外注』報告）。実際の宿泊者報告を重視し、当てにしない前提で、ベガス前（LAかアナハイム）で洗っておく。",
+      "モバイルバッテリーの日本発着ルール（2026/4/24〜）は本旅行に適用。最新の運用は搭乗前にUnited/各空港の案内で再確認を。"
+    ]
+  },
+  {
+    "topic": "両替・現金・チップ",
+    "summary": "結論：2025-2026年のアメリカは「カード（特にタッチ決済）8〜9割＋現金1〜2割」で回ります。支払いの主役はタッチ決済できるクレジット/デビットカードで、現金はチップ（特にラスベガス）と一部の露店・小規模店のためだけに少額あれば十分です。両替は「日本で少額だけ＋足りなければ現地のATM」が基本で、空港の両替所はレートが悪いので避けます。チップは着席レストランで会計の18〜20%（2026年の平均実績は約19.3%）が標準です。",
+    "points": [
+      {
+        "heading": "まず全体像：カード中心、現金はチップ用のサブ",
+        "detail": "アメリカは日本よりキャッシュレスが進んでいます。Visaの公表では、対面（face-to-face）決済の6割超がすでに『タッチ決済』（カードやスマホを機械にかざすだけの支払い）で、Mastercard網では2025年に全取引の75%超がタッチ決済でした。一方、現金で払う割合は下がり続け、米連邦準備制度（中央銀行）の2025年調査では2024年の消費者の支払い件数のうち現金は約14%でした（2019年は約26%）。3人とも、支払いの主役は『タッチ決済できるカード（クレジットかデビット）』にして、現金は補助、と覚えてください。LAの大型店・チェーン店・スーパー・ドラッグストア・配車アプリ（Uber/Lyft）・LAメトロ（地下鉄やバス。カードを改札やバスの読み取り機にかざすだけで乗れる）まで、ほぼカードで完結します。現金がないと困るのは主に(1)チップを手渡しする場面（ラスベガスの清掃・ベル・バレーなど）(2)露店・チップ箱・ストリートパフォーマー・ごく小さな個人店、です。",
+        "sources": [
+          "https://usa.visa.com/pay-with-visa/contactless-payments/contactless-payments.html",
+          "https://www.mastercard.com/us/en/news-and-trends/stories/2025/contactless-payments-2025.html",
+          "https://www.frbservices.org/news/press-releases/051325-findings-from-2025-diary-of-consumer-payment-choice",
+          "https://thesource.metro.net/paying-to-ride-metro-just-got-easier-tap-your-credit-or-debit-card-and-go/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "現金はいくら持つ？ 3人それぞれの目安",
+        "detail": "カード併用が前提なら『1日30〜50ドルの現金』で足ります。9日間なら一人あたり現金300〜450ドル程度を上限の目安に。ただしラスベガス2日は手渡しチップが多いので、ラスベガス滞在分だけ別枠で『一人100〜150ドル（よく遊ぶ場合）』を見ておくと安心。出発時に日本で用意するのは一人150〜250ドル程度の少額で十分（空港でいきなり大金を両替しない）。最重要は『$1札と$5札を多めに作る』こと——チップは1〜5ドル単位の手渡しが多く、$20札しかないと困ります。現地に着いたら早めに$20を崩して小額紙幣を作るのが定番のコツ。なお1万ドル超の現金を持ち込む/持ち出す場合は税関申告が必要（今回はまず該当しません）。",
+        "sources": [
+          "https://wise.com/jp/blog/cash-or-card-in-the-usa",
+          "https://lasvegaswonders.com/how-much-to-tip-in-las-vegas/",
+          "https://www.usa.gov/travel-money"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "両替はどこが得？ 結論は『日本で少額＋現地ATM』",
+        "detail": "得な順のイメージは(1)手数料の安いデビットカード/フィンテックカード（Wiseなど）で現地ATMからドルを引き出す(2)日本の銀行・金券ショップで少額だけ事前両替(3)クレジットカードの海外キャッシング——の組み合わせ。一番避けたいのが『空港の両替所』で、レートが悪い傾向。現地ATMは Bank of America・Chase・Wells Fargo など大手銀行のATMが各地にあり比較的安全。海外ATMはたいてい1回あたり数ドルの手数料がかかる（現地ATM側＋自分のカード側の両方でかかることも）ので、こまめに少額より『まとめて1〜2回引き出す』のがコツ。3人で割り勘前提なら、誰か1人が多めに引き出して分けるのも手数料節約になります。WiseなどのATM無料枠や手数料は『カードを発行した国（日本発行か等）』で条件が変わり、2026年5月にも改定されています。出発前に必ず自分のアプリ/公式で最新条件を確認してください。",
+        "sources": [
+          "https://wise.com/jp/blog/cash-or-card-in-the-usa",
+          "https://wise.com/help/articles/3GuSCwDgRqiYrsUc2eo7MN/atm-withdrawal-structure-and-fees",
+          "https://www.saisoncard.co.jp/credictionary/travel/kaigai-cash-use.html"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "カードの『海外事務手数料』に注意（2024〜2025年に各社値上げ）",
+        "detail": "海外でクレジットカードを使うと、日本円に換算するときに『海外事務手数料』が上乗せされます。2024〜2025年に各社が値上げし、楽天カード・三井住友カード（Visa/Mastercard）は3.63%、AMEX（アメックス）は2025年8月から3.5%（税込表記だと約3.85%）が目安。JCBは『JCBが自分で発行するカード（プロパーカード）』なら1.60%前後と低めですが、ここが大事な落とし穴——同じ『JCB』ロゴでも楽天カード等が発行するJCBブランドのカードは発行会社の手数料（例：3.63%）がかかり、1.60%にはなりません。またJCBはアメリカで使えない店も比較的あります。おすすめは『手数料の安いカードを主力に＋VisaかMastercardのブランドを最低1枚は持つ』こと。3人それぞれ別ブランド（Visa/Mastercard/JCB等）を持ち寄ると、片方が使えない店でも誰かのカードで払えて安心です。出発前に各自、自分の手持ちカードの最新手数料率を公式サイトで確認してください。",
+        "sources": [
+          "https://www.traicy.com/posts/20250423336390/",
+          "https://adviser-navi.co.jp/card/column/25106/",
+          "https://www.watch.impress.co.jp/docs/topic/2038281.html"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "超重要な落とし穴：『日本円で払う？』と聞かれたら必ず現地通貨（ドル）を選ぶ",
+        "detail": "カード決済やATMで『日本円（JPY）とドル（USD）どちらで決済しますか?』と聞かれることがあります（DCC＝店側やATM側が決める為替の仕組み）。ここは迷わず『US Dollar/現地通貨』を選んでください。日本円を選ぶと店側の割高なレートが使われ、数%〜10%以上上乗せされることも珍しくありません。ドルを選べばカード会社の公正なレート＋上記の事務手数料だけで済みます。英語が苦手でも、画面に『USD』『US Dollar』と出ている方を押す、とだけ3人で共有しておけばOK。ATMでも『現地通貨（ドル）で引き出す』を選ぶのが鉄則です。",
+        "sources": [
+          "https://wise.com/jp/blog/cash-or-card-in-the-usa",
+          "https://www.watch.impress.co.jp/docs/topic/2038281.html"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "チップの基本①：レストラン（会計の18〜20%が標準）",
+        "detail": "着席して店員さんが注文を取りに来る『フルサービス』のレストランは、会計の18〜20%が標準（決済データ大手の集計で2026年第1四半期の平均は約19.3%）。高級店なら22〜25%。支払い時、カードの機械や伝票に『18%/20%/25%/Custom（自由入力）』のボタンが出るので、選ぶだけ。店によって税抜き合計に対してか税込合計に対してかは異なります。一方、カウンターで受け取るファストフード・セルフのカフェはチップ任意（平均は15%台 or おつり程度）。伝票に『service charge』『gratuity included』とあればチップ込みなので、二重に払わなくてOK。3人で1枚の伝票なら合計に対して18〜20%を1回乗せれば十分です。",
+        "sources": [
+          "https://squareup.com/us/en/press/food-beverage-q1-2026-data",
+          "https://pos.toasttab.com/blog/data/restaurant-tipping-trends",
+          "https://www.bankrate.com/credit-cards/news/how-much-to-tip/",
+          "https://www.chase.com/personal/credit-cards/education/basics/how-does-tipping-on-credit-card-work"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "チップの基本②：ホテル（清掃・ベル・コンシェルジュ）",
+        "detail": "ホテルは手渡し現金が基本なので小額紙幣が活躍。荷物を運んでもらったら1個1〜2ドル（ベルボーイ/ポーター）、客室清掃は1泊1〜2ドル（最終日にまとめてでなく『毎朝枕元に置く』のが正解。担当者が日替わりのため）。コンシェルジュに何か頼んだら内容に応じて5〜20ドル。ラスベガスはやや高めで清掃1泊2〜5ドル・ベル1個2〜3ドルが目安（清掃を5〜10ドルとする案内もあり、幅があります）。今回の宿（Wayfarer DTLA／Clarion Anaheim／Excalibur）はいずれも清掃・ベルにこのレンジで考えればOK。",
+        "sources": [
+          "https://lasvegaswonders.com/how-much-to-tip-in-las-vegas/",
+          "https://wildandfreetools.com/blog/hotel-tipping-guide-housekeeping-bellhop-concierge-valet/",
+          "https://www.travelex.jp/media/column/a30"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "チップの基本③：タクシー・配車（Uber/Lyft）・その他",
+        "detail": "タクシーは料金の10〜20%（15%前後が無難）。Uber・Lyftはアプリ内でチップを選べるので現金不要——降車後にアプリが『何%チップする?』と聞いてくるので、15〜20%か任意額を選ぶだけ。空港送迎などで荷物を多く運んでもらったら数ドル上乗せが親切。その他、バー/カウンターのドリンクは1杯1〜2ドル（凝ったカクテルは3〜5ドル）。チップ画面（タブレット）が回ってくる店が増えていますが、カウンター越しの単純なサービスは無理に高%を選ばなくて大丈夫（画面の高め設定に圧を感じる人が多いのも実情で、米調査でも約3分の2が『請求が多すぎる/圧を感じる』と回答）。",
+        "sources": [
+          "https://wise.com/us/travel-money/tip-calculator/las-vegas",
+          "https://www.bankrate.com/credit-cards/news/how-much-to-tip/",
+          "https://splittyapp.com/learn/tipping-chart-2026/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "ラスベガス特有：現金チップが一気に増える街",
+        "detail": "ラスベガスはチップ現金が最も要る場所。目安は——カクテルを運ぶ係（カジノ内のドリンクは無料でも）は1杯1〜2ドル、バレーパーキング（車を預ける係）は車を受け取る時に5ドル（猛暑時10ドル以上）、清掃1泊3〜5ドル（5〜10ドルとする案内もあり）、ベル1個2〜3ドル、カジノのディーラーは勝った時などに少額。『よく遊ぶなら一人100〜150ドルの現金チップ』が現実的な目安。$1・$5札を多めに用意して。なお Excalibur など多くのホテルは『リゾートフィー（施設使用料／Wi-Fi・ジム等込み）』が宿泊料と別に1泊約51ドル（2025年11月に約42→51ドルへ値上げ）かかります。さらにチェックイン時に『デポジット（預り金／インシデンタル）』として1泊あたり約75ドルがカードに一時的に確保されます。これはチップとは別物で、使わなければ返金されますが、デビットカードだと海外の銀行では返金まで最大30日かかることがある点に注意（出発前に予約サイトの料金内訳とホテル公式で各自確認を）。",
+        "sources": [
+          "https://www.resortfeechecker.com/41308-resort_fee_excalibur_hotel_casino.html",
+          "https://www.tripadvisor.com/ShowTopic-g45963-i10-k14395666-Excalibur_check_in_deposit-Las_Vegas_Nevada.html",
+          "https://lasvegaswonders.com/how-much-to-tip-in-las-vegas/"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "ディズニー（アナハイム）の支払い：カード中心でほぼOK",
+        "detail": "アナハイムのディズニーランド/カリフォルニア・アドベンチャーは2026年時点で『現金も使えるが、カード中心』が正確です。Apple Pay等のタッチ決済・カードが園内のほぼ全域で使え、屋外のワゴン売店などには『Cashless Location（現金不可）』表示が増えています。一方で、チケット窓口・多くの物販ショップ・伝統的なフードスタンドでは現金もまだ使えます。フードのモバイルオーダー（アプリ注文）は現金不可。チケットは事前にオンラインでカード購入が基本。どうしても現金を使いたい場合は、園内の物販でディズニー・ギフトカードに現金をチャージして使う方法もあります。実質、カード/スマホ決済だけでほぼ完結し、現金はほとんど使いません。チップは着席レストランやホテル清掃で前述の基準。",
+        "sources": [
+          "https://disneyparknerds.com/does-disneyland-take-cash/",
+          "https://www.enchantedinsider.com/is-disneyland-cashless-in-2026-complete-payment-guide/",
+          "https://www.joinkudos.com/blog/does-disneyland-take-apple-pay"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "3人の持ち物・段取りプラン（初海外向けのまとめ）",
+        "detail": "(1)各自カード2枚体制：海外手数料の安いカードを主力＋別ブランドを予備（3人でVisa/Mastercard/JCBを分散）。スマホにタッチ決済（Apple Pay/Google Pay）も登録。(2)現金は出発時に一人150〜250ドル程度を日本で用意し、足りなければ現地の大手銀行ATMで補充（Wise等のデビットが手数料安め。ただし無料枠は出発前に要確認）。(3)着いたら$20を崩して$1・$5札を各自10枚ずつ確保。(4)チップ早見：レストラン18〜20%／ホテル清掃1泊2〜5ドル（ベガスは3〜5、案内によっては5〜10）／ベル1個2ドル／バレー5ドル／配車はアプリで15〜20%。(5)『JPYかUSDか』と聞かれたら必ずUSD。(6)現金・カードは3人で分散して持ち、全額を1人に集中させない（紛失・盗難対策）。(7)ホテル（特にExcalibur）はリゾートフィー＋デポジットが別途かかると予算に入れておく。",
+        "sources": [
+          "https://wise.com/jp/blog/cash-or-card-in-the-usa",
+          "https://www.watch.impress.co.jp/docs/topic/2038281.html",
+          "https://lasvegaswonders.com/how-much-to-tip-in-las-vegas/",
+          "https://www.resortfeechecker.com/41308-resort_fee_excalibur_hotel_casino.html"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      }
+    ],
+    "caveats": [
+      "チップの相場・%は年々上昇傾向（2026年は実績で約19〜20%が一般的）。実際に払う直前に伝票の『service charge / gratuity included（チップ込み）』表示を必ず確認し、二重払いを避けること。",
+      "カードの海外事務手数料は2024〜2025年に各社が値上げ中（楽天/三井住友3.63%、AMEX3.5%＝税込約3.85%、JCBプロパー約1.60%など）。ただし『JCBブランド』でも発行会社により手数料は異なる。出発前に自分の手持ちカードの最新の手数料率を各カード会社の公式サイトで必ず確認すること。",
+      "Wiseなどの両替手数料・ATM無料枠は『カードを発行した国』で条件が違い、2026年5月にも改定されている（例：米国発行カードは月250ドルまで無料など）。日本発行カードの条件は別。利用前に必ず公式アプリ/サイトで最新条件を確認すること。",
+      "Excaliburなどラスベガスのホテルは『リゾートフィー（約51ドル/泊・要確認）』に加え、チェックイン時に『デポジット（預り金）約75ドル/泊』がカードに一時確保される。デビットカードだと返金まで時間がかかる（海外の銀行で最大30日）ことがある。金額は変わるので予約サイトの料金内訳とホテル公式で出発前に各自確認すること。",
+      "ディズニー（アナハイム）は2026年時点でも現金が使える場所は残るが、屋外ワゴンやモバイルオーダーは現金不可。来園前に公式サイトで最新の支払い方法を確認すること。",
+      "現地ATMはスキミング（カード情報の盗み取り）被害もゼロではない。できるだけ銀行併設・屋内の大手銀行ATMを使い、暗証番号入力時は手で隠すこと。ATMでは必ず『現地通貨（ドル）で引き出す』を選ぶこと。",
+      "為替レート（円/ドル）は日々変動する。両替やカード利用の損得はそのときのレート次第なので、目安として捉え、出発直前のレートで最終判断すること。"
+    ]
+  },
+  {
+    "topic": "支払い：カードのブランド（アメックスのみ問題ない？）",
+    "summary": "結論から言うと、岡崎さんの「アメックス(AMEX)のみ」はリスクが高いので、出発前にVisaかMastercard(マスターカード)を最低1枚作っておくのがおすすめです。アメリカ本土のアメックス受け入れは広く(「クレカが使える店の99%」＝2023年のNilson Reportという業界調査による)、LA・アナハイム・ラスベガス・ディズニーのパーク内はアメックスでほぼ問題ありません。ただしコストコ(店内)や個人経営の小さな店など「使えない店」が残り、さらにカードを1枚しか持たないと紛失・利用停止のときに丸ごと支払い手段を失います。VisaかMastercardをもう1枚足すだけで、受け入れ・予備・タッチ決済(かざすだけ払い)の3つが一気に安心になります。",
+    "points": [
+      {
+        "heading": "アメックスは「使えるが、たまに使えない」。アメリカ本土なら受け入れはかなり広い",
+        "detail": "アメックス(American Express)はアメリカ本土では普及度が高く、(1)アメリカ国内では『クレカが使える店の約99%』でアメックスも使える(2023年2月のNilson Reportという業界調査による)、(2)世界の加盟店は約1.6億店に拡大、と公式・調査系メディアが説明しています。LA・アナハイム・ラスベガスのような都市部や大手チェーン、そして今回の日程に入っているディズニーのパーク内(チケット・店舗・レストラン・駐車場)もアメックスを受け付けます(Apple Pay/Google Payも対応)。つまり「アメックスだから全然使えない」わけではありません。ただし『99%』はあくまで“クレカが使える店の中で”の話で、後述の例外があります。",
+        "sources": [
+          "https://www.americanexpress.com/en-us/credit-cards/credit-intel/where-is-american-express-accepted/",
+          "https://www.nerdwallet.com/credit-cards/learn/retailers-accept-american-express",
+          "https://www.cnbc.com/select/american-express-merchant-acceptance/",
+          "https://plandisney.disney.go.com/question/disney-american-express-341096/",
+          "https://www.americanexpress.com/en-us/newsroom/articles/products-and-services/american-express-is-accepted-at-160-million-merchants-around-the.html"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "それでも「使えない店」は残る。代表例はコストコ(店内)と、個人経営の小さな店",
+        "detail": "アメックスを受け付けない店が残る一番の理由は『お店が払う手数料がVisa/Mastercardより高い』こと。アメックスは店から1.43%＋10セント〜3.30%＋10セント程度を取り、Visa/Mastercard(1.15%＋5セント〜2.5%＋10セント程度)より割高なため、手数料を嫌う店が断ります。具体的に注意したいのは・(1)コストコ(Costco)＝アメリカの“店舗(店内)”はVisaと独占契約で2016年6月以降アメックスは一切使えない(※ネット通販のCostco.comはVisaとMastercardが使え、デビットはどのブランドでも可)・(2)個人経営の飲食店・雑貨店・屋台・ファーマーズマーケットなど小規模店・(3)郊外や地方の小さな店。旅行ガイド系も『郊外のレストランや個人商店ではアメックスが使えない店も多いので、別ブランドのカードか現金を用意した方がよい』と明記しています。グランドキャニオン周辺など観光地の小規模な売店・事業者も同じ注意が当てはまる前提で、別ブランドか現金を携帯してください。",
+        "sources": [
+          "https://www.bankrate.com/credit-cards/business/why-american-express-isnt-universally-accepted/",
+          "https://customerservice.costco.com/app/answers/answer_view/a_id/719/~/what-payment-methods-are-accepted-at-costco",
+          "https://www.cnbc.com/select/what-credit-cards-does-costco-accept/",
+          "https://goodcoming.jp/media/31098/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "VisaかMastercardを最低1枚持つべき3つの理由（受け入れ・予備・タッチ決済）",
+        "detail": "もう1枚を勧める理由は次の3つ。(1)受け入れの広さ＝Visa/Mastercardは世界の加盟店数でアメックスを上回り、“アメックスだけ断られる店”でも通る確率が高い。(2)予備（バックアップ）＝1枚しか無いと、紛失・盗難・不正利用での利用停止・磁気不良などで“支払い手段がゼロ”になる。海外旅行では『最低2枚、できれば国際ブランドの異なる2〜3枚』が定番アドバイス。(3)タッチ決済(かざすだけ払い)＝Visaのタッチ決済は世界200超の国・地域に対応し、交通機関でも世界870超のプロジェクトで導入が進む。サインや暗証番号なしでスピーディーで、アメリカは少額決済でタッチが普及しているので、Visa/MCのタッチ対応カードがあると現地でとても楽です。",
+        "sources": [
+          "https://wise.com/jp/blog/how-use-american-express-card-abroad",
+          "https://shinpan-friend.com/financial-magazine/creditcard-travel/",
+          "https://usa.visa.com/pay-with-visa/contactless-payments/contactless-payments.html",
+          "https://www.smbctb.co.jp/globalcompass/tips/creditcard-overseas-travel/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "見落としがちな落とし穴：アメックスの海外手数料が2025年8月から3.5%に値上げ",
+        "detail": "日本発行のアメックスは、外貨(ドル)での買い物にかかる『海外事務手数料(外貨取扱手数料)』が2025年8月1日から従来の2.0%→3.5%に引き上げられました(個人カード・ビジネスカードが対象。コーポレートは2025年10月1日から)。たとえば1,000ドル使うと約35ドル分が手数料として上乗せされる計算で、Visa/Mastercard系カード(目安1.6〜2.2%前後のものが多い)より割高になりがちです。つまりアメックスは“非常用・サブ”にして、日常の支払いは手数料の安いVisa/MCをメインにすると、使えない問題と手数料の両方を同時に回避できます。※具体的な料率はカードごとに違うので、各自の規約で必ず確認してください。",
+        "sources": [
+          "https://www.traicy.com/posts/20250423336390/",
+          "https://creditcard-mania.com/post/amex-foreign-transacion-fee-revise/",
+          "https://www.americanexpress.com/jp/customer-service/faq.faq-82-payment-balance-payments-direct-debits.html",
+          "https://exiap.jp/guides/amex-card-international-fees"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "3人でブランドを分散しておくと“グループ全体”が止まらない",
+        "detail": "3人それぞれが同じブランドだと、その1ブランドが使えない店ではグループ全員が詰みます。理想は『3人合わせてVisa・Mastercard・アメックスが全部そろっている』状態。こうすれば、ある店がアメックス不可でも別の人のVisaで払って後で割り勘、という回避ができます。岡崎さんがアメックスのみなら、岡崎さんが新たにVisa/MCを作る or 残り2人がVisaとMastercardを分けて持つ、のどちらかで分散が完成します。加えて『カードは1か所にまとめない（財布と別の場所にも分ける）』のが盗難・紛失対策の鉄則。スマホのGoogle Pay等にカードを入れておけば、物理カードを失っても“かざし払い”で生き延びられます(対応店のみ)。",
+        "sources": [
+          "https://www.smbctb.co.jp/globalcompass/tips/creditcard-overseas-travel/",
+          "https://goodcoming.jp/media/31018/",
+          "https://shinpan-friend.com/financial-magazine/creditcard-two/",
+          "https://www.americanexpress.com/en-us/benefits/contactless/google-pay/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "紛失したときの備え：緊急ダイヤルとデビット併用",
+        "detail": "海外でカードを失くしたら、(1)まずカード会社の海外緊急連絡先に電話して利用停止→(2)現地の警察で紛失届、が基本の流れ。Visa/Mastercard/JCB/アメックスにはそれぞれ24時間の海外緊急サービス窓口(日本語対応あり)があるので、出発前に各社の番号を紙とスマホ両方に控えておくと安心です。クレカに加えて『国際ブランド付きデビットカード(Visaデビット等)』を1枚足すのも有効＝使った分だけ口座から即引き落としなので、もし不正利用されても被害を限定しやすく、クレカが全滅したときの最後の支払い手段になります。デビットもタッチ決済対応のものを選ぶと現地で使いやすいです。",
+        "sources": [
+          "https://www.jcb.jp/services/emergency_support.html",
+          "https://www.americanexpress.com/jp/support/contact/overseas-assist.html",
+          "https://jalcard.jal.co.jp/column/creditcard/lost2311/",
+          "https://www.smbctb.co.jp/globalcompass/tips/creditcard-overseas-travel/"
+        ],
+        "volatile": false,
+        "confidence": "medium"
+      }
+    ],
+    "decisions": [
+      "岡崎さんは出発前にVisaまたはMastercardを最低1枚作る（アメックスは“サブ”に降格し、メインはVisa/MCにする）。発行〜到着に2〜3週間かかることがあるので今すぐ申し込む。",
+      "3人合わせてVisa・Mastercard・アメックスが全部そろうようにブランドを分散する（例：岡崎さん＝Visa新規＋アメックス、他2人＝VisaとMastercardで分担）。同じブランドに偏らせない。",
+      "海外手数料が安いカードを“ふだん使い”に、アメックス(2025年8月から3.5%)は使えない店向けの非常用にする、と役割を決めておく。",
+      "全員、海外でのタッチ決済(かざし払い)対応のVisa/MCカードを用意し、スマホのGoogle Pay等にも登録しておく（物理カード紛失時の保険）。",
+      "可能なら国際ブランド付きデビットカードも1枚ずつ持ち、クレカ全滅時の最後の手段＋不正利用対策にする。",
+      "出発前に各カード会社の『海外緊急連絡先』を紙とスマホの両方にメモし、カードは3人で分散保管（財布・別バッグ・ホテル金庫など）する。"
+    ],
+    "caveats": [
+      "手数料率・料金改定・各社の規約は変わります。アメックスの海外手数料3.5%や各カードの料率は、予約・出発前に必ず各カード会社の公式サイト/規約で各自確認してください。",
+      "『どの店がアメックス可/不可か』は店ごと・時期ごとに変わります。コストコ店内の不可は確実ですが（ネットのCostco.comはVisa/MC可）、その他は現地で“使えない場合がある”前提で、必ず代替の支払い手段を携帯してください。",
+      "「アメリカの99%」はNilson Report(2023年2月)による“クレカを受け付ける店の中での割合”で、すべての店という意味ではありません。小規模店・個人店は対象外のことがあります。",
+      "カードの発行には審査と時間(目安2〜3週間、配送含む)がかかります。10月の旅行に間に合わせるには早めの申し込みが必要です。",
+      "タッチ決済やデビットは『対応している店・端末でのみ』使えます。すべての店で使えるわけではない点に注意。",
+      "海外緊急連絡先や利用停止の手続きは各社で異なります。番号や手順は出発前に各自の発行会社で確認を。"
+    ]
+  },
+  {
+    "topic": "カメラ・充電・電圧プラグ",
+    "summary": "結論を先に。スマホとデジカメは「どちらか」ではなく目的で使い分けるのが現実的で、多くの人はスマホ主役で足ります。電源は安心してよく、日本のスマホ・カメラ・USB充電器のACアダプター（コンセントに挿す四角い充電器）はアメリカでもほぼそのまま使え、変圧器（電圧を変える重い箱）は不要、プラグ形状も日本と同じなので変換プラグも基本いりません。ただしモバイルバッテリーだけは扱いが厳しく、預け入れは絶対NG・必ず手荷物で、2026年4月24日からの日本発着便の新ルールでは「1人2個まで・機内での充電/給電は禁止・頭上の棚もNG」です。違反には罰則の可能性もあるので要注意です。",
+    "points": [
+      {
+        "heading": "結論の出し方：スマホかデジカメかは『何を撮りたいか』で決まる（判断材料）",
+        "detail": "正解は人それぞれなので軸だけ整理します。(1)スマホ向き=とにかく身軽・撮ってすぐ3人で共有/SNS・記録が主目的。スマホ1台で写真も地図も決済も済むので荷物が減り、初海外の負担が軽い。(2)デジカメ向き=景色や夜景・人物をきれいに残したい/遠くを大きく撮りたい（ズーム）/暗い場所に強い。デジカメは光を取り込む部分（センサー）が大きく画質とズームで有利、かつバッテリー持ちが良い。デメリットは荷物が増える・別途充電やデータ移動の手間・盗難時の損失。実用的な落としどころは『スマホを主役にしつつ、グランドキャニオンの絶景やラスベガスの夜景などここぞでデジカメ』という併用。3人なら役割分担（1人がデジカメ係）も有効。これは好みの問題なので最終判断は本人たちで。",
+        "sources": [
+          "https://note.com/go_cameraman/n/nda2bd3fa9427",
+          "https://kakakumag.com/camera/?id=19663",
+          "https://noelstravels.com/travel-camera_pas/"
+        ],
+        "volatile": false,
+        "confidence": "medium"
+      },
+      {
+        "heading": "持ち歩きの実際：身軽さと盗難対策のバランス",
+        "detail": "観光中心なら『スマホ＋小型のコンデジ（コンパクトデジカメ）』が現実的で、大きな一眼は重く目立つため初海外・観光メインだとオーバースペックになりがち。LAやラスベガスは観光地ゆえスリ・置き引きに注意し、カメラやスマホを首から下げっぱなし・テーブル放置はしない、食事中はバッグの中、が基本。デジカメを持つ場合はSDカード（写真を保存する小さなカード）の予備を、スマホ主役なら『毎晩クラウドや別端末に写真を逃がす（バックアップ）』を習慣にすると、万一の紛失・盗難でも思い出が消えにくい。",
+        "sources": [
+          "https://noelstravels.com/travel-camera_pas/",
+          "https://note.com/go_cameraman/n/nb90d8129d824"
+        ],
+        "volatile": false,
+        "confidence": "medium"
+      },
+      {
+        "heading": "アメリカの電源スペック：電圧120V・周波数60Hz・プラグはType A/B（日本とほぼ同じ）",
+        "detail": "アメリカの標準は電圧120V・周波数60Hz。プラグ形状は『平たい2本の穴』のType A（日本と同型）が主流で、これにアース用の丸ピンが付いたType Bもあります。日本は100V・50/60Hz。重要なのは、コンセントの差し込み口が日本と同じ形なので、日本のプラグは物理的にそのまま挿さるという点。つまり差し込み口の心配は基本不要で、変換プラグは原則いりません。",
+        "sources": [
+          "https://www.power-plugs-sockets.com/us/japan/",
+          "https://www.traveltowns.jp/electricity/usa/",
+          "https://www.hanacell.com/users/usa-sightseeing/us-plug-and-socket-type/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "日本の機器はそのまま使えるか：スマホ・カメラ・USB充電器はOK、変圧器は不要",
+        "detail": "スマホ・タブレット・ノートPC・デジカメ・それらのACアダプター（充電器）は、内部で電圧を自動調整する作りなので、日本(100V)とアメリカ(120V)の差は問題にならず、変圧器なしでそのまま使えます。確認方法は充電器の表面の小さな文字で、『INPUT(入力) 100-240V 50/60Hz』と書いてあれば世界中で使える＝変圧器不要のサイン。今どきのスマホ/PC/カメラの充電器はほぼこの表示です。逆に注意が必要なのは発熱する家電（ヘアドライヤー・電気ケトル・ヘアアイロン等）で、これらは『100V専用』だと故障・発火の恐れがあるため、海外対応品でなければ持って行かない方が無難（ホテルにドライヤー備え付けが多い）。",
+        "sources": [
+          "https://www.lvtaizen.com/voltage/",
+          "https://www.owltech.co.jp/sp_faq/faq15-b-d-0008/",
+          "https://www.power-plugs-sockets.com/us/japan/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "変換プラグ・変圧器の要否まとめ：どちらも基本いらない（保険で1個あると安心）",
+        "detail": "(A)変圧器=不要。スマホ/カメラ/PCの充電器は100-240V対応なので電圧変換は要りません。(B)変換プラグ=原則不要（日本とプラグ形状が同じ）。ただし古い建物や一部の壁コンセントで日本の3つ穴プラグやアース付きが挿しにくい例もまれにあるため、心配なら『日本→アメリカ(Type A/B)対応の変換プラグ』を1個だけ保険で持つと安心。むしろ実用上の主役は、コンセント1口を複数のUSBに分けられる『USB急速充電器（複数ポート）』や短い電源タップで、3人でホテルの限られたコンセントを取り合わずに済みます。",
+        "sources": [
+          "https://www.traveltowns.jp/electricity/usa/",
+          "https://www.hanacell.com/users/usa-sightseeing/us-plug-and-socket-type/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "今どきのUSB充電中心の備え：1個の充電器で全員・全機器をまかなう",
+        "detail": "現代の旅は『コンセント→USB充電器→各機器をUSBケーブルで』が基本形。おすすめは、(1)複数ポート付きのUSB充電器（PD対応＝高速充電。スマホもPCも1個で）を1〜2個、(2)各自のUSBケーブルを予備込みで、(3)モバイルバッテリーを各自1個。これで3人分のスマホ・カメラ・イヤホン等を効率よく充電できます。前述どおりUSB充電器が100-240V対応なら変圧器・変換プラグなしでアメリカのコンセントに直挿しできます。グランドキャニオン日帰りなど移動が長い日は、モバイルバッテリーがあると安心（ただし機内では使えない点に注意。次項参照）。",
+        "sources": [
+          "https://www.owltech.co.jp/sp_faq/faq15-b-d-0008/"
+        ],
+        "volatile": false,
+        "confidence": "medium"
+      },
+      {
+        "heading": "モバイルバッテリーの容量と機内ルール（国際線の基本）：預け入れNG・容量で判定",
+        "detail": "国際的な基本ルール（アメリカFAA/TSAも同じ）：リチウム電池やモバイルバッテリーは『予備の電池』扱いで、預け入れ荷物に入れるのは禁止、必ず手荷物（機内持ち込み）にします。空港で手荷物を急きょ預けることになった場合も、バッテリー類は取り出して手元に持つこと。容量はWh(ワットアワー)で判定し、100Wh以下=航空会社の承認なしでOK、100Wh超〜160Wh以下=航空会社の承認が必要で1人2個まで、160Wh超=持ち込み不可。Whの計算は『電圧3.7V × 容量mAh ÷ 1000』で、例えば20000mAhなら約74Wh（=100Wh以下でOK）。市販の一般的なモバイルバッテリー（10000〜20000mAh級）はほぼ100Wh以下に収まります。端子のショート防止（袋に入れる等）も求められます。",
+        "sources": [
+          "https://www.faa.gov/hazmat/packsafe/lithium-batteries",
+          "https://www.faa.gov/hazmat/packsafe/airline-passengers-and-batteries",
+          "https://www.tsa.gov/travel/security-screening/whatcanibring/items/lithium-batteries-more-100-watt-hours"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "2026年4月24日からの日本発着便の新ルール：1人2個まで・機内での充電/給電は禁止",
+        "detail": "国土交通省の新ルールで、2026年4月24日以降、日本の航空会社(JAL/ANA等)では機内に持ち込めるモバイルバッテリーは『1人2個まで（160Wh以下）』に統一。さらに『機内でモバイルバッテリー本体を充電すること（コンセントやUSBから充電）も、モバイルバッテリーからスマホ等へ給電することも禁止』、頭上の収納棚に入れるのも禁止で、座席前のポケットなど手元で保管します。預け入れは従来どおり不可。違反（特に機内での充電強行など）は航空法上の『安全阻害行為』として2年以下の拘禁刑または100万円以下の罰金が科される可能性も案内されています。仙台→成田→LAの往路・復路で関係するので、機内充電はスマホ等を機内コンセント/USBから直接行い、モバイルバッテリーは『機内では使わない』と覚えておくと安全。",
+        "sources": [
+          "https://www.mlit.go.jp/report/press/kouku10_hh_000310.html",
+          "https://www.jal.co.jp/jp/ja/info/2026/other/260330/",
+          "https://www.ankerjapan.com/blogs/magazine/mobilebattery-ontheplane"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      }
+    ],
+    "caveats": [
+      "モバイルバッテリーの機内ルールは2026年4月に変わったばかりで流動的です。さらに『2027年1月以降は上限が160Whから100Whに引き下げられる予定』という国際的な動きもあります（ICAO/IATA基準の変更）。今回の旅(2026年10月)は引き下げ前なので160Wh以下が上限ですが、出発前に搭乗便（往路は成田→LAX、復路はラスベガス→LAX→成田）の航空会社の最新案内を各自で必ず確認してください。",
+      "モバイルバッテリーは『100Wh以下（おおむね20000mAh程度まで）』の品を選べば航空会社への事前承認なしで持ち込めて手続き不要・確実です。容量が不明なときは本体やパッケージのWh/mAh表示を確認してください。100Wh超〜160Whは承認が必要で扱いが面倒になります。",
+      "持って行く充電器・機器は、出発前に表面の『INPUT 100-240V 50/60Hz』表示を各自で確認してください。100V専用と書かれた発熱家電（ヘアドライヤー・ヘアアイロン等）はアメリカで使うと故障・発火の恐れがあるため持参を避けるか海外対応品を用意してください。",
+      "変換プラグは原則不要ですが、宿（The Wayfarer Downtown LA / Clarion Hotel Anaheim / Excalibur）の部屋のコンセント形状・口数は念のため確認を。3人で口数が足りない可能性があるため、複数ポートのUSB充電器か短い電源タップがあると安心です。",
+      "スマホかデジカメかは好みの問題で『正解』はありません。デジカメを持つかは出発前に本人たちで決め、持つ場合はSDカード・予備バッテリー・充電ケーブルを忘れずに。スマホ主役の場合も、写真のバックアップ手段（クラウド等）を旅行前に各自設定しておくと盗難・紛失に備えられます。",
+      "規則・キャンペーンなどは時間とともに変わります。本まとめの数値や規則は調査時点(2026年6月)のもので、出発前に最新情報を確認してください。特にバッテリー関連は政府(国土交通省)と各航空会社の公式ページが最も信頼できます。"
+    ]
+  },
+  {
+    "topic": "ホテルの作法",
+    "summary": "アメリカのホテルは「チェックイン午後3時・チェックアウト午前11時」が標準で、チェックイン時にクレジットカードで「保証金の一時的な与信（インシデンタルホールド）」を取られます。これは実際の請求ではなく一時的な枠取りで、退室後数日で消えます。重要なのは「部屋代以外の追加費用」が今回の3つの宿すべてで発生する点。ラスベガスのExcaliburだけでなく、LAのWayfarerもアナハイムのClarionも、リゾートフィー（施設利用料）や駐車料金、デポジット（保証金）が部屋代と別にかかります。チップは現金（できれば1ドル札）が基本です。",
+    "points": [
+      {
+        "heading": "チェックイン/アウトの標準時間と流れ",
+        "detail": "アメリカのホテルの標準は『チェックイン=午後3時ごろ（3〜4時が標準）』『チェックアウト=午前11時ごろ』。調査では米国ホテルの約86%がチェックアウト11時、6%が10時、6%が正午でした。フロント（front desk）でパスポートと予約確認（予約番号やメールの画面）、クレジットカードを出すだけでOK。流れは(1)『Check in, please.』と言う→(2)名前を伝える→(3)カードを渡す（後述のデポジットのため）→(4)ルームキー（カードキー）を受け取る、の順。英語が不安でも、予約確認メールを画面で見せれば名前と予約は伝わります。早く着いたら『Is early check-in available?（早めにチェックインできますか）』と聞くだけ聞いてみる価値あり（ただし部屋の空き次第で保証はされません）。",
+        "sources": [
+          "https://riverlanding.com/blog/what-is-the-standard-hotel-check-in-and-check-out-time/",
+          "https://www.supermoney.com/what-time-is-checkout-at-hotels"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "インシデンタルホールド（保証金の一時的な与信）とは",
+        "detail": "チェックイン時にカードへ取られる『保証金の一時的な与信』。専門語で incidental hold（インシデンタルホールド＝部屋代以外の追加費用に備えてカードの利用可能枠を一時的に押さえること）。これは“実際の支払い”ではなく“枠の仮押さえ”で、ミニバー（部屋の有料ドリンク）・ルームサービス・部屋の破損などに備えるもの。金額の目安は1泊あたり50〜200ドル（部屋代＋税に上乗せ）が一般的。何も使わなければ請求にはならず、クレジットカードならチェックアウト後おおむね3〜7営業日（ヒルトン系は72時間以内が公式方針）で枠が戻ります。今回の宿の実際の与信額は後述（Wayfarer約100ドル/泊、Excalibur約50ドル/泊）。",
+        "sources": [
+          "https://engine.com/blog/hotel-incidentals",
+          "https://www.sofi.com/learn/content/hotel-credit-card-hold/",
+          "https://thepointsguy.com/credit-cards/why-do-hotel-credit-card-holds-last-so-long/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "デビットよりクレジットカードを出すべき理由（キャッシュレス志向の人へ最重要）",
+        "detail": "ホールドはデビットカード（即時に銀行残高が減るカード）だと、ホテルは“仮押さえ”ができず実際に口座から引いて後で返金する形になり、戻るまで最長14営業日（約2週間）かかることもあります。クレジットカードなら減るのは『利用可能枠』だけで口座の現金は動かず、戻りも3〜7日と速い。3人旅・複数泊・リゾート（与信が毎晩重なることがある）では特にクレジット必須。フロントが『解除しました』と言っても実際に枠が戻るのは銀行の処理しだいで数日かかる点も覚えておくと、帰国後に枠が減ったままでも慌てません。海外対応のクレジットカードを各自最低1枚は必ず持参を。",
+        "sources": [
+          "https://tripverified.com/blogs/checkin-shock-why-hotels-put-a-hold-on-your-card-and-how-long-it-lasts",
+          "https://www.sofi.com/learn/content/hotel-credit-card-hold/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "ハウスキーピング（清掃係）へのチップ：相場と置き方",
+        "detail": "アメリカホテル協会（AHLA）の目安は『1泊あたり1〜5ドル』（中級ホテルは下限寄り、高級なら2〜20ドルの幅）。置き方のコツ:(1)現金で(2)毎日帰る前に置く（清掃担当が日替わりのため、最終日にまとめてだと別の人に渡る）(3)ドレッサー（化粧台）の上や枕元など“見える所”に置く—ホテルによってはチップ用の封筒が置いてあることも(4)『Thank you』とメモを添えると“チップだ”と確実に伝わる。1ドル札を旅行前に多めに用意しておくと毎日の運用が楽。3人なら部屋は1〜2室、1部屋あたり1日2〜3ドル程度で十分です。",
+        "sources": [
+          "https://cluballiance.aaa.com/the-extra-mile/advice/travel/how-much-to-tip-in-hotels",
+          "https://www.smartertravel.com/hotel-tipping-guide/",
+          "https://www.nerdwallet.com/travel/learn/how-much-do-you-tip-hotel-housekeeping"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "荷物の一時預け（早着・チェックアウト後）の頼み方",
+        "detail": "多くのホテルはベル係（bell desk＝荷物を扱う係）が荷物を“無料で”一時預かりしてくれる。荷物にタグ（番号札）を付け、預けた個数を控え、引換券をくれるので、戻ったら券を見せて受け取る。早朝着でまだチェックインできない時/チェックアウト後に夜の便まで観光したい時に便利。言い方の例:『Could I leave my luggage here before check-in?』『Can you store my bags until this evening?』。受け取り時に1個1〜2ドルのチップを渡すと丁寧。LA→アナハイム→ラスベガス→グランドキャニオン日帰りの行程では、チェックアウト後の観光日に重宝します。ただし無料預かりはホテル次第・空き次第で、断られたら荷物預かりサービス（Bounce等のアプリ）も検討を。",
+        "sources": [
+          "https://www.nerdwallet.com/article/travel/hotel-luggage-storage",
+          "https://travelpro.com/blogs/the-travelpro-blog/what-to-do-with-luggage-before-check-in"
+        ],
+        "volatile": false,
+        "confidence": "medium"
+      },
+      {
+        "heading": "リゾートフィー/施設利用料は『ラスベガスだけ』ではない — 3つの宿すべてで発生",
+        "detail": "リゾートフィー（resort fee）/施設利用料（amenity fee）＝Wi-Fi・ジム・電話などの名目で部屋代と別に1泊ごと自動で取られる料金。予約サイトの表示額に含まれないことが多く、現地で『思ったより高い』となる最大の原因。今回の宿は全部かかります:(1)Wayfarer DTLA（LA）=施設利用料 約25ドル/泊＋税。ただし1日25ドルの飲食クレジット（ホテル内レストランで使える）が付くので実質ほぼ相殺できる(2)Clarion Anaheim=リゾートフィーは確認できず（要確認）だが駐車は約28〜31ドル/泊(3)Excalibur（ラスベガス）=リゾートフィー約51ドル/泊（後述）。出発前に各ホテルの予約確認メールでフィー額を必ず確認してください。",
+        "sources": [
+          "https://www.resortfeechecker.com/2312-resort_fee_wayfarer_downtown_l_tapestry_collection_by_hilton.html",
+          "https://www.lasvegasjaunt.com/resort-fees/"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "ラスベガス Excalibur のリゾートフィー・駐車・デポジット（実額）",
+        "detail": "リゾートフィー優待サイトの情報（2025年11月10日更新）では、Excaliburのリゾートフィーは『1部屋・1泊あたり 51.02ドル（税込）』（含むのはフィットネス・インターネット・電話など）。インシデンタルデポジット（与信）は『1部屋・1泊あたり 50ドル』（※元データの75ドルは古い可能性。最新は50ドル表示）。駐車は時期で差があり平日約20ドル/日・週末約25ドル/日。注意:このリゾートフィーは2025年10月の41.95ドルから11月に51.02ドルへ約22%急騰しており、2026年10月の滞在時はさらに変わる可能性が高い。3人2泊なら『部屋代＋リゾートフィー約51ドル×2泊＋（車を使うなら駐車20〜25ドル×日数）』が最低でも上乗せ、と頭に入れておくと予算がブレません。",
+        "sources": [
+          "https://www.resortfeechecker.com/41308-resort_fee_excalibur_hotel_casino.html",
+          "https://www.vegas4locals.com/resources/las-vegas-parking-fees/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "ラスベガスのチップ:カジノチップの扱い（元データを訂正）",
+        "detail": "訂正点。元データは『ラスベガスではチップにカジノチップは使えない（州の規制）』としていましたが、これは不正確。カジノのディーラー（テーブルゲームの進行役）へのチップは、むしろカジノチップで渡すのが一般的で日常的に行われています（toke＝トークと呼ぶ）。ネバダ州の規制が禁じているのは『チップを商品やサービスの“支払い”に使うこと』であり、ディーラーへのチップとしての受け渡しで処罰された例は知られていません。一方、ホテルの清掃係・ベル係・カジノ外のレストランなどへのチップは現金（1ドル札）が基本。つまり『ギャンブルしないなら現金チップでOK、ディーラーにはチップで渡せる』が正しい理解です。",
+        "sources": [
+          "https://www.casino.org/news/vegas-myths-busted-tipping-with-casino-chips-is-allowed/",
+          "https://www.lasvegasadvisor.com/faq-tipping-chips-for-tips/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "部屋での注意:飲み水・ミニバー・設備",
+        "detail": "飲み水:アメリカの公共水道水はEPA（米環境保護庁）の安全基準を満たすようCDC（米疾病対策センター）が定めており、基本的に飲めます。元データの『鉛管の心配』は古い建物の一部の話で、過度に怖がる必要はありません。気になる人は数秒流してから飲む/ボトル水を買う、という“安心のための任意の選択”と捉えてOK。ボトル水はホテルのミニバーだと割高なので、コンビニ・ドラッグストア（CVS等）でまとめ買いが安い。その他:(1)ミニバー（冷蔵庫の有料ドリンク・スナック）は手に取る・動かすだけで自動課金されるセンサー式の所があるので不用意に触らない(2)『Do Not Disturb』の札をドアに掛けると清掃が来ない(3)冷暖房は壁のサーモスタット（温度調整パネル）で自分で設定できる(4)フロントに寄らずカードキーを置いて出る“エクスプレスチェックアウト”が使えるホテルも多い。",
+        "sources": [
+          "https://www.cdc.gov/drinking-water/about/index.html",
+          "https://orderwaterwell.com/blogs/news/tap-water-safety-united-states-travel-guide"
+        ],
+        "volatile": false,
+        "confidence": "medium"
+      }
+    ],
+    "caveats": [
+      "リゾートフィー・施設利用料・デポジット額・駐車料金・チップ相場は時期や為替で変わります。特にExcaliburのリゾートフィーは直近で約22%値上がりしているため（2025年10月41.95ドル→11月51.02ドル）、2026年10月の出発前に必ず各ホテル公式サイト/予約確認メールで最新額を各自確認してください。",
+      "【要確認】各ホテルのデポジット額は更新されている可能性があります。Excaliburは最新表示で1泊50ドル（元データの75ドルは古い可能性）、Wayfarer DTLAは1泊約100ドル、Clarion Anaheimは金額が明示されていませんでした。チェックイン前に予約確認メールで各自確認を。",
+      "【要確認】Clarion Anaheim Resortのリゾートフィー有無・額は今回の調査で確定できませんでした。アナハイムのホテルは施設利用料を取る所が多いので、予約サイトの『税・手数料』欄を必ず確認してください。",
+      "インシデンタルホールド（保証金の一時的な与信）はカード会社・銀行により枠が戻る日数が違います。デビットだと最長2週間ほど口座残高が一時的に減るので、海外対応のクレジットカードを各自1枚以上用意し、帰国後しばらくは利用明細で枠が戻ったか確認を。",
+      "チップは『現金（できれば1ドル札）』が基本。カジノのディーラーへはカジノチップでも渡せますが、清掃係・ベル係・レストランなどは現金です。出発前に小額紙幣を多めに用意しておくこと。",
+      "荷物の無料預かりや早期チェックインは“ホテル次第・空き次第”で保証されません。断られても荷物預かりアプリ（Bounce等）など代替を考えておくと安心。",
+      "水道水は基本的に飲めます（CDC基準）。ボトル水は『安全のため必須』ではなく『安心のための任意』。体調管理を重視するなら予算に少し入れておく程度で十分です。"
+    ]
+  },
+  {
+    "topic": "服装・10月の気候",
+    "summary": "結論：3か所とも「日中はそこそこ暖かい〜暑い、朝晩や屋内は冷える」ので、半袖＋羽織れる上着の「重ね着（レイヤリング）」が基本です。特にグランドキャニオン（標高約2100mの高地）は10月の朝に氷点下近くまで下がるため一番寒く、防寒着が必須。ラスベガスは砂漠で日中暑く乾燥が強いので日焼け止め・水分補給を。屋内（カジノやレストラン）は冷房が効いて外より涼しいので、上着を1枚持っておくと安心です。全行程で履き慣れたスニーカー必須。",
+    "points": [
+      {
+        "heading": "ロサンゼルス（10月）：日中は半袖でOK、朝晩は薄手の上着",
+        "detail": "10月のLAは「暖かいけど過ごしやすい」初秋。最高気温は月の前半が約27〜28℃、後半は約24〜25℃まで下がり、最低気温は前半16〜17℃→後半13〜14℃ほど。日中は半袖Tシャツ1枚で十分ですが、朝晩や日陰では肌寒く感じるので、薄手のパーカーやカーディガン、薄手の風よけ（ウインドブレーカー）を1枚持つと安心。雨はほとんど降らず（降る日は月2〜3日程度）、晴れが多い乾いた気候です。現地の観光ガイドも『朝晩の冷え用にセーターとウインドブレーカーを、特に月末は』とすすめています。",
+        "sources": [
+          "https://weatherspark.com/m/1705/10/Average-Weather-in-October-in-Los-Angeles-California-United-States",
+          "https://freetoursbyfoot.com/october-weather-in-la/",
+          "https://www.currentresults.com/Weather/California/Places/los-angeles-weather-in-october.php"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "ラスベガス（10月）：日中は暑い、月末に向け一気に涼しくなる",
+        "detail": "砂漠の街ラスベガス。10月は1か月のなかで気温が大きく下がるのが特徴です。月初は最高約30〜31℃／最低約18℃とまだ夏に近い暑さですが、月末には最高約24〜25℃／最低約12℃まで下がります（月平均はおおむね最高28℃前後／最低12〜14℃前後）。つまり『10月前半に行くか後半に行くかで体感がかなり違う』ので、自分たちの旅程の日付で判断を。日中は半袖でよいですが、朝晩用に羽織りものを1枚。",
+        "sources": [
+          "https://weatherspark.com/m/2228/10/Average-Weather-in-October-in-Las-Vegas-Nevada-United-States",
+          "https://www.holiday-weather.com/las_vegas/averages/october/",
+          "https://weather-and-climate.com/las-vegas-October-averages"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "ラスベガスの乾燥対策：水分補給と日焼け止めは必須",
+        "detail": "ラスベガスは10月でも湿度が非常に低く（平均約29〜30%、ジメジメ感はほぼゼロ）、とても乾燥しています。乾いた空気は汗に気づきにくく、知らないうちに脱水（体の水分が足りなくなること）や日焼けが進みやすいのが落とし穴。こまめに水を飲み（アルコールは脱水を進めるので水も一緒に）、SPF30以上で『ブロードスペクトラム』＝UVA・UVB両方を防ぐと書かれた日焼け止めを2時間おきに塗り直すのが基本。リップクリームや保湿クリームもあると快適です。日焼け止めは肌質・アレルギーに合わせて選んでください。",
+        "sources": [
+          "https://weatherspark.com/m/2228/10/Average-Weather-in-October-in-Las-Vegas-Nevada-United-States",
+          "https://weather-and-climate.com/average-monthly-Humidity-perc,las-vegas,United-States-of-America",
+          "https://skinandcancerinstitute.com/the-ultimate-guide-to-sun-protection-in-las-vegas/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "ラスベガスの屋内は冷房で外より涼しい：上着を1枚持っておくと安心",
+        "detail": "【検証で訂正したポイント】カジノやホテルの冷房は効いていて、室温はおおむね18〜23℃（華氏65〜74度）の範囲。施設ごとに差があり、調査ではMGMグランド65度／パリ68度／今回泊まるエクスカリバーは70〜71度（=約21〜22℃で、むしろ快適な室温）でした。元の調査結果にあった『約18℃に保たれている』『眠くならないよう意図的に冷やしている』は言い過ぎで、後者は“酸素を送り込んで眠らせない”という都市伝説とセットで否定されています。実際に冷やす理由は『砂漠の暑さからの避難』『寒ければ着ればよい（脱ぐより楽）』という快適性。とはいえ外が暑い日に屋内へ入ると涼しく感じる温度差は確かにあるので、薄手の上着やパーカーを1枚カバンに入れておくと安心、という結論自体は有効です（“必ず凍える”わけではない）。",
+        "sources": [
+          "https://www.lasvegasadvisor.com/faq-health-indoor-temps/",
+          "https://www.feelingvegas.com/is-it-cold-inside-vegas-casinos/",
+          "https://medium.com/bitcoin-news-today-gambling-news/do-vegas-casinos-pump-in-extra-air-to-keep-gamblers-awake-9d308677f0ca"
+        ],
+        "volatile": false,
+        "confidence": "medium"
+      },
+      {
+        "heading": "グランドキャニオン（サウスリム・標高約2100m）：朝晩は氷点下近く、3か所で一番寒い",
+        "detail": "ここが一番の要注意。高地（標高約2100m）なので10月の気温は他2か所よりぐっと低く、最高気温は月初の約21℃から月末の約14℃へ、最低気温は月初の約3℃から月末の約マイナス2℃へと下がります。つまり月の後半は朝晩に氷点下近く〜氷点下まで冷え込むことがあり、日帰りでも防寒着（厚手のジャケットやフリース、薄手の手袋・ニット帽）が必須。一方で日中の日なたは暖かいこともあり、昼夜の寒暖差が非常に大きいのが特徴です。NPS（国立公園局）もリム沿いの最高気温が秋に60℉台（16〜21℃）から50℉台（10〜15℃）へ下がり、リムの最低気温は氷点下まで下がることがあると説明しています。",
+        "sources": [
+          "https://weatherspark.com/m/2486/10/Average-Weather-in-October-in-Grand-Canyon-Arizona-United-States",
+          "https://www.nps.gov/grca/learn/nature/weather.htm",
+          "https://www.arizona-leisure.com/average-temperatures-grand-canyon-south-rim.html"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "重ね着（レイヤリング）の具体例：3層で考える",
+        "detail": "全行程で使える基本形は『脱ぎ着で温度調整する3層』です。(1)肌に近い層＝半袖Tシャツ、(2)中間層＝長袖シャツやパーカー、薄手フリース、(3)外側＝風を防ぐ薄手のジャケット。LA・ラスベガスの日中は(1)だけ、朝晩や冷房の効いた屋内は(2)を足す、グランドキャニオンの朝は(3)＋手袋・ニット帽まで足す、というイメージ。下半身も、暑い日用に動きやすいパンツ＋グランドキャニオン用に長ズボンを。一枚の厚いコートより『薄手を重ねる』方が、気温差の激しい今回のルートに向いています。",
+        "sources": [
+          "https://familyof4adventures.com/how-to-pack-for-the-grand-canyon-in-october/",
+          "https://www.canyontours.com/guides/visiting-the-grand-canyon/what-to-wear-when-you-visit-the-grand-canyon/",
+          "https://freetoursbyfoot.com/october-weather-in-la/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "靴：履き慣れたスニーカー1択（新品おろしたては避ける）",
+        "detail": "LA市内観光・ディズニー（アナハイム）・ラスベガスのストリップ（大通り）・グランドキャニオンの展望台めぐり、いずれも1日でかなりの距離を歩きます。特にディズニーとラスベガスのホテル間は『想像以上に歩く』ので、クッション性のある履き慣れたスニーカーが正解。旅行直前に新品をおろすと靴擦れの原因になるため、出発前に普段から履いて足になじませておくのが安全。グランドキャニオンも展望台中心なら登山靴までは不要ですが、滑りにくいスニーカーが安心です。",
+        "sources": [
+          "https://www.canyontours.com/guides/visiting-the-grand-canyon/what-to-wear-when-you-visit-the-grand-canyon/",
+          "https://freetoursbyfoot.com/october-weather-in-la/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "日差し対策：サングラス・帽子・日焼け止めを全行程で",
+        "detail": "3か所とも晴天が多く日差しが強いです。特にグランドキャニオンは標高が高く紫外線（UV）が強まるため、サングラス・つば広の帽子・日焼け止めはグランドキャニオンとラスベガスで特に重要。日本より日差しが強い場面が多いので、曇りに見えても日焼け止めを。サングラスは『まぶしさ疲れ』を防ぎ、運転や展望台での景色も見やすくなります。",
+        "sources": [
+          "https://www.maxtour.co/what-to-wear-on-a-trip-to-the-grand-canyon/",
+          "https://skinandcancerinstitute.com/the-ultimate-guide-to-sun-protection-in-las-vegas/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      }
+    ],
+    "caveats": [
+      "気温は『平年の目安』です。実際の天気はその年により変動するので、出発1週間前に各都市の週間予報（Weather.comやAccuWeatherなど）を必ず確認してください。",
+      "ラスベガスとグランドキャニオンは10月の前半か後半かで体感気温が大きく変わります。自分たちの旅程の正確な日付で気温帯を見直してください。",
+      "グランドキャニオンの朝晩は（特に月後半）氷点下近く〜氷点下まで下がり得ます。日帰りでも防寒着（手袋・ニット帽含む）を必ず持参してください。早朝出発なら特に。",
+      "【検証で修正】ラスベガスの屋内（カジノ等）は『必ず凍えるほど寒い』ではなく、室温18〜23℃（華氏65〜74度）が実態。今回泊まるエクスカリバーは約21〜22℃と快適な部類。『意図的に冷やして眠らせない』は俗説なので、上着は“念のため1枚”の感覚でOKです。",
+      "数値は複数サイトで近い値ですが、各サイトで観測地点・統計年が微妙に異なります。1〜2℃の差は誤差として捉えてください。",
+      "日焼け止めや常備薬など肌に使うものは、各自の肌質・アレルギーに合わせて選び、不安があれば購入前に確認してください。"
+    ]
+  },
+  {
+    "topic": "時差ボケ",
+    "summary": "2026年10月の旅行中は日本とロサンゼルス（太平洋時間）の時差は「16時間」（LAが日本より16時間うしろ＝遅れている）。サマータイム（夏時間）がまだ続いている期間で、終わるのは11月1日なので、今回の7泊9日は最後まで16時間です。時差ボケは「行き（日本→LA）は比較的ラク、帰り（LA→日本）の方がツラい」のが体のしくみ上の基本。行きは機内で寝すぎず、LA到着後は外で日光を浴びて夜まで起きておくのが王道で、到着当日に早く寝てしまう作戦はおすすめしません（早朝に目が覚めて逆に長引きやすい）。※敵対的検証の結果、元レポートの主な数値（時差16時間・夏時間終了日・帰りが長い・回復は東向きの方が遅い）はいずれも公式・一次情報で裏付けが取れました。",
+    "points": [
+      {
+        "heading": "時差は16時間（10月はまだ夏時間／LAが日本より遅れている）",
+        "detail": "今回の行き先ロサンゼルス（LA）は「太平洋時間」というアメリカ西海岸の時間帯です。アメリカには日が長い時期に時計を1時間進める「サマータイム（夏時間）＝Daylight Saving Time」という制度があり、2026年は3月8日（時計を進める日）〜11月1日（時計を戻す日）まで実施。10月はまだ夏時間の真っ最中なので、日本とLAの時差は『16時間』になります（夏時間が終わる冬になると17時間）。方向は『LAが日本より16時間うしろ（遅れている）』。例：日本が10月10日の朝9時のとき、LAはまだ前日10月9日の夕方17時です。つまりLAに着くと『日本の時計より16時間ぶん時間が巻き戻る』感覚になります。7泊9日の今回の旅行は11月1日より前なので、滞在中ずっと16時間で変わりません（ラスベガスも同じ太平洋時間なので時差は同じ）。【検証済み：2つの独立した時差サイトとtimeanddate.comで10月の時差が16時間であることを確認】",
+        "sources": [
+          "https://www.timeanddate.com/time/change/usa?year=2026",
+          "https://24timezones.com/difference/los_angeles/tokyo",
+          "https://en.wikipedia.org/wiki/Daylight_saving_time_in_the_United_States"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "サマータイムが終わるのは2026年11月1日（旅行はギリギリ夏時間内）",
+        "detail": "2026年のアメリカの夏時間が終わる（時計を1時間戻す＝「Fall Back」）のは『11月1日（日）午前2時』です（この時刻に2時→1時へ戻す）。この日を境に時差は16時間→17時間に変わります。今回の旅行は10月の7泊9日なので、出発から帰国までずっと11月1日より前＝夏時間のまま。だから時差は『一貫して16時間』で計算すればOKです。もし帰国が11月1日以降にずれ込む日程変更があった場合だけ、帰り側の時差が17時間になる点に注意してください。なお飛行機の予約サイトやスマホは自動で現地時間に直してくれるので、基本は『LAは日本より16時間遅い』とだけ覚えておけば十分です。【検証済み：timeanddate.com・Old Farmer's Almanacで11月1日午前2時の終了を確認。アメリカの夏時間は「3月第2日曜〜11月第1日曜」のルールで2026年もこれに一致】",
+        "sources": [
+          "https://www.timeanddate.com/time/change/usa?year=2026",
+          "https://www.almanac.com/content/when-daylight-saving-time"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "フライト時間は行き約10時間・帰り約11〜12時間（直行便の場合）",
+        "detail": "成田〜ロサンゼルスの直行便は、行き（成田→LA）が平均で約9時間50分〜10時間、帰り（LA→成田）が平均で約11時間半〜12時間です。帰りの方が1〜2時間長いのは、上空の偏西風（西から東へ吹く強い風）に向かって飛ぶためです。仙台からはまず国内線か新幹線などで成田へ移動してから国際線に乗る形になるので、出発当日は『仙台→成田の移動＋長時間フライト』でかなり長い一日になります。これは体力的にも時差ボケ的にもしんどいポイントなので、出発前夜にしっかり寝ておくのが大事。機内で過ごす時間が10時間以上あるので、この時間の使い方（後述）が時差ボケの軽さを左右します。【検証済み：travelmath等で成田→LAX平均9時間54分、LAX→成田平均11時間35分を確認。元レポートの数値レンジは正確。ただし航空会社・機材・天候で前後するためconfidenceはmediumのまま】",
+        "sources": [
+          "https://www.travelmath.com/flying-time/from/Narita,+Japan/to/Los+Angeles,+CA",
+          "https://www.travelmath.com/flying-time/from/LAX/to/Narita,+Japan"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "なぜ「行きはラク、帰りがツラい」のか（体内時計のしくみ）",
+        "detail": "人の体内時計（体に内蔵された約24時間のリズム）は『遅らせる（夜ふかしする）方向には合わせやすく、早める（早寝早起きする）方向には合わせにくい』という性質があります。これが時差ボケの根本原因です。今回の日本→アメリカ西海岸は、現地に着くと時間が巻き戻る＝体内時計を『遅らせる（後ろ倒し）』方向で合わせるので、比較的ラクな側。逆に帰りのアメリカ→日本は時間が進む＝体内時計を『早める（前倒し）』方向なので、こちらが本番のツラさです。医学的にも『東向きの移動（＝体内時計を早める方向）の方が時差ボケが重く、回復に時間がかかる』とされ、回復の目安は西向きが1日あたり約1.5時間ぶん、東向きは1日あたり約1時間ぶん（より遅い）。つまり覚悟しておくべきは『行き』より『帰国後』。帰国後は数日〜1週間ほど眠気やだるさが残る可能性があるので、帰国直後に重要な予定（仕事の大事な会議など）は入れないのが賢明です。【検証済み：CDC Yellow Bookに『westward travel is easier to adapt than eastward』『westward 1.5 hrs/day, eastward 1 hr/day』と明記。元レポートの「東向きは1日1時間未満」はやや厳しめだったので「約1時間」に訂正】",
+        "sources": [
+          "https://www.cdc.gov/yellow-book/hcp/travel-air-sea/jet-lag-disorder.html",
+          "https://my.clevelandclinic.org/health/diseases/12781-jet-lag",
+          "https://sleepdoctor.com/pages/health/is-jet-lag-worse-traveling-east-to-west"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "機内での過ごし方（行き＝LAの夜に合わせて起きておく/寝る）",
+        "detail": "ポイントは『機内ですでにLA時間で生活し始める』こと。スマホの時計をLA時間に変える、または2つ表示しておくと意識しやすいです。行き（昼ごろ成田発が多い）の場合、LA到着は現地の同じ日の午前〜昼。なので機内では『LAが夜の時間帯だけ寝て、LAが昼の時間帯は起きておく』のが理想で、結果として到着前に少し寝て、着いたら活動できる状態にするのが狙い。共通の鉄則は3つ：(1)水をこまめに飲む（脱水は時差ボケを悪化させる）、(2)アルコールとカフェインを控える（睡眠の質を下げ脱水も招く）、(3)ときどき立って歩く・足首を回す（むくみ・血行対策／長時間同じ姿勢を避ける）。睡眠薬がわりに市販の強い抗ヒスタミン薬・長く効く睡眠薬を使うのはCDCが推奨していません（翌日まで頭がぼんやりする・転倒など安全面のリスク）。眠れない時はアイマスク・耳栓・首枕など『薬に頼らない道具』で対応を。【検証済み：CDC Yellow Bookに『avoid excess alcohol』、抗ヒスタミン薬・長時間作用型の鎮静薬は認知機能低下・転倒リスクで避けるべきと明記】",
+        "sources": [
+          "https://www.cdc.gov/yellow-book/hcp/travel-air-sea/jet-lag-disorder.html",
+          "https://www.sleepfoundation.org/travel-and-sleep/how-to-get-over-jet-lag"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "到着初日の過ごし方（外で日光を浴びて夜まで起きる）",
+        "detail": "時差ボケ対策で一番効くのは『光（日光）を浴びるタイミング』です。体内時計は光でリセットされるからです。今回のような『体内時計を遅らせたい（後ろ倒し）』西海岸行きでは、到着した日の午後〜夕方に外で日光をしっかり浴びるのが効果的（夜ふかし方向に体を押してくれる）。LA到着は現地の午前〜昼ごろなので、ホテルに着いてもすぐ寝込まず、外を散歩したりダウンタウンを軽く歩いたりして、現地の夜（22〜23時ごろ）まで起きておくのが王道。食事も現地の食事時間に合わせて取ると体が『今は昼/夜だ』と認識しやすくなります。初日は予定を詰め込みすぎず、移動と軽い観光くらいにしておくと体が慣れやすい。眠気がどうしても限界なら昼寝は『30分以内』など短時間に限定（長く寝ると夜眠れなくなり逆効果）。メラトニン（体内時計に関わるホルモンのサプリ。アメリカではドラッグストアで普通に買える）は0.5〜1mgの少量を正しい時間に使うと調整を助けますが、飲む時間を間違えるとかえって悪化するため、初海外で慣れていないうちは無理に使わず『日光＋現地時間で生活』を優先するのが安全です。【検証済み：CDCに『朝の強い光は前倒し、夕方の光は後ろ倒しを促す』『日中の長い昼寝は避け、短い昼寝は覚醒度を上げる』『メラトニンは0.5〜1mgで十分、高用量(>5mg)は非推奨』と明記。元レポートの「就寝の8時間以上前まで」という昼寝制限はCDCに具体的記載が見当たらないため『短時間に限定』へ表現を一般化】",
+        "sources": [
+          "https://www.cdc.gov/yellow-book/hcp/travel-air-sea/jet-lag-disorder.html",
+          "https://www.sleepfoundation.org/travel-and-sleep/how-to-get-over-jet-lag",
+          "https://lifestylemedicine.stanford.edu/sleep-traveling-jet-lag/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "「初日に早く寝る作戦」はおすすめしない（早朝覚醒で長引く）",
+        "detail": "結論：日本→西海岸の行きでは『到着当日に早く寝てしまう作戦』は基本おすすめしません。理由は体内時計のしくみ。西海岸では体を『遅らせる（夜ふかし方向）』に合わせたいのに、早く寝てしまうと逆方向（早寝早起き）に固定してしまい、明け方3〜4時に目が覚めてその後眠れない…という『早朝覚醒』が起きやすく、かえって時差ボケが長引きます。専門機関も『到着後はできるだけ早く現地の生活リズムに合わせる』『日中の長い昼寝・早すぎる就寝は避ける』方針です。なので行きは多少眠くても、なんとか現地の夜（最低でも21〜22時ごろ）まで頑張って起きてから寝るのが正解。一方、帰国後の日本では逆に『体を早める（前倒し）』方向なので、帰国当日に普段より少し早めに寝るのはむしろ有効。つまり『早寝が良いか悪いかは方向で逆になる』と覚えておくと混乱しません（行き＝早寝NG／帰り＝早寝OK寄り）。【検証済み：Sleep Foundation・Cleveland Clinic・CDCの方向性と整合】",
+        "sources": [
+          "https://www.sleepfoundation.org/travel-and-sleep/how-to-get-over-jet-lag",
+          "https://my.clevelandclinic.org/health/diseases/12781-jet-lag",
+          "https://www.cdc.gov/yellow-book/hcp/travel-air-sea/jet-lag-disorder.html"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "出発前の準備＆全体の段取り（数日前から少しずつ）",
+        "detail": "可能なら出発の1〜3日前から、寝る時間と食事の時間を少しずつ後ろにずらす（夜ふかし気味にする）と、西海岸の時間に体が入りやすくなります（西海岸行きは体を遅らせる方向だから）。とはいえ初海外＋仕事もある中で無理は禁物なので、最低限『出発前夜だけはしっかり睡眠を取る』ことを優先。長距離移動で体力を削られると時差ボケも感じやすくなります。3人旅なので、初日は誰か一人が極端に眠くなることも想定して、初日の予定はゆるめに組むと全員が楽。時差ボケは病気ではなく数日（多くは1〜7日）で自然に回復するものなので、神経質になりすぎず『日光・水分・現地時間の生活』の3点を守れば十分対処できます。心配が強い場合や持病・服薬がある人は、出発前に医師や薬剤師に相談を。【検証済み：CDC・Sleep Foundationで症状は概ね1〜7日で解消とされる】",
+        "sources": [
+          "https://www.cdc.gov/yellow-book/hcp/travel-air-sea/jet-lag-disorder.html",
+          "https://www.sleepfoundation.org/travel-and-sleep/how-to-get-over-jet-lag",
+          "https://lifestylemedicine.stanford.edu/sleep-traveling-jet-lag/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      }
+    ],
+    "caveats": [
+      "時差（16時間）はサマータイム期間中の値です。2026年の夏時間終了は11月1日（午前2時に時計を1時間戻す）。旅行日程が11月1日以降にずれ込む場合は帰り側の時差が17時間になるため、出発前に最新の日程と現地時間を各自で再確認してください。",
+      "フライト時間（行き約10時間／帰り約11〜12時間）は平均値の目安であり、航空会社・機材・天候・経由有無で前後します。仙台→成田の移動時間も含め、実際の航空券・乗り継ぎ時間は予約時に各自で必ず確認してください。",
+      "メラトニンやサプリ・睡眠補助薬は、飲む量・タイミングを間違えると逆効果になりえます。持病・常用薬がある人、不安が強い人は出発前に医師・薬剤師へ相談してから使うか判断してください（特に初海外では無理に使わない選択も有効）。CDCは高用量メラトニン(>5mg)・市販の抗ヒスタミン薬・長時間作用型の睡眠薬を推奨していません。",
+      "時差ボケの感じ方・回復日数（目安は1〜7日）には個人差があります。本ガイドは一般的な目安であり、医療アドバイスではありません。体調がつらい場合は現地・帰国後に医療機関の受診を検討してください。",
+      "サマータイム制度は将来的に法改正で変わる可能性があります（恒久化の議論あり）。長期的には最新情報を各自で確認してください。",
+      "【検証メモ】元レポートの主要な数値・主張はいずれも一次情報（CDC Yellow Book）・公式の時差/夏時間サイト・複数のフライト時間サイトで裏付けが取れ、大きな誤りはありませんでした。微修正点は2つのみ：(1)東向き回復速度を「1日1時間未満」→CDCの記載に合わせ「約1日1時間」に訂正、(2)初日の昼寝制限「就寝8時間以上前」はCDCに明記がないため「短時間に限定」へ表現を一般化しました。"
+    ]
+  },
+  {
+    "topic": "通信（スマホ/ネット）",
+    "summary": "結論：瑠威さんはすでに ahamo なので「申し込み不要・追加料金なしで30GBまで・スマホそのまま使える」のが最大の強み。地図・配車・翻訳が中心ならまず ahamo の海外データ通信(ローミング)をオンにするだけでOKです。ただし「最初に通信した日から15日で速度制限」「30GBは日本での利用分と合算」「通話・SMSは別料金で高い(特に着信175円/分)」の3点に注意。同期2人は各自のプランが海外ローミング対応か出発前に確認し、対応していなければ日本でeSIM(物理カード不要のSIM)を準備すると安心です。空港・ホテルの無料Wi-Fiは便利ですが偽物や盗み見の危険があるため、ログインや決済は自分の回線(ahamo/eSIM)で行うのが安全です。",
+    "points": [
+      {
+        "heading": "まず全体像:選択肢は4つ。初心者3人にはどれが現実的か",
+        "detail": "アメリカでスマホを使う主な方法は4つです。(1)海外ローミング=日本のSIMのまま現地の電波を借りる方式(ahamoはこれ)。(2)eSIM=スマホに電波情報を書き込む『物理カード不要のSIM』。差し替え不要で設定はスマホ内だけで完結。(3)現地SIM=アメリカで物理SIMカードを買って差し替える方式。(4)ポケットWi-Fi=小型のWi-Fiルーターを借りて持ち歩く方式。地図・配車(Uber/Lyft)・翻訳(Google翻訳)が中心の使い方なら必要な通信量はそれほど多くなく、瑠威さんは既に ahamo なので『追加料金ゼロ・申し込み不要』のローミングが最有力です。英語がほぼ話せない前提だと、現地SIMは店員との英語のやり取りや英語の設定画面が壁になるので優先度は下がります。",
+        "sources": [
+          "https://ahamo.com/services/roaming-data/index.html",
+          "https://www.hanacell.com/users/america-sim/prepaid_sim_disadvantages/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "本命:ahamo の海外データ通信(瑠威さんは設定オンにするだけ)",
+        "detail": "ahamoは事前申し込み不要で、海外91の国・地域(アメリカを含む)で『追加料金なし』でデータ通信が使えます。月のデータ量30GB(基本プラン月額2,970円税込)の枠内で海外でも使えるので、追加で払うものは原則ナシ。やることは現地でスマホの『データローミング』をオンにするだけ。物理的な受け取り・返却・差し替えが一切ないのが初心者に最大のメリットです。地図・配車・翻訳・SNS程度なら30GBはかなり余裕があります(動画を長時間見なければ7〜9日で使い切るのは難しいレベル)。同期3人それぞれが ahamo など同様のローミング付きプランなら、全員が同じやり方で済みます。なお『ahamo大盛り(110GB)』に入っていても、海外で使えるのは30GBまでです。",
+        "sources": [
+          "https://ahamo.com/services/roaming-data/index.html",
+          "https://ahamo.com/plan/index.html",
+          "https://faq.ahamo.com/faq/show/98?category_id=28&site_domain=default"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "ahamo の3大落とし穴:15日制限・30GB合算・通話/SMSは別料金(着信が高い)",
+        "detail": "(1)15日ルール:海外で『最初にデータ通信した日(日本時間)』を起算日として15日経過後の0時以降、海外では送受信最大128kbps(地図がほぼ動かないレベルの低速)になります。今回は7泊9日なので15日以内に収まり、ここは問題になりません。(2)30GBは『日本での利用分と合算』。出発前に日本でたくさん使っていると残りが少ない状態で渡米するので、出発前に残量を確認しておくと安心。(3)通話・SMSは追加料金なしの対象外で別料金。アメリカ本土での料金は『現地への発信125円/分・日本への発信140円/分・着信(電話を受ける)175円/分』と高め(着信が一番高い点に注意。鳴っただけで出ると課金されます)。SMSは送信1通100円・受信無料。電話したい相手とは LINE通話など『データ通信を使う通話アプリ』を使えば、この高い通話料はかかりません(データ扱いになるため)。",
+        "sources": [
+          "https://ahamo.com/services/roaming/index.html",
+          "https://faq.ahamo.com/faq/show/2442?category_id=30&site_domain=default",
+          "https://nanameue-travel.com/ahamo-overseas/"
+        ],
+        "volatile": true,
+        "confidence": "high"
+      },
+      {
+        "heading": "保険・代替案その1:eSIM(日本で買って準備、設定はスマホだけ)",
+        "detail": "eSIMは『物理カードのいらないSIM』で、出発前に日本で買って、QRコードを読み込む/アプリで開通するだけ。受け取り・返却・差し替えが不要で、ahamoが万一うまく繋がらない時の予備にもなります。アメリカ向けの料金目安(2026年6月時点)は、容量を気にしたくない無制限系なら7日間で約3,300〜4,800円(例:ジャパンコネクトeSIM 約3,280円、Airalo 約3,550円、Holafly 約4,790円)。少なめで安く済ませるなら7日3GBで約1,300〜1,600円、7日10GBで約3,800円前後が目安です。英語が不安なら日本語サポートのある trifa、安さ重視なら Airalo やジャパンコネクトeSIM、無制限の使い放題重視なら Holafly という選び分けが一般的。注意点は『eSIM対応スマホが必須』『開通設定を自分でやる必要がある』こと。心配なら出発前(日本のWi-Fi下)に設定だけ済ませておくと当日慌てません。",
+        "sources": [
+          "https://japanconnect-esim.store/blog/america-esim/",
+          "https://kakaku.com/mobile_data/world-wifi/world-esim/",
+          "https://www.trifa.co/ja/column/e-sim/usa-esim"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "代替案その2:ポケットWi-Fi(3人でシェアできるが荷物・受返却が手間)",
+        "detail": "ポケットWi-Fiは小型ルーターをレンタルし、複数台を同時接続できるので3人でシェアすれば1人あたりは割安になります(アメリカ本土で1日約1,000円前後の例)。日本語の電話サポートがある会社も多く、トラブル時に相談しやすいのも利点。一方デメリットは、(1)空港カウンターや宅配での受け取り・帰国後の返却が必要、(2)本体・充電器を持ち歩く荷物になり充電切れに注意、(3)ルーターを持っている人とはぐれると他の人が繋がらない(3人が別行動する場面もある今回のルートでは弱点)。瑠威さんが ahamo を持っている以上、ポケットWi-Fiは『3人とも格安プランで全員ローミング不可』のような場合の選択肢で、今回は優先度は高くありません。",
+        "sources": [
+          "https://www.imotonowifi.jp/about/comparison/",
+          "https://kakaku.com/mobile_data/world-wifi/world-esim/"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      },
+      {
+        "heading": "代替案その3:現地SIM(英語が壁。今回は無理に選ばなくてよい)",
+        "detail": "アメリカに着いてから物理SIMカードを買う方法。料金は割安なこともありますが、英語初心者には壁が多めです。店員とのやり取りやチャージ(残量追加)の説明画面が英語のことが多く、設定でつまずくと『繋がらない→無料Wi-Fiに頼る→セキュリティ不安』という悪循環に陥りがち。また使い切ると一切通信できなくなり、チャージ方法を調べることすらできなくなるリスクも。どうしても現地SIMにしたい場合でも『日本で事前に買っておく(日本語で購入・設定できる)』のが鉄則とされています。今回は ahamo があるので、無理に現地SIMを選ぶ理由は薄いです。",
+        "sources": [
+          "https://www.hanacell.com/users/america-sim/prepaid_sim_disadvantages/",
+          "https://amesma.net/blog/smartphone/prepaid-sim-pros-and-cons/21831/"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "無料Wi-Fi(空港・ホテル)の注意:便利だが「ログイン・決済はしない」",
+        "detail": "空港やホテルの無料Wi-Fiはタダで使えて便利ですが、リスクが2つあります。(1)通信が暗号化されていないと、入力した内容(IDやパスワード)を盗み見られる恐れ。(2)正規そっくりの名前の『偽物Wi-Fi(なりすまし。別名・悪魔の双子)』に誤って繋ぐと情報を抜かれる危険。対策は、(a)スマホの『Wi-Fi自動接続』を旅行前にオフにする、(b)銀行・クレジットカード・重要なログインは無料Wi-Fiでやらず、自分の回線(ahamo/eSIM)で行う、(c)接続名はスタッフに正しい名前を確認してから繋ぐ、(d)サイトのアドレスが鍵マーク付きのhttpsかを見る、(e)心配ならVPN(通信を暗号化して盗み見を防ぐアプリ)を使う。キャッシュレス志向で決済アプリやカードを使う場面が多いはずなので、『決済・ログインは無料Wi-Fiでやらない』を3人の共通ルールにしておくと安全です。",
+        "sources": [
+          "https://nordvpn.com/ja/blog/free-wifi-vpn/",
+          "https://anshin-security.docomo.ne.jp/security_news/wifi/column001.html",
+          "https://www.police.pref.osaka.lg.jp/seikatsu/saiba/chuikanki/soshiki/18104.html"
+        ],
+        "volatile": false,
+        "confidence": "high"
+      },
+      {
+        "heading": "3人の現実的なおすすめ構成(まとめ)",
+        "detail": "(1)瑠威さん:ahamoのまま。現地で『データローミングをオン』にすればOK。出発前に30GBの残量を確認。(2)同期2人:各自のプランがahamoのように『海外ローミング追加料金なし』ならそれでOK。そうでなければ、日本で各自eSIM(7〜9日で3GB約1,300〜1,600円〜、無制限約3,300〜4,800円が目安)を買って出発前のWi-Fi下で開通設定だけ済ませておくのが手軽。(3)共通ルール:通話はLINEなどデータ通信の通話を使う(ahamoの高い国際通話、特に着信175円/分を避ける)、地図はオフラインマップを事前ダウンロード(Googleマップは現地の地図を事前に保存可能=圏外でも道がわかる)、無料Wi-Fiではログイン・決済をしない。グランドキャニオンなど郊外・国立公園は電波が弱い場所があるので、移動前にルートと配車手配を済ませておくと安心です。",
+        "sources": [
+          "https://ahamo.com/services/roaming-data/index.html",
+          "https://japanconnect-esim.store/blog/america-esim/",
+          "https://anshin-security.docomo.ne.jp/security_news/wifi/column001.html"
+        ],
+        "volatile": true,
+        "confidence": "medium"
+      }
+    ],
+    "caveats": [
+      "料金・キャンペーン・データ容量・対象国は変わりやすい。ahamoの30GB/月額2,970円や15日制限・通話SMS料金、各eSIMの価格は、出発前に必ず公式サイトで最新を各自確認すること(本ガイドは2026年6月時点の情報)。",
+      "【訂正】元データはahamoの国際通話を『発信・着信とも約1分125円』としていたが、これは誤り。正しくはアメリカ本土で『現地発信125円/分・日本宛発信140円/分・着信(受信)175円/分・SMS送信100円/通・受信無料』。着信が最も高いので、知らない番号からの電話はうっかり出ないこと。",
+      "【要確認・訂正】元データのeSIM価格『無制限7日 約1,350円〜』『7日10GB 約2,180円』は2026年6月時点では安すぎる(過去のキャンペーン価格と思われる)。現状の目安は無制限7日 約3,300〜4,800円、10GB7日 約3,800円前後。3GB7日は約1,300〜1,600円。実際の価格は購入直前に各社サイトで必ず確認すること。",
+      "ahamoの対象91の国・地域にアメリカ本土は含まれるが、本ガイドの調査ではハワイ・グアム等の扱いまでは個別確認できていない。立ち寄り地や経由地が対象か、出発前にahamo公式『海外データ通信』の対象国リストで各自確認すること。",
+      "eSIMは『eSIM対応スマホ』が必須。瑠威さんのPixel(近年のPixelは一般にeSIM対応)を含め、3人のスマホが実際にeSIM対応か、また各自のキャリアプランが海外ローミング対応か(追加料金の有無)を出発前に各自チェックすること。",
+      "eSIMや現地SIMは『SIMロック』が解除されていないと使えない場合がある。中古・古い端末の人は事前にロック解除状況を確認。",
+      "ahamoは『最初に通信した日から15日』で速度制限(最大128kbps)。今回は9日間で問題ないが、予定が延びる場合は要注意。データは日本利用分と合算30GBである点も出発前に残量確認を。15日経過後の速度制限はデータを追加購入しても帰国するまで解除されない。",
+      "通話・SMSはahamoの追加料金なしの対象外で別料金(高額)。電話はLINE等のデータ通話で代替し、うっかり国際電話・国際SMSを使わないよう注意。海外での通話・SMS利用額が一定額(初期設定の利用停止目安5万円)を超えると当月末まで利用停止になる点も留意。",
+      "空港・ホテルの無料Wi-Fiでは銀行・クレジットカード・重要なログインを行わない。Wi-Fi自動接続は旅行前にオフにし、接続名はスタッフに確認する。",
+      "海外では高額請求トラブルもあり得るため、不安なら出発前に各キャリアの『海外利用の上限設定・通知設定』を確認しておくこと。"
+    ]
+  }
+]
