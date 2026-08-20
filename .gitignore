@@ -8,3 +8,7 @@ __pycache__/
 # 個人用の下調べ（公開サイトには載せない）
 海外クレカ選び.html
 _card_body.html
+海外ショッピング候補.html
+_shopping_body.html
+_shopping.json
+build_shopping.py
