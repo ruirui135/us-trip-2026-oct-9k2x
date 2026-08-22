@@ -21,7 +21,7 @@ import re
 import sys
 import csv
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from urllib.request import urlopen, Request
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -307,7 +307,7 @@ def build_fb(grid):
 
     tnotes = timing_notes(rows)          # ← (A) 計算で出すコメント
 
-    out = ["🤖 ClaudeFB（30分ごとに自動更新）"]
+    out = ["__HEADER__"]
     prev_day, used_once = None, set()
 
     for i, r in enumerate(rows):
@@ -350,18 +350,57 @@ def build_fb(grid):
     return out
 
 
+STAMP_RE = re.compile(r"(\d{1,2})/(\d{1,2})\s+(\d{1,2}):(\d{2})")
+
+
+def read_existing():
+    """今あるCSVの本文と、ヘッダに書かれた最終更新時刻を返す"""
+    if not os.path.exists(OUT):
+        return None, None
+    try:
+        rows = list(csv.reader(io.open(OUT, encoding="utf-8")))
+    except Exception:
+        return None, None
+    if not rows:
+        return None, None
+    head = rows[0][0] if rows[0] else ""
+    body = [r[0] if r else "" for r in rows[1:]]
+    m = STAMP_RE.search(head)
+    stamp = None
+    if m:
+        mo, da, hh, mi = (int(x) for x in m.groups())
+        try:
+            stamp = datetime.now().replace(month=mo, day=da, hour=hh,
+                                           minute=mi, second=0, microsecond=0)
+        except ValueError:
+            stamp = None
+    return body, stamp
+
+
 def main():
     grid = fetch_grid()
     col = build_fb(grid)
+    now = datetime.now()
+    body = col[1:]
+
+    old_body, old_stamp = read_existing()
+    fresh = old_stamp is not None and timedelta(0) <= (now - old_stamp) < timedelta(hours=6)
+    if body == old_body and fresh:
+        # 中身も同じ・鮮度印も新しい → 触らない（無駄なpushを避ける）
+        print("変更なし（%d行 / 最終更新 %s）" % (len(col), old_stamp.strftime("%m/%d %H:%M")))
+        return
+
+    col[0] = "🤖 ClaudeFB（自動更新 %d/%d %s 時点）" % (
+        now.month, now.day, now.strftime("%H:%M"))
+
     os.makedirs("docs", exist_ok=True)
     with io.open(OUT, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f, quoting=csv.QUOTE_ALL)
         for line in col:
             w.writerow([line])
-    n = sum(1 for x in col[1:] if x.strip())
+
+    n = sum(1 for x in body if x.strip())
     print("%s  行数=%d / コメントあり=%d  (%s)" % (
-        OUT, len(col), n, datetime.now().strftime("%H:%M")))
-
-
+        OUT, len(col), n, now.strftime("%H:%M")))
 if __name__ == "__main__":
     main()

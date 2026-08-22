@@ -18,3 +18,6 @@ trip_worksheet.xlsx
 trip_timeline.xlsx
 trip_flexible.xlsx
 csv/
+
+# 自動更新の実行ログ
+_fb_update.log
